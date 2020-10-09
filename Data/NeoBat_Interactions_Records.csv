@@ -1,6 +1,6 @@
 IDCode,SiteCode,RefCode,BatGenus,BatSpecies,CurrentBatSpecies,TrophicGuild,PlantFamily,PlantGenus,PlantSpecies,CurrentPlantSpecies,LifeForm,SuccessionalStage,Interaction,Weight
-BPI0001,BPA001,BPR001,Artibeus,Artibeus jamaicensis,Artibeus planirostris,Frugivore,Moraceae,Brosimum,Brosimum lactescens ,Brosimum lactescens ,Tree,Late,Frugivory,NA
-BPI0002,BPA001,BPR001,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Moraceae,Brosimum,Brosimum lactescens ,Brosimum lactescens ,Tree,Late,Frugivory,NA
+BPI0001,BPA001,BPR001,Artibeus,Artibeus jamaicensis,Artibeus planirostris,Frugivore,Moraceae,Brosimum,Brosimum lactescensÂ ,Brosimum lactescensÂ ,Tree,Late,Frugivory,NA
+BPI0002,BPA001,BPR001,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Moraceae,Brosimum,Brosimum lactescensÂ ,Brosimum lactescensÂ ,Tree,Late,Frugivory,NA
 BPI0003,BPA002,BPR002,Platyrrhinus,Platyrrhinus lineatus,Platyrrhinus lineatus,Frugivore,Icacinaceae,Emmotum,Emmotum nitens,Emmotum nitens,Tree,NA,Frugivory,NA
 BPI0004,BPA003,BPR003,Artibeus,Artibeus fimbriatus,Artibeus fimbriatus,Frugivore,Piperaceae,Piper,Piper amalago,Piper amalago,Shrub,Early,Frugivory,1.00
 BPI0005,BPA003,BPR003,Artibeus,Artibeus fimbriatus,Artibeus fimbriatus,Frugivore,Piperaceae,Piper,Piper crassinervium,Piper crassinervium,Shrub,Early,Frugivory,1.00
@@ -205,7 +205,7 @@ BPI0203,BPA015,BPR014,Sturnira,Sturnira lilium,Sturnira parvidens,Frugivore,Mora
 BPI0204,BPA015,BPR014,Sturnira,Sturnira lilium,Sturnira parvidens,Frugivore,Muntingiaceae,Muntingia,Muntingia calabura,Muntingia calabura,Tree,NA,Frugivory,NA
 BPI0205,BPA016,BPR015,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Passifloraceae,Tetrastylis,Tetrastylis ovalis,Tetrastylis ovalis,Vine,Late,Nectarivory,NA
 BPI0206,BPA016,BPR015,Rhinophylla,Rhinophylla pumilio,Rhinophylla pumilio,Frugivore,Passifloraceae,Tetrastylis,Tetrastylis ovalis,Tetrastylis ovalis,Vine,Late,Nectarivory,NA
-BPI0207,BPA017,BPR016,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Malvaceae,Bakeridesia,Abutilon rufinerve var. latifolium,Bakeridesia rufinervis,Tree,NA,Nectarivory,NA
+BPI0207,BPA017,BPR016,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Malvaceae,Bakeridesia,AbutilonÂ rufinerve var. latifolium,Bakeridesia rufinervis,Tree,NA,Nectarivory,NA
 BPI0208,BPA018,BPR016,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Malvaceae,Abutilon,Abutilon regnellii,Abutilon regnellii,Shrub,Early,Nectarivory,NA
 BPI0209,BPA019,BPR016,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Malvaceae,Abutilon,Abutilon aff. regnellii,Abutilon regnellii,Shrub,Early,Nectarivory,NA
 BPI0210,BPA020,BPR017,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Solanaceae,Solanum,Solanum granulosoleprosum,Solanum granuloso-leprosum,Tree,Early,Frugivory,NA
@@ -219,7 +219,7 @@ BPI0217,BPA021,BPR018,Artibeus,Artibeus jamaicensis,Artibeus planirostris,Frugiv
 BPI0218,BPA021,BPR018,Artibeus,Artibeus jamaicensis,Artibeus planirostris,Frugivore,Myrtaceae,Syzygium,Jambosa vulgaris,Syzygium jambos,Tree,Late,Frugivory,NA
 BPI0219,BPA021,BPR018,Artibeus,Artibeus jamaicensis,Artibeus planirostris,Frugivore,Arecaceae,Oenocarpus,Cenocarpus disticus,Oenocarpus distichus,Palm-tree,NA,Frugivory,NA
 BPI0220,BPA021,BPR018,Artibeus,Artibeus jamaicensis,Artibeus planirostris,Frugivore,Arecaceae,Socratea,Iriartea exorrhiza,Socratea exorrhiza,Palm-tree,Late,Frugivory,NA
-BPI0221,BPA021,BPR018,Artibeus,Artibeus jamaicensis,Artibeus planirostris,Frugivore,Myrtaceae,Psidium,Psidium guajava,Psidium guajava,Tree,Late,Frugivory,NA
+BPI0221,BPA021,BPR018,Artibeus,Artibeus jamaicensis,Artibeus planirostris,Frugivore,Myrtaceae,Psidium,PsidiumÂ guajava,Psidium guajava,Tree,Late,Frugivory,NA
 BPI0222,BPA021,BPR018,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Leguminosae,Alexa,Alexa grandiflora,Alexa grandiflora,Tree,Late,Nectarivory,NA
 BPI0223,BPA021,BPR018,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Bignoniaceae,Crescentia,Crescentia amazonica,Crescentia amazonica,Shrub,NA,Nectarivory,NA
 BPI0224,BPA021,BPR018,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Bignoniaceae,Crescentia,Crescentia cujete,Crescentia cujete,Tree,NA,Nectarivory,NA
@@ -227,11 +227,11 @@ BPI0225,BPA021,BPR018,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nect
 BPI0226,BPA021,BPR018,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Urticaceae,Cecropia,Cecropia bureaniana,Cecropia palmata,Tree,Early,Frugivory,NA
 BPI0227,BPA021,BPR018,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Capparaceae,Crateva,Crataeva benthamii,Crateva tapia,Tree,NA,Nectarivory,NA
 BPI0228,BPA021,BPR018,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Leguminosae,Elizabetha,Elizabetha paraense,Elizabetha paraensis,Tree,NA,Nectarivory,NA
-BPI0229,BPA021,BPR018,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Leguminosae,Hymenaea,Hymenaea courbaril,Hymenaea courbaril,Tree,Late,Nectarivory,NA
+BPI0229,BPA021,BPR018,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Leguminosae,Hymenaea,HymenaeaÂ courbaril,Hymenaea courbaril,Tree,Late,Nectarivory,NA
 BPI0230,BPA021,BPR018,Phyllostomus,Phyllostomus discolor,Phyllostomus discolor,Omnivore,Leguminosae,Parkia,Parkia gigantocarpa,Parkia gigantocarpa,Tree,Late,Nectarivory,NA
-BPI0231,BPA021,BPR018,Phyllostomus,Phyllostomus discolor,Phyllostomus discolor,Omnivore,Leguminosae,Parkia,Parkia pendula,Parkia pendula,Tree,Late,Nectarivory,NA
+BPI0231,BPA021,BPR018,Phyllostomus,Phyllostomus discolor,Phyllostomus discolor,Omnivore,Leguminosae,Parkia,ParkiaÂ pendula,Parkia pendula,Tree,Late,Nectarivory,NA
 BPI0232,BPA021,BPR018,Phyllostomus,Phyllostomus hastatus,Phyllostomus hastatus,Omnivore,Leguminosae,Parkia,Parkia gigantocarpa,Parkia gigantocarpa,Tree,Late,Nectarivory,NA
-BPI0233,BPA021,BPR018,Phyllostomus,Phyllostomus hastatus,Phyllostomus hastatus,Omnivore,Leguminosae,Parkia,Parkia pendula,Parkia pendula,Tree,Late,Nectarivory,NA
+BPI0233,BPA021,BPR018,Phyllostomus,Phyllostomus hastatus,Phyllostomus hastatus,Omnivore,Leguminosae,Parkia,ParkiaÂ pendula,Parkia pendula,Tree,Late,Nectarivory,NA
 BPI0234,BPA021,BPR018,Uroderma,Uroderma bilobatum,Uroderma bilobatum,Frugivore,Moraceae,Ficus,Ficus radula,Ficus maxima,Tree,Late,Frugivory,NA
 BPI0235,BPA021,BPR018,Uroderma,Uroderma bilobatum,Uroderma bilobatum,Frugivore,Moraceae,Ficus,Ficus retusa var. nitida,Ficus microcarpa,Tree,NA,Frugivory,NA
 BPI0236,BPA021,BPR018,Uroderma,Uroderma bilobatum,Uroderma bilobatum,Frugivore,Moraceae,Ficus,Ficus sp.,Ficus sp.,Tree,NA,Frugivory,NA
@@ -411,7 +411,7 @@ BPI0409,BPA035,BPR031,Carollia,Carollia brevicauda,Carollia brevicauda,Frugivore
 BPI0410,BPA035,BPR031,Sturnira,Sturnira ludovici,Sturnira ludovici,Frugivore,Solanaceae,Acnistus,Acnistus arborescens,Acnistus arborescens,Shrub,Early,Frugivory,NA
 BPI0411,BPA036,BPR032,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Urticaceae,Cecropia,Cecropia obtusifolia,Cecropia obtusifolia,Tree,Early,Frugivory,NA
 BPI0412,BPA036,BPR032,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Urticaceae,Cecropia,Cecropia obtusifolia,Cecropia obtusifolia,Tree,Early,Frugivory,NA
-BPI0413,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Moraceae,Ficus,Ficus glabrata ,Ficus insipida,Tree,Late,Frugivory,NA
+BPI0413,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Moraceae,Ficus,FicusÂ glabrataÂ ,Ficus insipida,Tree,Late,Frugivory,NA
 BPI0414,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Moraceae,Ficus,Ficus hartwegii,Ficus hartwegii,Tree,NA,Frugivory,NA
 BPI0415,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Moraceae,Ficus,Ficus insipida,Ficus insipida,Tree,Late,Frugivory,NA
 BPI0416,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Moraceae,Ficus,Ficus obtusifolia,Ficus obtusifolia,Tree,Early,Frugivory,NA
@@ -421,7 +421,7 @@ BPI0419,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivo
 BPI0420,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Moraceae,Brosimum,Brosimum alicastrum,Brosimum alicastrum,Tree,Late,Frugivory,NA
 BPI0421,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Moraceae,Poulsenia,Poulsenia armata,Poulsenia armata,Tree,Late,Frugivory,NA
 BPI0422,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Moraceae,Pseudolmedia,Pseudolmedia oxyphyllaria,Pseudolmedia glabrata,Tree,Late,Frugivory,NA
-BPI0423,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Lauraceae,Nectandra,Nectandra ambigens,Nectandra ambigens,Tree,Late,Frugivory,NA
+BPI0423,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Lauraceae,Nectandra,NectandraÂ ambigens,Nectandra ambigens,Tree,Late,Frugivory,NA
 BPI0424,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Sapotaceae,Pouteria,Pouteria campechiana,Pouteria campechiana,Tree,Late,Frugivory,NA
 BPI0425,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Sapotaceae,Manilkara,Manilkara sapota,Manilkara zapota,Tree,Late,Frugivory,NA
 BPI0426,BPA037,BPR033,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Sapotaceae,Pouteria,Pouteria unilocularis,Pouteria reticulata ,Tree,Late,Frugivory,NA
@@ -536,10 +536,10 @@ BPI0534,BPA046,BPR042,Carollia,Carollia subrufa,Carollia subrufa,Frugivore,Munti
 BPI0535,BPA046,BPR042,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Muntingiaceae,Muntingia,Muntingia calabura,Muntingia calabura,Tree,NA,Frugivory,NA
 BPI0536,BPA047,BPR043,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Pachycereus,Pachycereus pringlei,Pachycereus pringlei,Succulent,NA,Nectarivory,NA
 BPI0537,BPA047,BPR043,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Carnegiea,Carnegiea gigantea,Carnegiea gigantea,Succulent,NA,Nectarivory,NA
-BPI0538,BPA047,BPR043,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Stenocereus,Stenocereus thurberi ,Stenocereus thurberi ,Succulent,NA,Nectarivory,NA
+BPI0538,BPA047,BPR043,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Stenocereus,StenocereusÂ thurberiÂ ,Stenocereus thurberiÂ ,Succulent,NA,Nectarivory,NA
 BPI0539,BPA047,BPR043,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Lophocereus,Lophocereus schottii,Lophocereus schottii,Succulent,NA,Nectarivory,NA
 BPI0540,BPA048,BPR043,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Carnegiea,Carnegiea gigantea,Carnegiea gigantea,Succulent,NA,Nectarivory,NA
-BPI0541,BPA048,BPR043,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Stenocereus,Stenocereus thurberi ,Stenocereus thurberi ,Succulent,NA,Nectarivory,NA
+BPI0541,BPA048,BPR043,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Stenocereus,StenocereusÂ thurberiÂ ,Stenocereus thurberiÂ ,Succulent,NA,Nectarivory,NA
 BPI0542,BPA048,BPR043,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Lophocereus,Lophocereus schottii,Lophocereus schottii,Succulent,NA,Nectarivory,NA
 BPI0543,BPA049,BPR044,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Moraceae,Maclura,Chlorophora tinctoria,Maclura tinctoria,Tree,Late,Frugivory,NA
 BPI0544,BPA049,BPR044,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Moraceae,Ficus,Ficus enormis,Ficus enormis,Tree,NA,Frugivory,NA
@@ -788,12 +788,12 @@ BPI0786,BPA055,BPR049,Carollia,Carollia perspicillata,Carollia perspicillata,Fru
 BPI0787,BPA055,BPR049,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Leguminosae,Hymenaea,Hymenaea stigonocarpa,Hymenaea stigonocarpa,Tree,NA,Nectarivory,NA
 BPI0788,BPA055,BPR049,Phyllostomus,Phyllostomus hastatus,Phyllostomus hastatus,Omnivore,Leguminosae,Hymenaea,Hymenaea stigonocarpa,Hymenaea stigonocarpa,Tree,NA,Nectarivory,NA
 BPI0789,BPA055,BPR049,Platyrrhinus,Platyrrhinus lineatus,Platyrrhinus lineatus,Frugivore,Leguminosae,Hymenaea,Hymenaea stigonocarpa,Hymenaea stigonocarpa,Tree,NA,Nectarivory,NA
-BPI0790,BPA056,BPR050,Choeronycteris,Choeronycteris mexicana,Choeronycteris mexicana,Nectarivore,Cactaceae,Neobuxbaumia,Neobuxbaumia tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Nectarivory,NA
-BPI0791,BPA056,BPR050,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Neobuxbaumia,Neobuxbaumia tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Nectarivory,NA
-BPI0792,BPA057,BPR051,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Cactaceae,Neobuxbaumia,Neobuxbaumia tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Frugivory,NA
-BPI0793,BPA057,BPR051,Choeronycteris,Choeronycteris mexicana,Choeronycteris mexicana,Nectarivore,Cactaceae,Neobuxbaumia,Neobuxbaumia tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Frugivory,NA
-BPI0794,BPA057,BPR051,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Neobuxbaumia,Neobuxbaumia tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Frugivory,NA
-BPI0795,BPA057,BPR051,Leptonycteris,Leptonycteris nivalis,Leptonycteris nivalis,Nectarivore,Cactaceae,Neobuxbaumia,Neobuxbaumia tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Frugivory,NA
+BPI0790,BPA056,BPR050,Choeronycteris,Choeronycteris mexicana,Choeronycteris mexicana,Nectarivore,Cactaceae,Neobuxbaumia,NeobuxbaumiaÂ tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Nectarivory,NA
+BPI0791,BPA056,BPR050,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Neobuxbaumia,NeobuxbaumiaÂ tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Nectarivory,NA
+BPI0792,BPA057,BPR051,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Cactaceae,Neobuxbaumia,NeobuxbaumiaÂ tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Frugivory,NA
+BPI0793,BPA057,BPR051,Choeronycteris,Choeronycteris mexicana,Choeronycteris mexicana,Nectarivore,Cactaceae,Neobuxbaumia,NeobuxbaumiaÂ tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Frugivory,NA
+BPI0794,BPA057,BPR051,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Cactaceae,Neobuxbaumia,NeobuxbaumiaÂ tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Frugivory,NA
+BPI0795,BPA057,BPR051,Leptonycteris,LeptonycterisÂ nivalis,Leptonycteris nivalis,Nectarivore,Cactaceae,Neobuxbaumia,NeobuxbaumiaÂ tetetzo,Neobuxbaumia tetetzo,Succulent,NA,Frugivory,NA
 BPI0796,BPA058,BPR052,Artibeus,Artibeus gnomus,Artibeus gnomus,Frugivore,Urticaceae,Cecropia,Cecropia ficifolia,Cecropia ficifolia,Tree,Early,Frugivory,3.00
 BPI0797,BPA058,BPR052,Artibeus,Artibeus gnomus,Artibeus gnomus,Frugivore,Moraceae,Ficus,Ficus sp.,Ficus sp.1,NA,NA,Frugivory,3.00
 BPI0798,BPA058,BPR052,Artibeus,Artibeus gnomus,Artibeus gnomus,Frugivore,Hypericaceae,Vismia,Vismia angusta,Vismia macrophylla,Tree,Early,Frugivory,3.00
@@ -1285,10 +1285,10 @@ BPI1283,BPA076,BPR068,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nect
 BPI1284,BPA076,BPR068,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Malvaceae,Ceiba,Ceiba pentafila,Ceiba sp.,Tree,NA,Nectarivory,NA
 BPI1285,BPA076,BPR068,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Unidentified,Unidentified,Unidentified,Unidentified sp.2,NA,NA,Nectarivory,NA
 BPI1286,BPA076,BPR068,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Combretaceae,Combretum,Combretum sp.,Combretum sp.,NA,NA,Nectarivory,NA
-BPI1287,BPA077,BPR069,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Leguminosae,Bauhinia,Bauhinia pauletia,Bauhinia pauletia,Tree,NA,Nectarivory,NA
-BPI1288,BPA077,BPR069,Phyllostomus,Phyllostomus discolor,Phyllostomus discolor,Omnivore,Leguminosae,Bauhinia,Bauhinia pauletia,Bauhinia pauletia,Tree,NA,Nectarivory,NA
-BPI1289,BPA078,BPR069,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Leguminosae,Bauhinia,Bauhinia multinervia,Bauhinia multinervia,Tree,NA,Nectarivory,NA
-BPI1290,BPA078,BPR069,Phyllostomus,Phyllostomus discolor,Phyllostomus discolor,Omnivore,Leguminosae,Bauhinia,Bauhinia multinervia,Bauhinia multinervia,Tree,NA,Nectarivory,NA
+BPI1287,BPA077,BPR069,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Leguminosae,Bauhinia,BauhiniaÂ pauletia,Bauhinia pauletia,Tree,NA,Nectarivory,NA
+BPI1288,BPA077,BPR069,Phyllostomus,Phyllostomus discolor,Phyllostomus discolor,Omnivore,Leguminosae,Bauhinia,BauhiniaÂ pauletia,Bauhinia pauletia,Tree,NA,Nectarivory,NA
+BPI1289,BPA078,BPR069,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Leguminosae,Bauhinia,BauhiniaÂ multinervia,Bauhinia multinervia,Tree,NA,Nectarivory,NA
+BPI1290,BPA078,BPR069,Phyllostomus,Phyllostomus discolor,Phyllostomus discolor,Omnivore,Leguminosae,Bauhinia,BauhiniaÂ multinervia,Bauhinia multinervia,Tree,NA,Nectarivory,NA
 BPI1291,BPA079,BPR070,Artibeus,Artibeus concolor,Artibeus concolor,Frugivore,Leguminosae,Parkia,Parkia pendula,Parkia pendula,Tree,Late,Nectarivory,NA
 BPI1292,BPA079,BPR070,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Leguminosae,Parkia,Parkia pendula,Parkia pendula,Tree,Late,Nectarivory,NA
 BPI1293,BPA079,BPR070,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Leguminosae,Parkia,Parkia nitida,Parkia nitida,Tree,Late,Nectarivory,NA
@@ -1422,10 +1422,10 @@ BPI1420,BPA096,BPR083,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabu
 BPI1421,BPA096,BPR083,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Malvaceae,Helicteres,Helicteris baruensis,Helicteres baruensis,Shrub,NA,Nectarivory,12.00
 BPI1422,BPA097,BPR084,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Malvaceae,Ceiba,Ceiba pentandra,Ceiba pentandra,Tree,Early,Nectarivory,NA
 BPI1423,BPA097,BPR084,Phyllostomus,Phyllostomus discolor,Phyllostomus discolor,Omnivore,Malvaceae,Ceiba,Ceiba pentandra,Ceiba pentandra,Tree,Early,Nectarivory,NA
-BPI1424,BPA098,BPR085,Sturnira,Sturnira lilium,Sturnira giannae,Frugivore,Amaranthaceae,Cyathula,Cyathula prostrata,Cyathula prostrata,Herb,Early,Frugivory,NA
+BPI1424,BPA098,BPR085,Sturnira,Sturnira lilium,Sturnira giannae,Frugivore,Amaranthaceae,Cyathula,CyathulaÂ prostrata,Cyathula prostrata,Herb,Early,Frugivory,NA
 BPI1425,BPA098,BPR085,Sturnira,Sturnira lilium,Sturnira giannae,Frugivore,Piperaceae,Piper,Piper bartlingianum,Piper bartlingianum,Shrub,Early,Frugivory,NA
 BPI1426,BPA098,BPR085,Sturnira,Sturnira lilium,Sturnira giannae,Frugivore,Solanaceae,Solanum,Solanum torvum,Solanum rudepannum,Shrub,Early,Frugivory,NA
-BPI1427,BPA098,BPR085,Sturnira,Sturnira tildae,Sturnira tildae,Frugivore,Amaranthaceae,Cyathula,Cyathula prostrata,Cyathula prostrata,Herb,Early,Frugivory,NA
+BPI1427,BPA098,BPR085,Sturnira,Sturnira tildae,Sturnira tildae,Frugivore,Amaranthaceae,Cyathula,CyathulaÂ prostrata,Cyathula prostrata,Herb,Early,Frugivory,NA
 BPI1428,BPA098,BPR085,Sturnira,Sturnira tildae,Sturnira tildae,Frugivore,Piperaceae,Piper,Piper bartlingianum,Piper bartlingianum,Shrub,Early,Frugivory,NA
 BPI1429,BPA098,BPR085,Sturnira,Sturnira tildae,Sturnira tildae,Frugivore,Solanaceae,Solanum,Solanum torvum,Solanum rudepannum,Shrub,Early,Frugivory,NA
 BPI1430,BPA099,BPR086,Artibeus,Artibeus cinereus,Artibeus cinereus,Frugivore,Urticaceae,Cecropia,Cecropia obtusa,Cecropia obtusa,Tree,Early,Frugivory,1.00
@@ -1506,9 +1506,9 @@ BPI1504,BPA102,BPR089,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,M
 BPI1505,BPA102,BPR089,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Moraceae,Ficus,Ficus insipida,Ficus insipida,Tree,Late,Frugivory,NA
 BPI1506,BPA102,BPR089,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Moraceae,Ficus,Ficus nymphaeifolia,Ficus nymphaeifolia,Tree,Late,Frugivory,NA
 BPI1507,BPA102,BPR089,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Hypericaceae,Vismia,Vismia panamensis,Vismia baccifera,Tree,Early,Frugivory,NA
-BPI1508,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Piperaceae,Piper,Piper “aborted”,Piper sp.,Shrub,NA,Frugivory,NA
-BPI1509,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Piperaceae,Piper,Piper “bell”,Piper sp.,Shrub,NA,Frugivory,NA
-BPI1510,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Piperaceae,Piper,Piper “umbrella”,Piper sp.,Shrub,NA,Frugivory,NA
+BPI1508,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Piperaceae,Piper,Piper Â“abortedÂ”,Piper sp.,Shrub,NA,Frugivory,NA
+BPI1509,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Piperaceae,Piper,Piper Â“bellÂ”,Piper sp.,Shrub,NA,Frugivory,NA
+BPI1510,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Piperaceae,Piper,Piper Â“umbrellaÂ”,Piper sp.,Shrub,NA,Frugivory,NA
 BPI1511,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Piperaceae,Piper,Piper auritum,Piper auritum,Shrub,Early,Frugivory,NA
 BPI1512,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Piperaceae,Piper,Piper colonense,Piper colonense,Shrub,Early,Frugivory,NA
 BPI1513,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Piperaceae,Piper,Piper friedrichsthalii,Piper friedrichsthalii ,Shrub,Early,Frugivory,NA
@@ -1526,7 +1526,7 @@ BPI1524,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Leg
 BPI1525,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Solanaceae,Solanum,Solanum arboreum,Solanum arboreum,Shrub,Early,Frugivory,NA
 BPI1526,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Solanaceae,Solanum,Solanum rugosum,Solanum rugosum,Shrub,Early,Frugivory,NA
 BPI1527,BPA102,BPR089,Carollia,Carollia castanea,Carollia castanea,Frugivore,Hypericaceae,Vismia,Vismia panamensis,Vismia baccifera,Tree,Early,Frugivory,NA
-BPI1528,BPA102,BPR089,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Piperaceae,Piper,Piper “bell”,Piper sp.,Shrub,NA,Frugivory,NA
+BPI1528,BPA102,BPR089,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Piperaceae,Piper,Piper Â“bellÂ”,Piper sp.,Shrub,NA,Frugivory,NA
 BPI1529,BPA102,BPR089,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Piperaceae,Piper,Piper auritum,Piper auritum,Shrub,Early,Frugivory,NA
 BPI1530,BPA102,BPR089,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Piperaceae,Piper,Piper colonense,Piper colonense,Shrub,Early,Frugivory,NA
 BPI1531,BPA102,BPR089,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Piperaceae,Piper,Piper friedrichsthalii,Piper friedrichsthalii ,Shrub,Early,Frugivory,NA
@@ -1544,8 +1544,8 @@ BPI1542,BPA102,BPR089,Carollia,Carollia perspicillata,Carollia perspicillata,Fru
 BPI1543,BPA102,BPR089,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Solanaceae,Solanum,Solanum arboreum,Solanum arboreum,Shrub,Early,Frugivory,NA
 BPI1544,BPA102,BPR089,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Solanaceae,Solanum,Solanum rugosum,Solanum rugosum,Shrub,Early,Frugivory,NA
 BPI1545,BPA102,BPR089,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Hypericaceae,Vismia,Vismia panamensis,Vismia baccifera,Tree,Early,Frugivory,NA
-BPI1546,BPA102,BPR089,Carollia,Carollia sowelli,Carollia sowelli,Frugivore,Piperaceae,Piper,Piper “aborted”,Piper sp.,Shrub,NA,Frugivory,NA
-BPI1547,BPA102,BPR089,Carollia,Carollia sowelli,Carollia sowelli,Frugivore,Piperaceae,Piper,Piper “bell”,Piper sp.,Shrub,NA,Frugivory,NA
+BPI1546,BPA102,BPR089,Carollia,Carollia sowelli,Carollia sowelli,Frugivore,Piperaceae,Piper,Piper Â“abortedÂ”,Piper sp.,Shrub,NA,Frugivory,NA
+BPI1547,BPA102,BPR089,Carollia,Carollia sowelli,Carollia sowelli,Frugivore,Piperaceae,Piper,Piper Â“bellÂ”,Piper sp.,Shrub,NA,Frugivory,NA
 BPI1548,BPA102,BPR089,Carollia,Carollia sowelli,Carollia sowelli,Frugivore,Piperaceae,Piper,Piper auritum,Piper auritum,Shrub,Early,Frugivory,NA
 BPI1549,BPA102,BPR089,Carollia,Carollia sowelli,Carollia sowelli,Frugivore,Piperaceae,Piper,Piper colonense,Piper colonense,Shrub,Early,Frugivory,NA
 BPI1550,BPA102,BPR089,Carollia,Carollia sowelli,Carollia sowelli,Frugivore,Piperaceae,Piper,Piper friedrichsthalii,Piper friedrichsthalii ,Shrub,Early,Frugivory,NA
@@ -1608,7 +1608,7 @@ BPI1606,BPA102,BPR089,Vampyressa,Vampyressa pusilla,Vampyressa thyone,Frugivore,
 BPI1607,BPA102,BPR089,Platyrrhinus,Vampyrops helleri,Platyrrhinus helleri,Frugivore,Urticaceae,Cecropia,Cecropia obtusifolia,Cecropia obtusifolia,Tree,Early,Frugivory,NA
 BPI1608,BPA102,BPR089,Platyrrhinus,Vampyrops helleri,Platyrrhinus helleri,Frugivore,Moraceae,Ficus,Ficus cahuitensis,Ficus cahuitensis,Tree,Late,Frugivory,NA
 BPI1609,BPA102,BPR089,Platyrrhinus,Vampyrops helleri,Platyrrhinus helleri,Frugivore,Moraceae,Ficus,Ficus insipida,Ficus insipida,Tree,Late,Frugivory,NA
-BPI1610,BPA103,BPR090,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Bignoniaceae,Adenocalymma,Adenocalymma dichilum,Adenocalymma dichilum,Vine,Late,Nectarivory,NA
+BPI1610,BPA103,BPR090,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Bignoniaceae,Adenocalymma,AdenocalymmaÂ dichilum,Adenocalymma dichilum,Vine,Late,Nectarivory,NA
 BPI1611,BPA104,BPR091,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Gentianaceae,Chelonanthus,Irlbachia alata,Chelonanthus alatus,Herb,NA,Nectarivory,NA
 BPI1612,BPA105,BPR092,Brachyphylla,Brachyphylla nana,Brachyphylla nana,Frugivore,Malvaceae,Hibiscus,Talipariti elatum,Hibiscus elatus,Tree,NA,Nectarivory,NA
 BPI1613,BPA105,BPR092,Artibeus,Artibeus jamaicensis,Artibeus jamaicensis,Frugivore,Malvaceae,Hibiscus,Talipariti elatum,Hibiscus elatus,Tree,NA,Nectarivory,NA
@@ -1732,14 +1732,14 @@ BPI1730,BPA114,BPR101,Carollia,Carollia perspicillata,Carollia perspicillata,Fru
 BPI1731,BPA114,BPR101,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Solanaceae,Lycianthes,Solanum austrsle,Lycianthes glandulosa ,Shrub,Early,Frugivory,1
 BPI1732,BPA114,BPR101,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Solanaceae,Solanum,Solanum caavurana,Solanum caavurana,Shrub,Early,Frugivory,1
 BPI1733,BPA114,BPR101,Sturnira,Sturnira lilium,Sturnira lilium,Frugivore,Moraceae,Maclura,Maclura tinctoria,Maclura tinctoria,Tree,Late,Frugivory,3
-BPI1734,BPA114,BPR101,Sturnira,Sturnira lilium,Sturnira lilium,Frugivore,Unidentified,Unidentified,Não identificada,Unidentified sp.,NA,NA,Frugivory,1
+BPI1734,BPA114,BPR101,Sturnira,Sturnira lilium,Sturnira lilium,Frugivore,Unidentified,Unidentified,NÃ£o identificada,Unidentified sp.,NA,NA,Frugivory,1
 BPI1735,BPA114,BPR101,Artibeus,Artibeus sp.,Artibeus sp.,Frugivore,Moraceae,Maclura,Maclura tinctoria,Maclura tinctoria,Tree,Late,Frugivory,5
 BPI1736,BPA114,BPR101,Artibeus,Artibeus sp.,Artibeus sp.,Frugivore,Moraceae,Ficus,Ficus glabra,Ficus eximia,Tree,NA,Frugivory,6
 BPI1737,BPA114,BPR101,Artibeus,Artibeus sp.,Artibeus sp.,Frugivore,Urticaceae,Cecropia,Cecropia glaziouii,Cecropia glaziovii,Tree,Early,Frugivory,1
 BPI1738,BPA114,BPR101,Artibeus,Artibeus sp.,Artibeus sp.,Frugivore,Moraceae,Ficus,Ficus insipida,Ficus insipida,Tree,Late,Frugivory,6
 BPI1739,BPA114,BPR101,Artibeus,Artibeus sp.,Artibeus sp.,Frugivore,Myrtaceae,Psidium,Psidium guajava,Psidium guajava,Tree,Late,Frugivory,1
 BPI1740,BPA114,BPR101,Artibeus,Artibeus sp.,Artibeus sp.,Frugivore,Moraceae,Ficus,Ficus luschnatiana,Ficus luschnathiana,Tree,Early,Frugivory,1
-BPI1741,BPA114,BPR101,Artibeus,Artibeus sp.,Artibeus sp.,Frugivore,Unidentified,Unidentified,Não identificada,Unidentified sp.,NA,NA,Frugivory,1
+BPI1741,BPA114,BPR101,Artibeus,Artibeus sp.,Artibeus sp.,Frugivore,Unidentified,Unidentified,NÃ£o identificada,Unidentified sp.,NA,NA,Frugivory,1
 BPI1742,BPA114,BPR101,Artibeus,Artibeus sp.,Artibeus sp.,Frugivore,Solanaceae,Solanum,Solanum caavurana,Solanum caavurana,Shrub,Early,Frugivory,1
 BPI1743,BPA115,BPR102,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Piperaceae,Piper,Piper gaudichaudianum,Piper gaudichaudianum,Shrub,Early,Frugivory,NA
 BPI1744,BPA116,BPR103,Leptonycteris,Leptonycteris curasoae,Leptonycteris yerbabuenae,Nectarivore,Asparagaceae,Agave,Agave angustifolia,Agave vivipara,Herb,NA,Nectarivory,NA
@@ -2252,10 +2252,10 @@ BPI2250,BPA169,BPR140,Anoura,Anoura geoffroyi,Anoura geoffroyi,Nectarivore,Brome
 BPI2251,BPA169,BPR140,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Leguminosae,Mucuna,Mucuna urens,Mucuna urens,Vine,NA,Nectarivory,NA
 BPI2252,BPA169,BPR140,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Leguminosae,Mucuna,Mucuna urens,Mucuna urens,Vine,NA,Nectarivory,NA
 BPI2253,BPA169,BPR140,Platyrrhinus,Platyrrhinus lineatus,Platyrrhinus lineatus,Frugivore,Lythraceae,Lafoensia,Lafoensia glyptocarpa,Lafoensia glyptocarpa,Tree,NA,Nectarivory,NA
-BPI2254,BPA169,BPR140,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Marcgraviaceae,Marcgravia,MarcgraŠia polyantha,Marcgravia polyantha,Vine,Late,Nectarivory,NA
-BPI2255,BPA169,BPR140,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Marcgraviaceae,Marcgravia,MarcgraŠia aff. polyantha,Marcgravia polyantha,Vine,Late,Nectarivory,NA
-BPI2256,BPA169,BPR140,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Passifloraceae,Tetrastylis,Tetrastylis oŠvalis,Tetrastylis ovalis,Vine,Late,Nectarivory,NA
-BPI2257,BPA169,BPR140,Anoura,Anoura geoffroyi,Anoura geoffroyi,Nectarivore,Passifloraceae,Tetrastylis,Tetrastylis oŠvalis,Tetrastylis ovalis,Vine,Late,Nectarivory,NA
+BPI2254,BPA169,BPR140,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Marcgraviaceae,Marcgravia,MarcgraÂŠia polyantha,Marcgravia polyantha,Vine,Late,Nectarivory,NA
+BPI2255,BPA169,BPR140,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Marcgraviaceae,Marcgravia,MarcgraÂŠia aff. polyantha,Marcgravia polyantha,Vine,Late,Nectarivory,NA
+BPI2256,BPA169,BPR140,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Passifloraceae,Tetrastylis,Tetrastylis oÂŠvalis,Tetrastylis ovalis,Vine,Late,Nectarivory,NA
+BPI2257,BPA169,BPR140,Anoura,Anoura geoffroyi,Anoura geoffroyi,Nectarivore,Passifloraceae,Tetrastylis,Tetrastylis oÂŠvalis,Tetrastylis ovalis,Vine,Late,Nectarivory,NA
 BPI2258,BPA169,BPR140,Anoura,Anoura caudifer,Anoura caudifer,Nectarivore,Rubiaceae,Hillia,Hillia illustris,Hillia illustris,Shrub,NA,Nectarivory,NA
 BPI2259,BPA170,BPR141,Glossophaga,Glossophaga soricina,Glossophaga soricina,Nectarivore,Solanaceae,Dyssochroma,Dyssoschroma viridiflorum,Dyssochroma viridiflora,Shrub,NA,Nectarivory,NA
 BPI2260,BPA170,BPR141,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Solanaceae,Dyssochroma,Dyssoschroma viridiflorum,Dyssochroma viridiflora,Shrub,NA,Frugivory,NA
@@ -2570,593 +2570,3 @@ BPI2568,BPA200,BPR169,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,M
 BPI2569,BPA200,BPR169,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Myrtaceae,Syzygium,Syzygium malaccense,Syzygium malaccense,Tree,Late,Frugivory,1
 BPI2570,BPA200,BPR169,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Arecaceae,Livistona,Livistona chinensis,Livistona chinensis ,Palm-tree,NA,Frugivory,4
 BPI2571,BPA200,BPR169,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Moraceae,Ficus,Ficus citrifolia,Ficus citrifolia,Tree,Late,Frugivory,3
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,
-,,,,,,,,,,,p-,,,
