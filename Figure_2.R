@@ -37,7 +37,7 @@ f_countries <- f_countries %>%
                           "Trinidad and Tobago" = "Trinidad"))
 
 # Load the Worl map from 'mapdata' package
-world<-map_data("world")
+world <- map_data("world")
 
 # A cut off of America without Canada
 America <- world %>% filter(lat > -60 & lat < 50, long > -125 & long < -30,
