@@ -61,7 +61,7 @@ g1 <- ggplot() + geom_polygon(data = America,
                               aes(x = long, y = lat, fill = frequency, 
                                   group = group), colour = "black") + 
    theme_void() + coord_fixed(1.1) +
-   scale_fill_gradient(low = "#dcdcdc", high = "#980063") +
+   scale_fill_gradient(low = "white", high = "#006154") +
    labs(fill = "Number of studies") +
    theme(legend.text = element_text(size = 12, family = "Arial Narrow"),
          legend.title = element_text(face = "bold", size = 12, family = "Arial Narrow"),
@@ -74,7 +74,7 @@ g1 <- ggplot() + geom_polygon(data = America,
 
 # The histogram
 g2 <- ggplot(r_years, aes(x = year)) +
-   geom_histogram(binwidth = 4, fill = "#980063", color = "black", alpha = 0.9) +
+   geom_histogram(binwidth = 4, fill = "#006154", color = "black", alpha = 0.9) +
    theme_bw() +
    labs(x = "Year of publication", y = "Number of Studies") +
    theme(axis.text = element_text(size = 12, colour = "black",

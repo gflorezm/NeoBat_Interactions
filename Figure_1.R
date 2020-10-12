@@ -45,10 +45,10 @@ g1 <- ggplot(data = world) +
   theme_bw() + 
   # Points
   geom_point(data = sampleSites, aes(x = Longitude, y = Latitude, 
-                                     colour = StudyType), 
-             alpha = 0.5, size = 1.6) +
+                                    colour = StudyType), 
+             alpha = 0.6, size = 1.6) +
   # Customize the colors and labels
-  scale_color_manual(values = c("#C59F00","#006154")) + 
+  scale_color_manual(values = c("#C59F00","#980063")) + 
   labs(colour = "Study type", x = "Longitude", y = "Latitude") +
   theme(panel.grid.major = element_blank(),
         panel.grid.minor = element_blank(),
