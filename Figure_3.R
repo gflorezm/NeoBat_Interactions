@@ -30,17 +30,17 @@ BatRecords <- Records %>%
 Bats15 <- BatRecords[1:15,]
 
 
-# I'll create a function to abbreviate the scientific name
+# We'll create a function to abbreviate the scientific name
 
 abr_name <- function(X) {
    
    # a vector to store the result
    Abr_name <- character(length = length(X))
    
-   # a list with the names separates in genus and epithets
+   # a list with the names separates in genus and epithet
    lista <- strsplit(X, " ")
    
-   # pick the first letter of the genus and the epithets
+   # pick the first letter of the genus and paste it with the epithet
    for (i in 1:length(X)) {
       X[i] <- paste(substr(lista[[i]][1],1,1), 
                              lista[[i]][2], sep = ". ")
@@ -69,7 +69,7 @@ loadfonts(device = "win") # To set the fonts we'll use
 # Make the bar plot for the bat species
 g3 <- ggplot(Bats15, aes(x = reorder(names, Frequency), y = Frequency)) +
    geom_bar(stat = "identity", color = "Black", fill = "#C59F00") +
-   theme_bw() + coord_flip() + ylim(c(0,450)) + 
+   theme_bw() + coord_flip() + ylim(c(0,450)) +
    labs(x = " ", y = "Absolute frequency") +
    theme(axis.text.y = element_text(size = 9, colour = "black", face = "italic",
                                     family = "Arial Narrow"),
@@ -81,7 +81,10 @@ g3 <- ggplot(Bats15, aes(x = reorder(names, Frequency), y = Frequency)) +
                                      family = "Arial Narrow", face = "bold"),
          plot.margin = unit(c(1,1,2,2), "lines"))
 
-# Make the bar plot for the plant species
+
+
+
+# Make the bar plot for the plant genus
 g4 <- ggplot(Plants15, aes(x = reorder(PlantGenus, Frequency), y = Frequency)) +
    geom_bar(stat = "identity", color = "Black", fill = "#980063") +
    theme_bw() + coord_flip() + ylim(c(0,450)) +
