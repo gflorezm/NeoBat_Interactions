@@ -107,7 +107,7 @@ g4 <- ggplot(Plants15, aes(x = reorder(PlantGenus, Frequency), y = Frequency)) +
 
 
 # print them together as a .png
-png("Figure_3.png", res = 400,
+png("./Figures/Figure_3.png", res = 400,
     width = 20, height = 12, unit = "cm")
 
 # Draw the two plots together with the same size (only acept objets of class Gorb)

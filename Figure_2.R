@@ -87,7 +87,7 @@ g2 <- ggplot(r_years, aes(x = year)) +
 
 
 # print them together as a .png
-png("Figure_2.png", res = 400,
+png("./Figures/Figure_2.png", res = 400,
     width = 20, height = 10, unit = "cm")
 
 ggarrange(g1, g2, ncol = 2, nrow = 1,

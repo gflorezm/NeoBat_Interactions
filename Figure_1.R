@@ -73,7 +73,7 @@ g1 <- ggplot(data = world) +
                                     style = north_arrow_fancy_orienteering(fill = c("white", "grey30")))
 
 # Save the map as a png
-png("Figure_1.png", res = 400,
+png("./Figures/Figure_1.png", res = 400,
     width = 10, height = 14, unit = "cm")
 g1
 

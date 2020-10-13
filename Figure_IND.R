@@ -48,7 +48,7 @@ PlantDegree <- Records %>%
       summarise(Degree = n()) %>%                     
       arrange(desc(Degree))                           
 
-# I will plot the first 15 species
+# I will plot the first 15 specieS
 PlantDegree15 <- PlantDegree[1:15,]
 
 # I will use the Abr_name() function I've created previously to abreviate the
@@ -97,7 +97,7 @@ g6 <- ggplot(PlantDegree15, aes(x = reorder(Plant, -Degree), y = Degree)) +
 
 
 # print them together as a .png
-png("Figure_IND.png", res = 400,
+png("./Figures/Figure_IND.png", res = 400,
     width = 20, height = 10, unit = "cm")
 
 # Draw the two plots together with the same size (only acept objets of class Gorb)

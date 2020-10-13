@@ -691,7 +691,7 @@ BPI0689,BPA053,BPR048,Carollia,Carollia perspicillata,Carollia perspicillata,Fru
 BPI0690,BPA053,BPR048,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Moraceae,Ficus,Ficus insipida,Ficus insipida,Tree,Late,Frugivory,NA
 BPI0691,BPA053,BPR048,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Moraceae,Ficus,Ficus obtusifolia,Ficus obtusifolia,Tree,Early,Frugivory,NA
 BPI0692,BPA053,BPR048,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Moraceae,Ficus,Ficus sp.,Ficus sp.,NA,NA,Frugivory,NA
-BPI0693,BPA053,BPR048,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Myrtaceae,Eugenia,Eugenia sp.,Eugenia sp.,tree,NA,Frugivory,NA
+BPI0693,BPA053,BPR048,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Myrtaceae,Eugenia,Eugenia sp.,Eugenia sp.,Tree,NA,Frugivory,NA
 BPI0694,BPA053,BPR048,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Piperaceae,Piper,Piper arboreum,Piper arboreum,Shrub,Early,Frugivory,NA
 BPI0695,BPA053,BPR048,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Piperaceae,Piper,Piper cordulatum,Piper cordulatum,Shrub,Late,Frugivory,NA
 BPI0696,BPA053,BPR048,Carollia,Carollia perspicillata,Carollia perspicillata,Frugivore,Piperaceae,Piper,Piper colonense,Piper colonense,Shrub,Early,Frugivory,NA
@@ -1962,7 +1962,7 @@ BPI1960,BPA144,BPR119,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,U
 BPI1961,BPA144,BPR119,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Musaceae,Musa,Musa paradisiaca,Musa paradisiaca,Herb,NA,Frugivory,NA
 BPI1962,BPA144,BPR119,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Myrtaceae,Plinia,Myrciaria jaboticaba,Plinia cauliflora,Tree,Late,Frugivory,NA
 BPI1963,BPA144,BPR119,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Rosaceae,Prunus,Prunus persica,Prunus persica,Tree,Late,Frugivory,NA
-BPI1964,BPA144,BPR119,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Myrtaceae,Eugenia,Eugenia uniflora,Eugenia uniflora,tree,Late,Frugivory,NA
+BPI1964,BPA144,BPR119,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Myrtaceae,Eugenia,Eugenia uniflora,Eugenia uniflora,Tree,Late,Frugivory,NA
 BPI1965,BPA144,BPR119,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Myrtaceae,Syzygium,Syzygium jambos,Syzygium jambos,Tree,Late,Frugivory,NA
 BPI1966,BPA144,BPR119,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Rosaceae,Eriobotrya,Eryobotrya japonica,Eriobotrya japonica,Tree,NA,Frugivory,NA
 BPI1967,BPA144,BPR119,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Caricaceae,Carica,Carica papaya,Carica papaya,Tree,Early,Frugivory,NA
@@ -2225,7 +2225,7 @@ BPI2223,BPA166,BPR139,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,L
 BPI2224,BPA166,BPR139,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Moraceae,Ficus,Ficus glabra,Ficus eximia,Tree,NA,Frugivory,NA
 BPI2225,BPA166,BPR139,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Moraceae,Ficus,Ficus luschnatiana,Ficus luschnathiana,Tree,Early,Frugivory,NA
 BPI2226,BPA166,BPR139,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Moraceae,Maclura,Maclura tinctoria,Maclura tinctoria,Tree,Late,Frugivory,NA
-BPI2227,BPA166,BPR139,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Myrtaceae,Eugenia,Eugenia sp.,Eugenia sp.,tree,NA,Frugivory,NA
+BPI2227,BPA166,BPR139,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Myrtaceae,Eugenia,Eugenia sp.,Eugenia sp.,Tree,NA,Frugivory,NA
 BPI2228,BPA166,BPR139,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Myrtaceae,Psidium,Psidium guayava,Psidium guajava,Tree,Late,Frugivory,NA
 BPI2229,BPA166,BPR139,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Myrtaceae,Syzygium,Syzygium jambos,Syzygium jambos,Tree,Late,Frugivory,NA
 BPI2230,BPA166,BPR139,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Rosaceae,Eriobotrya,Eryobotrya japonica,Eriobotrya japonica,Tree,NA,Frugivory,NA
@@ -2344,13 +2344,13 @@ BPI2342,BPA182,BPR152,Glossophaga,Glossophaga commissarisi,Glossophaga commissar
 BPI2343,BPA182,BPR152,Glossophaga,Glossophaga commissarisi,Glossophaga commissarisi,Nectarivore,Solanaceae,Merinthopodium,Markea neurantha,Merinthopodium neuranthum,Shrub,Late,Nectarivory,NA
 BPI2344,BPA182,BPR152,Glossophaga,Glossophaga commissarisi,Glossophaga commissarisi,Nectarivore,Marcgraviaceae,Marcgravia,Marcgravia spp.,Marcgravia sp.,Vine,NA,Nectarivory,NA
 BPI2345,BPA182,BPR152,Glossophaga,Glossophaga commissarisi,Glossophaga commissarisi,Nectarivore,Leguminosae,Inga,Inga sp.,Inga sp.,Tree,NA,Nectarivory,NA
-BPI2346,BPA182,BPR152,Glossophaga,Glossophaga commissarisi,Glossophaga commissarisi,Nectarivore,Myrtaceae,Eugenia,Eugenia sp.,Eugenia sp.,tree,NA,Nectarivory,NA
+BPI2346,BPA182,BPR152,Glossophaga,Glossophaga commissarisi,Glossophaga commissarisi,Nectarivore,Myrtaceae,Eugenia,Eugenia sp.,Eugenia sp.,Tree,NA,Nectarivory,NA
 BPI2347,BPA182,BPR152,Glossophaga,Glossophaga commissarisi,Glossophaga commissarisi,Nectarivore,Malvaceae,Ceiba,Ceiba pentandra,Ceiba pentandra,Tree,Early,Nectarivory,NA
 BPI2348,BPA182,BPR152,Glossophaga,Glossophaga commissarisi,Glossophaga commissarisi,Nectarivore,Urticaceae,Cecropia,Cecropia sp.,Cecropia sp.,Tree,Early,Nectarivory,NA
 BPI2349,BPA182,BPR152,Hylonycteris,Hylonycteris underwoodi,Hylonycteris underwoodi,Nectarivore,Arecaceae,Calyptrogyne,Calyptrogyne ghiesbreghtiana,Calyptrogyne ghiesbreghtiana,Palm-tree,Late,Nectarivory,NA
 BPI2350,BPA182,BPR152,Hylonycteris,Hylonycteris underwoodi,Hylonycteris underwoodi,Nectarivore,Urticaceae,Cecropia,Cecropia sp.,Cecropia sp.,Tree,Early,Nectarivory,NA
 BPI2351,BPA182,BPR152,Hylonycteris,Hylonycteris underwoodi,Hylonycteris underwoodi,Nectarivore,Malvaceae,Ceiba,Ceiba pentandra,Ceiba pentandra,Tree,Early,Nectarivory,NA
-BPI2352,BPA182,BPR152,Hylonycteris,Hylonycteris underwoodi,Hylonycteris underwoodi,Nectarivore,Myrtaceae,Eugenia,Eugenia sp.,Eugenia sp.,tree,NA,Nectarivory,NA
+BPI2352,BPA182,BPR152,Hylonycteris,Hylonycteris underwoodi,Hylonycteris underwoodi,Nectarivore,Myrtaceae,Eugenia,Eugenia sp.,Eugenia sp.,Tree,NA,Nectarivory,NA
 BPI2353,BPA182,BPR152,Hylonycteris,Hylonycteris underwoodi,Hylonycteris underwoodi,Nectarivore,Marcgraviaceae,Marcgravia,Marcgravia sp.,Marcgravia sp.,Vine,NA,Nectarivory,NA
 BPI2354,BPA182,BPR152,Hylonycteris,Hylonycteris underwoodi,Hylonycteris underwoodi,Nectarivore,Solanaceae,Merinthopodium,Markea neurantha,Merinthopodium neuranthum,Shrub,Late,Nectarivory,NA
 BPI2355,BPA182,BPR152,Hylonycteris,Hylonycteris underwoodi,Hylonycteris underwoodi,Nectarivore,Malvaceae,Matisia,Matisia bracteolosa,Matisia bracteolosa,Tree,Late,Nectarivory,NA
@@ -2376,7 +2376,7 @@ BPI2374,BPA182,BPR152,Lichonycteris,Lichonycteris obscura,Lichonycteris obscura,
 BPI2375,BPA182,BPR152,Lichonycteris,Lichonycteris obscura,Lichonycteris obscura,Nectarivore,Malvaceae,Quararibea,Quararibea parvifolia,Quararibea parvifolia,Tree,NA,Nectarivory,NA
 BPI2376,BPA182,BPR152,Lichonycteris,Lichonycteris obscura,Lichonycteris obscura,Nectarivore,Bromeliaceae,Vriesea,Vriesea sp.,Vriesea sp.,Herb,NA,Nectarivory,NA
 BPI2377,BPA182,BPR152,Lonchophylla,Lonchophylla robusta,Lonchophylla robusta,Nectarivore,Arecaceae,Calyptrogyne,Calyptrogyne ghiesbreghtiana,Calyptrogyne ghiesbreghtiana,Palm-tree,Late,Nectarivory,NA
-BPI2378,BPA182,BPR152,Lonchophylla,Lonchophylla robusta,Lonchophylla robusta,Nectarivore,Myrtaceae,Eugenia,Eugenia sp.,Eugenia sp.,tree,NA,Nectarivory,NA
+BPI2378,BPA182,BPR152,Lonchophylla,Lonchophylla robusta,Lonchophylla robusta,Nectarivore,Myrtaceae,Eugenia,Eugenia sp.,Eugenia sp.,Tree,NA,Nectarivory,NA
 BPI2379,BPA182,BPR152,Lonchophylla,Lonchophylla robusta,Lonchophylla robusta,Nectarivore,Marcgraviaceae,Marcgravia,Marcgravia sp.,Marcgravia sp.,Vine,NA,Nectarivory,NA
 BPI2380,BPA182,BPR152,Lonchophylla,Lonchophylla robusta,Lonchophylla robusta,Nectarivore,Solanaceae,Merinthopodium,Markea neurantha,Merinthopodium neuranthum,Shrub,Late,Nectarivory,NA
 BPI2381,BPA182,BPR152,Lonchophylla,Lonchophylla robusta,Lonchophylla robusta,Nectarivore,Malvaceae,Quararibea,Matisia cordata,Quararibea cordata,Tree,NA,Nectarivory,NA
@@ -2558,7 +2558,7 @@ BPI2556,BPA199,BPR168,Micronycteris,Mycronycteris hirsuta,Micronycteris hirsuta,
 BPI2557,BPA199,BPR168,Micronycteris,Mycronycteris hirsuta,Micronycteris hirsuta,Foliage gleaner,Hypericaceae,Vismia,Vismia latifolia,Vismia latifolia,Tree,Early,Frugivory,NA
 BPI2558,BPA199,BPR168,Micronycteris,Mycronycteris hirsuta,Micronycteris hirsuta,Foliage gleaner,Passifloraceae,Passiflora,Passiflora sp.,Passiflora sp.,Vine,Late,Frugivory,NA
 BPI2559,BPA199,BPR168,Micronycteris,Mycronycteris hirsuta,Micronycteris hirsuta,Foliage gleaner,Myrtaceae,Calycolpus,Calycolpus warszewiczianus,Calycolpus warszewiczianus,Tree,NA,Frugivory,NA
-BPI2560,BPA199,BPR168,Micronycteris,Mycronycteris hirsuta,Micronycteris hirsuta,Foliage gleaner,Myrtaceae,Eugenia,Eugenia nesiotica,Eugenia nesiotica,tree,Late,Frugivory,NA
+BPI2560,BPA199,BPR168,Micronycteris,Mycronycteris hirsuta,Micronycteris hirsuta,Foliage gleaner,Myrtaceae,Eugenia,Eugenia nesiotica,Eugenia nesiotica,Tree,Late,Frugivory,NA
 BPI2561,BPA200,BPR169,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Rosaceae,Eriobotrya,Eriobotrya japonica,Eriobotrya japonica,Tree,NA,Frugivory,99
 BPI2562,BPA200,BPR169,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Urticaceae,Cecropia,Cecropia glazioui,Cecropia glaziovii,Tree,Early,Frugivory,82
 BPI2563,BPA200,BPR169,Artibeus,Artibeus lituratus,Artibeus lituratus,Frugivore,Urticaceae,Cecropia,Cecropia holoieuca,Cecropia hololeuca,Tree,Late,Frugivory,34
