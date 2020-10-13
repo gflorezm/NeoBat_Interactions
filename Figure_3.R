@@ -42,8 +42,13 @@ abr_name <- function(X) {
    
    # pick the first letter of the genus and paste it with the epithet
    for (i in 1:length(X)) {
-      X[i] <- paste(substr(lista[[i]][1],1,1), 
-                             lista[[i]][2], sep = ". ")
+      X[i] <- if(lista[[i]][2] == "sp.") {
+         paste(lista[[i]][1], 
+               lista[[i]][2], sep = " ") 
+      } else {
+         paste(substr(lista[[i]][1],1,1), 
+               lista[[i]][2], sep = ". ")  
+      }
    }
    X
 }
@@ -60,11 +65,12 @@ PlantRecords <- Records %>%
 Plants15 <- PlantRecords[1:15,]
 
 
-loadfonts(device = "win") # To set the fonts we'll use
+
 
 
 ### PLOTS ###
 
+loadfonts(device = "win") # To set the fonts we'll use
 
 # Make the bar plot for the bat species
 g3 <- ggplot(Bats15, aes(x = reorder(names, Frequency), y = Frequency)) +
