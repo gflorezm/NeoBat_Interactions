@@ -27,8 +27,8 @@ Plants <- unique(Interactions$PlantFamily)
 ggplot(Interactions, aes(BatGenus, PlantFamily)) + 
       geom_tile(aes(fill = account), colour = "white") +
       scale_fill_gradient(low = "white", high= "#006154") +
-      scale_x_discrete(breaks = 1:length(Bats)) + 
-      scale_y_discrete(breaks = 1:length(Plants)) +
+      scale_x_discrete(breaks = length(Bats)) + 
+      scale_y_discrete(breaks = length(Plants)) +
       theme_bw() +
       coord_equal()
 
