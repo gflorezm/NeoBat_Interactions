@@ -1,12 +1,27 @@
-####################################################
+################################################################################
 #
 # FIGURE 3. Abundance of bats and plants species
 #
-####################################################
+################################################################################
 
 
+################################################################################
+##### SET THE STAGE
+################################################################################
 
-### PREPARE THE LIBRARY ###
+
+#Set the working directory
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+#Delete all previous objects
+rm(list= ls())
+
+
+################################################################################
+##### LOAD THE PACKAGES
+################################################################################
+
+
 library(dplyr)
 library(ggplot2)
 library(tidyr)
@@ -15,65 +30,70 @@ library(ggpubr)
 library(grid)
 
 
-### PREPARE THE DATA ###
+################################################################################
+##### IMPORT THE DATA
+################################################################################
 
-# Read the Records matrix 
-Records <- read.csv("./Data/NeoBat_Interactions_Records.csv")
 
-# Separate the number of bat records
-BatRecords <- Records %>% 
+# Import the data set with the interaction records
+records <- read.csv("./Data/NeoBat_Interactions_records.csv")
+
+# Check the data
+class(records)
+str(records)
+head(records)
+
+# Make a table with the number of interaction records per bat species
+batrecords <- records %>% 
    group_by(CurrentBatSpecies) %>%
    summarise(Frequency = n()) %>%
    arrange(desc(Frequency))
 
-# We will plot the first 15 species
-Bats15 <- BatRecords[1:15,]
+# Check the data
+class(batrecords)
+str(batrecords)
+head(batrecords)
 
+# Pick only the 15 most frequent species
+batrecords15 <- batrecords[1:15,]
 
-# We'll create a function to abbreviate the scientific name
+# Check the data
+batrecords15
 
-abr_name <- function(X) {
-   
-   # a vector to store the result
-   Abr_name <- character(length = length(X))
-   
-   # a list with the names separates in genus and epithet
-   lista <- strsplit(X, " ")
-   
-   # pick the first letter of the genus and paste it with the epithet
-   for (i in 1:length(X)) {
-      X[i] <- if(lista[[i]][2] == "sp.") {
-         paste(lista[[i]][1], 
-               lista[[i]][2], sep = " ") 
-      } else {
-         paste(substr(lista[[i]][1],1,1), 
-               lista[[i]][2], sep = ". ")  
-      }
-   }
-   X
-}
+# Load a custom-made function to abbreviate the scientific names
 
-Bats15$names <- abr_name(Bats15$CurrentBatSpecies)
+source("abbr_name.R")
 
+batrecords15$names <- abbr_name(batrecords15$CurrentBatSpecies)
 
-# do the same for plant genus
-PlantRecords <- Records %>% 
+# Check the names
+batrecords15$names
+
+# Make a table with the number of interaction records per plant genus
+plantrecords <- records %>% 
    group_by(PlantGenus) %>%
    summarise(Frequency = n()) %>%
    arrange(desc(Frequency))
 
-Plants15 <- PlantRecords[1:15,]
+# Check the data
+class(plantrecords)
+str(plantrecords)
+head(plantrecords)
+
+# Pick only the 15 most frequent species
+plantrecords15 <- plantrecords[1:15,]
+
+# Check the data
+plantrecords15
 
 
+################################################################################
+##### MAKE THE PLOTS
+################################################################################
 
 
-
-### PLOTS ###
-
-loadfonts(device = "win") # To set the fonts we'll use
-
-# Make the bar plot for the bat species
-g3 <- ggplot(Bats15, aes(x = reorder(names, Frequency), y = Frequency)) +
+# Plot the bat bat species
+g1 <- ggplot(batrecords15, aes(x = reorder(names, Frequency), y = Frequency)) +
    geom_bar(stat = "identity", color = "Black", fill = "#C59F00") +
    theme_bw() + coord_flip() + ylim(c(0,450)) +
    labs(x = " ", y = "Absolute frequency") +
@@ -87,11 +107,12 @@ g3 <- ggplot(Bats15, aes(x = reorder(names, Frequency), y = Frequency)) +
                                      family = "Arial Narrow", face = "bold"),
          plot.margin = unit(c(1,1,2,2), "lines"))
 
+#See the plot
+g1
 
 
-
-# Make the bar plot for the plant genus
-g4 <- ggplot(Plants15, aes(x = reorder(PlantGenus, Frequency), y = Frequency)) +
+# Plot the plant genera
+g2 <- ggplot(plantrecords15, aes(x = reorder(PlantGenus, Frequency), y = Frequency)) +
    geom_bar(stat = "identity", color = "Black", fill = "#980063") +
    theme_bw() + coord_flip() + ylim(c(0,450)) +
    labs(x = " ", y = "Absolute frequency") + 
@@ -105,13 +126,15 @@ g4 <- ggplot(Plants15, aes(x = reorder(PlantGenus, Frequency), y = Frequency)) +
                                      family = "Arial Narrow", face = "bold"),
          plot.margin = unit(c(1,1,2,2), "lines"))
 
+#See the plot
+g2
 
-# print them together as a .png
-png("./Figures/Figure_3.png", res = 400,
-    width = 20, height = 12, unit = "cm")
+# Export both plots together as PNG image
+png("./Figures/Figure_3.png", res = 300,
+    width = 2000, height = 1200, unit = "px")
 
-# Draw the two plots together with the same size (only acept objets of class Gorb)
-grid.draw(cbind(ggplotGrob(g3), ggplotGrob(g4), size = "first"))
+# Draw the two plots together with the same size (it only accepts objects of the class Grob)
+grid.draw(cbind(ggplotGrob(g1), ggplotGrob(g2), size = "first"))
 # Draw the legend
 grid.text(label = c("A","B"), x = c(0.03,0.54), y = c(0.96,0.96),
           gp = gpar(fontsize = 14, fontfamily = "Arial Narrow", fontface = "bold"))
@@ -119,4 +142,4 @@ grid.text(label = c("A","B"), x = c(0.03,0.54), y = c(0.96,0.96),
 dev.off()
 
 
-### END ###
+################################ END ###########################################

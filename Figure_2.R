@@ -1,14 +1,28 @@
-#####################################################
+################################################################################
 #
 # FIGURE 2
 # 2.A Cartogram: number of studies per country
 # 2.B Histogram: number of per year of publication
 #
-#####################################################
+################################################################################
 
 
+################################################################################
+##### SET THE STAGE
+################################################################################
 
-### PREPARE THE LIBRARY ###
+
+#Set the working directory
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+#Delete all previous objects
+rm(list= ls())
+
+
+################################################################################
+##### LOAD THE PACKAGES
+################################################################################
+
 
 library(dplyr)
 library(ggplot2)
@@ -18,46 +32,63 @@ library(extrafont)
 library(ggpubr)
 
 
-### PREPARE THE DATA ###
+################################################################################
+##### IMPORT THE DATA
+################################################################################
 
-#Read the csv from the directory
+
+# Import the data sets with sites and references
 sites <- read.csv("./Data/NeoBat_Interactions_Sites.csv")
 refs <- read.csv("./Data/NeoBat_Interactions_References.csv")
 
-# Frequency table with the number of studies per country
+# Check the data
+class(sites)
+str(sites)
+head(sites)
+
+class(refs)
+str(refs)
+head(refs)
+
+# Make a frequency table with the number of studies per country
 f_countries <- data.frame(table(sites$Country))
+
+#Give the table human-readable column names
 colnames(f_countries) <- c("region","frequency")
 
-# A vector with the year of publication of each paper
+# Check the data
+head(f_countries)
+
+# Make a vector with each paper's publication year
 r_years <- data.frame("year" = refs$Year)
 
-# To standardize the USA name with "world map
+#Check the data
+head(r_years)
+
+# Standardize country names as in the package world map
 f_countries <- f_countries %>% 
    mutate(region = recode(region, "United States" = "USA", 
                           "Trinidad and Tobago" = "Trinidad"))
 
-# Load the Worl map from 'mapdata' package
+# Load the world map from mapdata package
 world <- map_data("world")
 
-# A cut off of America without Canada
-America <- world %>% filter(lat > -60 & lat < 50, long > -125 & long < -30,
+# Select the Americas without Canada
+Americas <- world %>% filter(lat > -60 & lat < 50, long > -125 & long < -30,
                             region != "Canada")
 
-# Merge the data of America and f_countries and replace NA by 0
-America <- America %>% full_join(f_countries, by = "region") %>%
+# Merge the data of the Americas and f_countries and replace NA by 0
+Americas <- Americas %>% full_join(f_countries, by = "region") %>%
    mutate(frequency = coalesce(frequency, 0))
 
-# Remove some data from the global environment to save memory
-rm(sites, world, refs)
+
+################################################################################
+##### MAKE THE PLOTS
+################################################################################
 
 
-### MAKE THE PLOTS ###
-
-loadfonts(device = "win") # To set the fonts we'll use
-
-
-# The Cartogram 
-g1 <- ggplot() + geom_polygon(data = America, 
+# Make the Cartogram 
+g1 <- ggplot() + geom_polygon(data = Americas, 
                               aes(x = long, y = lat, fill = frequency, 
                                   group = group), colour = "black") + 
    theme_void() + coord_fixed(1.1) +
@@ -71,8 +102,10 @@ g1 <- ggplot() + geom_polygon(data = America,
          legend.box = "vertical",
          plot.margin = unit(c(0,2,0.5,1), "lines"))
 
+#See the cartogram
+g1
 
-# The histogram
+# Make the histogram
 g2 <- ggplot(r_years, aes(x = year)) +
    geom_histogram(binwidth = 4, fill = "#006154", color = "black", alpha = 0.9) +
    theme_bw() +
@@ -85,10 +118,12 @@ g2 <- ggplot(r_years, aes(x = year)) +
                                      family = "Arial Narrow", face = "bold"),
          plot.margin = unit(c(1,1,2,2), "lines"))
 
+# See the histogram
+g2
 
-# print them together as a .png
-png("./Figures/Figure_2.png", res = 400,
-    width = 20, height = 10, unit = "cm")
+# Export both plots together as PNG image
+png("./Figures/Figure_2.png", res = 300,
+    width = 3000, height = 1700, unit = "px")
 
 ggarrange(g1, g2, ncol = 2, nrow = 1,
           labels = c("A", "B"), hjust = -1,
@@ -97,4 +132,4 @@ ggarrange(g1, g2, ncol = 2, nrow = 1,
 dev.off()
 
 
-### END ###
+################################ END ###########################################

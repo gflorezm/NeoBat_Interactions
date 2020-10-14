@@ -1,50 +1,75 @@
-##########################################################
+################################################################################
 #
 # FIGURE 1
-# Geographic istribution of sampling sites by study type
+# Geographic distribution of sampling sites by study type
 #
-##########################################################
+################################################################################
 
 
+################################################################################
+##### SET THE STAGE
+################################################################################
 
-### PREPARE THE LIBRARY ###
 
-# you also need the package rgeos
-# install.packages("rgeos")
+#Set the working directory
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+#Delete all previous objects
+rm(list= ls())
+
+
+################################################################################
+##### LOAD THE PACKAGES
+################################################################################
+
 
 library(dplyr)
+library(extrafont)
 library(ggplot2)
+library(grDevices)
 library(sf)
 library(rnaturalearth)
 library(rnaturalearthdata)
 library(extrafont)
 library(ggspatial)
+library(rgeos)
 
-### PREPARE THE DATA ###
 
-#Read the csv from the directory
+################################################################################
+##### IMPORT THE DATA
+################################################################################
+
+
+# Import the data set with site coordinates
 sites <- read.csv("./Data/NeoBat_Interactions_Sites.csv")
 
-# Separate the columns with the coordinates and the study type
-sampleSites <- sites %>% select(Latitude, Longitude, StudyType)
+# Check the data
+class(sites)
+str(sites)
+head(sites)
 
-# Load the Worl map from 'mapdata' package
+# Select the columns with the coordinates and study types
+sites_short <- sites %>% select(Latitude, Longitude, StudyType)
+
+#Check the data
+head(sites_short)
+
+# Load the world map from the mapdata package
 world <- rnaturalearth::ne_countries(scale = "medium", returnclass = "sf")
 
 
+################################################################################
+##### PLOT THE MAP
+################################################################################
 
-### MAKE THE MAP ###
 
-loadfonts(device = "win") # To set the fonts we'll use
-
-# The base map
-
+# Make the base map
 g1 <- ggplot(data = world) +
   geom_sf(colour = "white", fill = "#d3d3d3") +
   coord_sf(xlim = c(-124, -30), ylim = c(-58,40), expand = FALSE) +
   theme_bw() + 
-  # Points
-  geom_point(data = sampleSites, aes(x = Longitude, y = Latitude, 
+  # Plot the sites
+  geom_point(data = sites_short, aes(x = Longitude, y = Latitude, 
                                     colour = StudyType), 
              alpha = 0.6, size = 1.6) +
   # Customize the colors and labels
@@ -64,20 +89,24 @@ g1 <- ggplot(data = world) +
         legend.background = element_rect(fill = "NA"),
         legend.key = element_rect(fill = "NA"),
         plot.margin = unit(rep(0.5,4), "lines")) +
-  # Add the scale bar
+  # Add a scale bar
   ggspatial::annotation_scale(location = "bl", width_hint = 0.2,
                               bar_cols = c("grey30", "white"),
                               text_family = "Arial Narrow") +
+  # Add a north arrow
   ggspatial::annotation_north_arrow(location = "tr", which_north = "true",
                                     height = unit(0.8, "cm"), width = unit(0.8, "cm"),
                                     style = north_arrow_fancy_orienteering(fill = c("white", "grey30")))
 
-# Save the map as a png
-png("./Figures/Figure_1.png", res = 400,
-    width = 10, height = 14, unit = "cm")
+# See the map
+g1
+
+# Export the map as a PNG image
+png("./Figures/Figure_1.png", res = 300,
+    width = 2000, height = 2200, unit = "px")
 g1
 
 dev.off()
 
-### END ###
 
+################################ END ###########################################
