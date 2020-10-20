@@ -28,7 +28,6 @@ library(dplyr)
 library(ggplot2)
 library(maps)
 library(mapdata)
-library(extrafont)
 library(ggpubr)
 
 
@@ -67,19 +66,21 @@ head(r_years)
 
 # Standardize country names as in the package world map
 f_countries <- f_countries %>% 
-   mutate(region = recode(region, "United States" = "USA", 
-                          "Trinidad and Tobago" = "Trinidad"))
+      dplyr::mutate(region = recode(region, "United States" = "USA", 
+                                    "Trinidad and Tobago" = "Trinidad"))
 
 # Load the world map from mapdata package
-world <- map_data("world")
+world <- ggplot2::map_data("world")
 
 # Select the Americas without Canada
-Americas <- world %>% filter(lat > -60 & lat < 50, long > -125 & long < -30,
-                            region != "Canada")
+Americas <- world %>% 
+      dplyr::filter(lat > -60 & lat < 50, long > -125 & long < -30,
+                    region != "Canada")
 
 # Merge the data of the Americas and f_countries and replace NA by 0
-Americas <- Americas %>% full_join(f_countries, by = "region") %>%
-   mutate(frequency = coalesce(frequency, 0))
+Americas <- Americas %>% 
+      dplyr::full_join(f_countries, by = "region") %>%
+      dplyr::mutate(frequency = coalesce(frequency, 0))
 
 
 ################################################################################
@@ -88,35 +89,38 @@ Americas <- Americas %>% full_join(f_countries, by = "region") %>%
 
 
 # Make the Cartogram 
-g1 <- ggplot() + geom_polygon(data = Americas, 
-                              aes(x = long, y = lat, fill = frequency, 
-                                  group = group), colour = "black") + 
-   theme_void() + coord_fixed(1.1) +
-   scale_fill_gradient(low = "white", high = "#006154") +
-   labs(fill = "Number of studies") +
-   theme(legend.text = element_text(size = 12, family = "Arial Narrow"),
-         legend.title = element_text(face = "bold", size = 12, family = "Arial Narrow"),
-         legend.key.height = unit(0.8, "lines"),
-         legend.key.width = unit(1.2, "lines"),
-         legend.position = "right", 
-         legend.box = "vertical",
-         plot.margin = unit(c(0,2,0.5,1), "lines"))
+g1 <- ggplot() +
+      geom_polygon(data = Americas, 
+                   aes(x = long, y = lat, fill = frequency, 
+                       group = group), colour = "black") + 
+      theme_void() +
+      coord_fixed(1.1) +
+      scale_fill_gradient(low = "white", high = "#006154") +
+      labs(fill = "Number of studies") +
+      theme(legend.text = element_text(size = 11),
+            legend.title = element_text(face = "bold", size = 12),
+            legend.key.height = unit(0.8, "lines"),
+            legend.key.width = unit(1.2, "lines"),
+            legend.position = "right", 
+            legend.box = "vertical",
+            plot.margin = unit(c(0,2,0.5,1), "lines"))
 
 #See the cartogram
 g1
 
 # Make the histogram
 g2 <- ggplot(r_years, aes(x = year)) +
-   geom_histogram(binwidth = 4, fill = "#006154", color = "black", alpha = 0.9) +
-   theme_bw() +
-   labs(x = "Year of publication", y = "Number of Studies") +
-   theme(axis.text = element_text(size = 12, colour = "black",
-                                  family = "Arial Narrow"),
-         axis.title.x = element_text(size = 12, colour = "black", vjust = -3,
-                                     family = "Arial Narrow", face = "bold"),
-         axis.title.y = element_text(size = 12, colour = "black", vjust = 3,
-                                     family = "Arial Narrow", face = "bold"),
-         plot.margin = unit(c(1,1,2,2), "lines"))
+      geom_histogram(binwidth = 4, fill = "#006154", 
+                     color = "black", alpha = 0.9) +
+      theme_bw() +
+      labs(x = "Year of publication", y = "Number of Studies") +
+      theme(panel.grid = element_blank(),
+            axis.text = element_text(size = 11, colour = "black"),
+            axis.title.x = element_text(size = 12, colour = "black", vjust = -3,
+                                        face = "bold"),
+            axis.title.y = element_text(size = 12, colour = "black", vjust = 3,
+                                        face = "bold"),
+            plot.margin = unit(c(1,1,2,2), "lines"))
 
 # See the histogram
 g2
@@ -125,9 +129,9 @@ g2
 png("./Figures/Figure_2.png", res = 300,
     width = 3000, height = 1700, unit = "px")
 
-ggarrange(g1, g2, ncol = 2, nrow = 1,
-          labels = c("A", "B"), hjust = -1,
-          font.label = list(size = 16, family = "Arial Narrow"))
+ggpubr::ggarrange(g1, g2, ncol = 2, nrow = 1,
+                  labels = c("A", "B"), hjust = -1,
+                  font.label = list(size = 16))
 
 dev.off()
 
