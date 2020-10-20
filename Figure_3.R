@@ -1,6 +1,10 @@
 ################################################################################
 #
-# FIGURE 3. Abundance of bats and plants species
+# FIGURE 3. 
+# 3.A Abundance of the 15 most abundant bats species
+# 3.B Number of interactions of the 15 most abundant bats species
+# 3.C Abundance of the 15 most abundant plants genus
+# 3.D Number of interactions of the 15 most abundant plants species
 #
 ################################################################################
 
@@ -25,9 +29,7 @@ rm(list= ls())
 library(dplyr)
 library(ggplot2)
 library(tidyr)
-library(extrafont)
-library(ggpubr)
-library(grid)
+library(cowplot)
 
 
 ################################################################################
@@ -45,9 +47,9 @@ head(records)
 
 # Make a table with the number of interaction records per bat species
 batrecords <- records %>% 
-   group_by(CurrentBatSpecies) %>%
-   summarise(Frequency = n()) %>%
-   arrange(desc(Frequency))
+      dplyr::group_by(CurrentBatSpecies) %>%
+      dplyr::summarise(Frequency = n()) %>%
+      dplyr::arrange(desc(Frequency))
 
 # Check the data
 class(batrecords)
@@ -69,11 +71,39 @@ batrecords15$names <- abbr_name(batrecords15$CurrentBatSpecies)
 # Check the names
 batrecords15$names
 
+
+# Make the table with the number of interactions of each bat species
+batdegree <- records %>% 
+      dplyr::filter(!PlantGenus == "Unidentified") %>%
+      dplyr::group_by(CurrentBatSpecies, CurrentPlantSpecies) %>%
+      dplyr::summarise(Frequency = n()) %>%                  
+      dplyr::group_by(CurrentBatSpecies) %>%
+      dplyr::summarise(Degree = n()) %>%                     
+      dplyr::arrange(desc(Degree))               
+
+# Check the data
+class(batdegree)
+str(batdegree)
+head(batdegree)
+
+# Pick the 15 species with most interactions
+batdegree15 <- batdegree[1:15,]
+
+# Check the data
+batdegree15
+
+# Abbreviate the scientific names
+batdegree15$Bat <- abbr_name(batdegree15$CurrentBatSpecies)
+
+# Check the names
+batdegree15$Bat
+
+
 # Make a table with the number of interaction records per plant genus
 plantrecords <- records %>% 
-   group_by(PlantGenus) %>%
-   summarise(Frequency = n()) %>%
-   arrange(desc(Frequency))
+      dplyr::group_by(PlantGenus) %>%
+      dplyr::summarise(Frequency = n()) %>%
+      dplyr::arrange(desc(Frequency))
 
 # Check the data
 class(plantrecords)
@@ -87,57 +117,130 @@ plantrecords15 <- plantrecords[1:15,]
 plantrecords15
 
 
+# Make the table with the number of interactions of each plant species
+plantdegree <-records %>% 
+      dplyr::filter(!PlantGenus == "Unidentified") %>%
+      dplyr::group_by(CurrentBatSpecies, CurrentPlantSpecies) %>%
+      dplyr::summarise(Frequency = n()) %>%                 
+      dplyr::group_by(CurrentPlantSpecies) %>%
+      dplyr::summarise(Degree = n()) %>%                     
+      dplyr::arrange(desc(Degree))
+
+# Check the data
+class(plantdegree)
+str(plantdegree)
+head(plantdegree)
+
+# Pick the 15 species with most interactions
+plantdegree15 <- plantdegree[1:15,]
+
+# Check the data
+plantdegree15
+
+# Abbreviate the scientific names
+plantdegree15$Plant <- abbr_name(plantdegree15$CurrentPlantSpecies)
+
+# Check the names
+plantdegree15$Plant
+
+
 ################################################################################
 ##### MAKE THE PLOTS
 ################################################################################
 
 
-# Plot the bat bat species
-g1 <- ggplot(batrecords15, aes(x = reorder(names, Frequency), y = Frequency)) +
-   geom_bar(stat = "identity", color = "Black", fill = "#C59F00") +
-   theme_bw() + coord_flip() + ylim(c(0,450)) +
-   labs(x = " ", y = "Absolute frequency") +
-   theme(axis.text.y = element_text(size = 9, colour = "black", face = "italic",
-                                    family = "Arial Narrow"),
-         axis.text.x = element_text(size = 9, colour = "black",
-                                    family = "Arial Narrow"),
-         axis.title.x = element_text(size = 10, colour = "black", vjust = -3,
-                                     family = "Arial Narrow", face = "bold"),
-         axis.title.y = element_text(size = 10, colour = "black", vjust = 3,
-                                     family = "Arial Narrow", face = "bold"),
-         plot.margin = unit(c(1,1,2,2), "lines"))
+# Plot the bat species abundance
+g1 <- ggplot(batrecords15, aes(x = reorder(names, -Frequency), y = Frequency)) +
+      geom_bar(stat = "identity", color = "Black", fill = "#C59F00") +
+      theme_bw() + 
+      ylim(c(0,450)) +
+      labs(x = " ", y = "Absolute frequency") +
+      theme(panel.grid = element_blank(),
+            axis.text.x = element_text(size = 9, colour = "black",
+                                       face = "italic", angle = 80,
+                                       vjust = 1, hjust = 1),
+            axis.text.y = element_text(size = 9, colour = "black"),
+            axis.title.y = element_text(size = 10, colour = "black", vjust = 3,
+                                        face = "bold"),
+            plot.margin = unit(c(1,1,1,1), "lines"))
 
 #See the plot
 g1
 
+# Plot the bat species degree (number of interactions)
+batdp <- ggplot(batdegree15, aes(x = reorder(Bat, Degree), y = Degree)) + 
+      geom_bar(stat = "identity", color = "Black", fill = "#C59F00") +
+      theme_bw() +
+      coord_flip() +
+      labs(x = " ", y = "Number of interactions (plant species)") +
+      theme(rect = element_rect(fill = "transparent", colour = "NA"),
+            panel.grid = element_blank(),
+            axis.text.x = element_text(size = 7, colour = "black"),
+            axis.text.y = element_text(size = 7, colour = "black",
+                                       face = "italic"),
+            axis.title.x = element_text(size = 7, colour = "black", vjust = -3,
+                                        face = "bold"),
+            plot.margin = unit(c(1,1,1,1), "lines"))
 
-# Plot the plant genera
-g2 <- ggplot(plantrecords15, aes(x = reorder(PlantGenus, Frequency), y = Frequency)) +
-   geom_bar(stat = "identity", color = "Black", fill = "#980063") +
-   theme_bw() + coord_flip() + ylim(c(0,450)) +
-   labs(x = " ", y = "Absolute frequency") + 
-   theme(axis.text.y = element_text(size = 9, colour = "black", face = "italic",
-                                    family = "Arial Narrow"),
-         axis.text.x = element_text(size = 9, colour = "black",
-                                    family = "Arial Narrow"),
-         axis.title.x = element_text(size = 10, colour = "black", vjust = -3,
-                                     family = "Arial Narrow", face = "bold"),
-         axis.title.y = element_text(size = 10, colour = "black", vjust = 3,
-                                     family = "Arial Narrow", face = "bold"),
-         plot.margin = unit(c(1,1,2,2), "lines"))
+# See the plot
+batdp
+
+# Plot the plant genera abundance
+g2 <- ggplot(plantrecords15, aes(x = reorder(PlantGenus, -Frequency), 
+                                 y = Frequency)) +
+      geom_bar(stat = "identity", color = "Black", fill = "#980063") +
+      theme_bw() + 
+      ylim(c(0,450)) +
+      labs(x = " ", y = "Absolute frequency") + 
+      theme(panel.grid = element_blank(),
+            axis.text.x = element_text(size = 9, colour = "black",
+                                       face = "italic", angle = 80,
+                                       vjust = 1, hjust = 1),
+            axis.text.y = element_text(size = 9, colour = "black"),
+            axis.title.y = element_text(size = 10, colour = "black", vjust = 3,
+                                        face = "bold"),
+            plot.margin = unit(c(1,1,1,1), "lines"))
 
 #See the plot
 g2
 
-# Export both plots together as PNG image
-png("./Figures/Figure_3.png", res = 300,
-    width = 2000, height = 1200, unit = "px")
 
-# Draw the two plots together with the same size (it only accepts objects of the class Grob)
-grid.draw(cbind(ggplotGrob(g1), ggplotGrob(g2), size = "first"))
-# Draw the legend
-grid.text(label = c("A","B"), x = c(0.03,0.54), y = c(0.96,0.96),
-          gp = gpar(fontsize = 14, fontfamily = "Arial Narrow", fontface = "bold"))
+# Plot the plant species degree (number of interactions)
+plantdp <- ggplot(plantdegree15, aes(x = reorder(Plant, Degree), y = Degree)) +
+      geom_bar(stat = "identity", color = "Black", fill = "#980063") +
+      theme_bw() +
+      coord_flip() +
+      labs(x = " ", y = "Number of interactions (bat species)") +
+      theme(rect = element_rect(fill = "transparent", colour = "NA"),
+            panel.grid = element_blank(),
+            axis.text.x = element_text(size = 7, colour = "black"),
+            axis.text.y = element_text(size = 7, colour = "black", 
+                                       face = "italic"),
+            axis.title.x = element_text(size = 7, colour = "black", vjust = -3,
+                                        face = "bold"),
+            plot.margin = unit(c(1,1,1,1), "lines"))
+
+#See the plot
+plantdp
+
+
+# Export both plots together as PNG image
+png("./Figures/Figure_3.png", res = 200,
+    width = 2000, height = 1400, unit = "px")
+
+# Draw all the plots together:
+# Number of interactions plot will be inside of the abundance plots
+
+cowplot::plot_grid(
+      cowplot::ggdraw(g1) +
+            cowplot::draw_plot(batdp, 0.40, 0.47, 0.55, 0.5) +
+            cowplot::draw_plot_label(c("A", "B"), c(0, 0.42), c(0.98, 0.96),
+                                     size = 12, family = NULL),
+      cowplot::ggdraw(g2) +
+            cowplot::draw_plot(plantdp, 0.40, 0.47, 0.55, 0.5) +
+            cowplot::draw_plot_label(c("C", "D"), c(0, 0.42), c(0.98, 0.96),
+                                     size = 12, family = NULL)
+)
 
 dev.off()
 

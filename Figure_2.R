@@ -28,7 +28,7 @@ library(dplyr)
 library(ggplot2)
 library(maps)
 library(mapdata)
-library(ggpubr)
+library(cowplot)
 
 
 ################################################################################
@@ -129,9 +129,7 @@ g2
 png("./Figures/Figure_2.png", res = 300,
     width = 3000, height = 1700, unit = "px")
 
-ggpubr::ggarrange(g1, g2, ncol = 2, nrow = 1,
-                  labels = c("A", "B"), hjust = -1,
-                  font.label = list(size = 16))
+cowplot::plot_grid(g1, g2, labels = c("A", "B"))
 
 dev.off()
 
