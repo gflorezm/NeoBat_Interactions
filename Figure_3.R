@@ -1,6 +1,6 @@
 ################################################################################
 #
-# FIGURE 3. 
+# FIGURE 3 
 # 3.A Abundance of the 15 most abundant bats species
 # 3.B Number of interactions of the 15 most abundant bats species
 # 3.C Abundance of the 15 most abundant plants genus
@@ -45,7 +45,7 @@ class(records)
 str(records)
 head(records)
 
-# Make a table with the number of interaction records per bat species
+# Make a tibble with the number of interaction records per bat species
 batrecords <- records %>% 
       dplyr::group_by(CurrentBatSpecies) %>%
       dplyr::summarise(Frequency = n()) %>%
@@ -63,16 +63,15 @@ batrecords15 <- batrecords[1:15,]
 batrecords15
 
 # Load a custom-made function to abbreviate the scientific names
-
 source("abbr_name.R")
 
+#Abbreviate the scientific names of bats
 batrecords15$names <- abbr_name(batrecords15$CurrentBatSpecies)
 
 # Check the names
 batrecords15$names
 
-
-# Make the table with the number of interactions of each bat species
+# Make a tibble with the number of interactions made by each bat species
 batdegree <- records %>% 
       dplyr::filter(!PlantGenus == "Unidentified") %>%
       dplyr::group_by(CurrentBatSpecies, CurrentPlantSpecies) %>%
@@ -84,7 +83,7 @@ batdegree <- records %>%
 # Check the data
 class(batdegree)
 str(batdegree)
-head(batdegree)
+batdegree
 
 # Pick the 15 species with most interactions
 batdegree15 <- batdegree[1:15,]
@@ -98,8 +97,7 @@ batdegree15$Bat <- abbr_name(batdegree15$CurrentBatSpecies)
 # Check the names
 batdegree15$Bat
 
-
-# Make a table with the number of interaction records per plant genus
+# Make a tibble with the number of interaction records per plant genus
 plantrecords <- records %>% 
       dplyr::group_by(PlantGenus) %>%
       dplyr::summarise(Frequency = n()) %>%
@@ -108,7 +106,7 @@ plantrecords <- records %>%
 # Check the data
 class(plantrecords)
 str(plantrecords)
-head(plantrecords)
+plantrecords
 
 # Pick only the 15 most frequent species
 plantrecords15 <- plantrecords[1:15,]
@@ -116,8 +114,7 @@ plantrecords15 <- plantrecords[1:15,]
 # Check the data
 plantrecords15
 
-
-# Make the table with the number of interactions of each plant species
+# Make a tibble with the number of interactions of each plant species
 plantdegree <-records %>% 
       dplyr::filter(!PlantGenus == "Unidentified") %>%
       dplyr::group_by(CurrentBatSpecies, CurrentPlantSpecies) %>%
@@ -129,7 +126,7 @@ plantdegree <-records %>%
 # Check the data
 class(plantdegree)
 str(plantdegree)
-head(plantdegree)
+plantdegree
 
 # Pick the 15 species with most interactions
 plantdegree15 <- plantdegree[1:15,]
@@ -137,7 +134,7 @@ plantdegree15 <- plantdegree[1:15,]
 # Check the data
 plantdegree15
 
-# Abbreviate the scientific names
+# Abbreviate the scientific names of plants
 plantdegree15$Plant <- abbr_name(plantdegree15$CurrentPlantSpecies)
 
 # Check the names
@@ -160,7 +157,7 @@ g1 <- ggplot(batrecords15, aes(x = reorder(names, -Frequency), y = Frequency)) +
                                        face = "italic", angle = 80,
                                        vjust = 1, hjust = 1),
             axis.text.y = element_text(size = 9, colour = "black"),
-            axis.title.y = element_text(size = 10, colour = "black", vjust = 3,
+            axis.title.y = element_text(size = 14, colour = "black", vjust = 3,
                                         face = "bold"),
             plot.margin = unit(c(1,1,1,1), "lines"))
 
@@ -197,7 +194,7 @@ g2 <- ggplot(plantrecords15, aes(x = reorder(PlantGenus, -Frequency),
                                        face = "italic", angle = 80,
                                        vjust = 1, hjust = 1),
             axis.text.y = element_text(size = 9, colour = "black"),
-            axis.title.y = element_text(size = 10, colour = "black", vjust = 3,
+            axis.title.y = element_text(size = 14, colour = "black", vjust = 3,
                                         face = "bold"),
             plot.margin = unit(c(1,1,1,1), "lines"))
 
@@ -224,13 +221,12 @@ plantdp <- ggplot(plantdegree15, aes(x = reorder(Plant, Degree), y = Degree)) +
 plantdp
 
 
-# Export both plots together as PNG image
+# Export both plots together as a PNG image
 png("./Figures/Figure_3.png", res = 200,
     width = 2000, height = 1400, unit = "px")
 
 # Draw all the plots together:
 # Number of interactions plot will be inside of the abundance plots
-
 cowplot::plot_grid(
       cowplot::ggdraw(g1) +
             cowplot::draw_plot(batdp, 0.40, 0.47, 0.55, 0.5) +

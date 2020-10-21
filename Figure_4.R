@@ -1,8 +1,10 @@
 ################################################################################
 #
-# FIGURE 4. 
-# A. Number of recorded interactions by plant life form and interaction type
-# B. 
+# FIGURE 4 
+# A. Number of interactions by plant life form and interaction type
+# B. Number of interactions by plant successional stage and interaction type
+# C. Number of interactions by bat trophic guild and interaction type
+#
 ################################################################################
 
 
@@ -28,6 +30,7 @@ library(ggplot2)
 library(tidyr)
 library(cowplot)
 
+
 ################################################################################
 ##### IMPORT THE DATA
 ################################################################################
@@ -42,8 +45,7 @@ class(records)
 str(records)
 head(records)
 
-
-# Make a new table in which each observation represents a plant species,
+# Make a tibble in which each observation represents a plant species,
 # and the number of interactions is given by type (nectarivory and frugivory)
 # and plant life form.
 lifeform <- records %>%
@@ -57,14 +59,11 @@ lifeform <- records %>%
 #Check the data
 class(lifeform)
 str(lifeform)
-head(lifeform)
+lifeform
 
-
-# Make another table in which each observation represents a plant species,
+# Make another tibble in which each observation represents a plant species,
 # and the number of interactions is given by type (nectarivory and frugivory)
 # and plant successional stage.
-
-
 sstage <- records %>%
    dplyr::filter(!is.na(SuccessionalStage)) %>%
    dplyr::group_by(CurrentPlantSpecies,CurrentBatSpecies, 
@@ -76,14 +75,11 @@ sstage <- records %>%
 #Check the data
 class(sstage)
 str(sstage)
-head(sstage)
+sstage
 
-
-# Make a third table in which each observation represents a bat species,
+# Make a third tibble in which each observation represents a bat species,
 # and the number of interactions is given by type (nectarivory and frugivory)
 # and bat trophic guild.
-
-
 batguild <- records %>%
    dplyr::filter(!is.na(TrophicGuild)) %>%
    dplyr::group_by(CurrentPlantSpecies,CurrentBatSpecies, 
@@ -95,14 +91,12 @@ batguild <- records %>%
 #Check the data
 class(batguild)
 str(batguild)
-head(batguild)
+batguild
 
-
-# Make a violin plot with jitter
-# number of interactions for each type of life form of plants
-
+# Make a violin plot with jitter, showing the number of interactions by
+# plant life form and interaction type
 p1 <- ggplot(data = lifeform, aes(x = Interaction, y = N_interactions)) + 
-   geom_violin(alpha = 0.3,colour = "black",
+   geom_violin(alpha = 0.3,colour = "white",
                fill = "#980063") + 
    facet_wrap(. ~ LifeForm, nrow = 3) +
    geom_jitter(alpha = 0.5, colour = "#980063",
@@ -126,12 +120,10 @@ p1 <- ggplot(data = lifeform, aes(x = Interaction, y = N_interactions)) +
 # See the plot
 p1
 
-
-# Make a violin plot with jitter
-# number of interactions for each type of successional stage of plants
-
+# Make a violin plot with jitter, showing the number of interactions by
+# plant successional stage and interaction type
 p2 <- ggplot(data = sstage, aes(x = Interaction, y = N_interactions)) + 
-   geom_violin(alpha = 0.3,colour = "black",
+   geom_violin(alpha = 0.3,colour = "white",
                fill = "#980063") + 
    facet_wrap(. ~ SuccessionalStage) +
    geom_jitter(alpha = 0.5, colour = "#980063",
@@ -155,12 +147,10 @@ p2 <- ggplot(data = sstage, aes(x = Interaction, y = N_interactions)) +
 # See the plot
 p2
 
-
-# Make a violin plot with jitter
-# number of interactions for each type of trophic guild of bats
-
+# Make a violin plot with jitter, showing the number of interactions by
+# bat trophic guild and interaction type
 p3 <- ggplot(data = batguild, aes(x = Interaction, y = N_interactions)) + 
-   geom_violin(alpha = 0.3,colour = "black",
+   geom_violin(alpha = 0.3,colour = "white",
                fill = "#C59F00") + 
    facet_wrap(. ~ TrophicGuild) +
    geom_jitter(alpha = 0.5, colour = "#C59F00",
@@ -184,8 +174,7 @@ p3 <- ggplot(data = batguild, aes(x = Interaction, y = N_interactions)) +
 p3
 
 
-
-# Export the map as a PNG image
+# Export all three plots as a PNG image
 png("./Figures/Figure_4.png", res = 300,
     width = 2000, height = 3200, unit = "px")
 
