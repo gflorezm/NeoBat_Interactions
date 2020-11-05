@@ -1,0 +1,212 @@
+---
+title: "**NeoBat Interactions: a data set of bat-plant interactions in the Neotropics**"
+author: 
+  - Guillermo L. Florez-Montero^1^*
+  - Cullen Geiselman^2^
+  - Marcelo R. Nogueira^3^
+  - Renata de Lara Muylaert^4^
+  - Sharlene E. Santana^5^
+  - Richard D. Stevens^6^
+  - Marco Tschapka^7^
+  - Francisco A. Rodrigues^8^
+  - Marco A. R. Mello^9^
+output: 
+  pdf_document: 
+    latex_engine: xelatex  
+    extra_dependencies: float
+    citation_package: biblatex
+indent: true
+bibliography: bibliography.bib
+biblio-style: apa
+---
+
+```{r graph float, message=FALSE, warning=FALSE, include=FALSE}
+
+knitr::opts_chunk$set(fig.pos = "!t", out.extra = "")
+```
+
+
+>> _1 Universidade Federal do ABC (UFABC). Centro de Ciências Humanas e Naturais. 09210-580 Santo André, SP, Brazil._
+>>
+>> _2 Institution. Departament. Postal Code. City, Country_
+>>
+>> _3 Universidade Federal Rural do Rio de Janeiro (UFRRJ). Instituto de Biologia, Laboratório de Mastozoologia. 23890-000 Seropédica, RJ, Brazil._
+>>
+>> _4 Institution. Departament. Postal Code. City, Country_
+>>
+>> _5 Department of Biology and Burke Museum of Natural History and Culture, University of Washington, Seattle, WA, 98195, USA_
+>>
+>> _6 Institution. Departament. Postal Code. City, Country_
+>>
+>> _7 Institution. Departament. Postal Code. City, Country_
+>>
+>> _8 Universidade de São Paulo. Departamento de Matemática Aplicada e Estatística, Instituto de Ciências Matemáticas e de Computação. 13560-970 São Carlos, SP, Brazil_
+>>
+>> _9 Universidade de São Paulo (USP), Instituto de Biociências, Departamento de Ecologia Geral. 05508-090 São Paulo, SP, Brazil._
+&nbsp;
+
+>> *Corresponding author: Guillermo L. Florez-Montero (gflorezmontero@gmail.com)
+
+&nbsp;
+
+
+## INTRODUCTION
+
+&nbsp;
+
+Open access to primary scientific data is fundamental to assure the social contract that governs scientific publishing [@vision2010]. Making primary data available improves the transparency, reproducibility, and progress of science by allowing independent verification and reuse of published data. [@costello2009]. This access has been facilitated in the information age through important frameworks for the production, storage, curation, and sharing of  ecological data. Those frameworks which aim to preserve data in the long term, even beyond the life of the initial compilers and curators [@chavan2009].
+
+&nbsp;
+
+One of those frameworks are data papers, which optimize efforts in the discovery, organization, and availability of ecological data [@chavan2011]. They offer a highly reliable source of data, as they have been subjected to high-quality control measures, such as peer review and editorial control of data and metadata [@costello2013]. This new kind of publication has revolutionized contemporary science by making decades of naturalistic information widely available in highly accessible and comprehensive formats.
+The revolution has also reached mammalogy. Data papers on mammal communities are growing in numbers. There are, for instance, data papers on the global non-volant mammal communities [@thibault2011]. Another important source is the BioTIME database of biodiversity time series for the Anthropocene [@dornelas2018]. Others have larger scope, such as the global database for metacommunity ecology, integrating species, traits, environment and space [@jeliazkov2020]. 
+
+&nbsp;
+
+In Brazil, the most famous mammalogical data papers were produced in the ATLANTIC Series, which contains information about the biodiversity of the Atlantic Forest of South America. This series includes data papers on plant-frugivore interactions [@bello2017], rodents and marsupials: [@bovendorp2017], bats [@muylaert2017], primates [@culot2019], and medium-and large-sized mammals [@souza2019]. Many other data papers were produced by other research groups outside the ATLANTIC Series, focusing on groups such as small mammals [@figueredo2017]. In addition, only a few covered larger spatial scales, such as Neotropical xenarthrans [@santos2019]. Nevertheless, most of them are based on abundance-incidence species data whereas species interactions received much less attention.
+
+&nbsp;
+
+Mutualistic interactions between animals and plants are a cornerstone of terrestrial ecosystems. Almost 94% of plants in neotropical communities are pollinated by animals [@ollerton2011], while 70 – 94% have their seeds dispersed by vertebrates [@jordano2013]. Bats are especially important in this context, as they represent the second largest group of seed dispersers in the Neotropics, after birds [@bello2017]. On the other hand, even though insects pollinate most of the flowering plants, bats are also the second group of pollinating vertebrates since they pollinate about 2% of plant genera [@skercioglu2006]. Bat-plant interactions also result in ecosystem services, such as the pollination of some economically important plants and the dispersal of seeds from pioneer plants that are key to habitat regeneration [@kunz2011].
+
+&nbsp;
+
+In the present data paper,we compiled a georeferenced database of 2,574 interaction records of frugivory and nectarivory between 95 bat species and 526 plant species. The data came from 168 studies covering 200 locations in 16 countries all over the Neotropical region. (Fig. 1). The database compiled by (@geiselman2002) was used as a starting point and was filtered and updated. NeoBat Interactions is so far the most extensive bat-plant interaction database both in geographic and taxonomic terms. Most sampling sites are georeferenced with high coordinate accuracy. All records came from primary sources and were taxonomically verified and updated. Additionally, our database includes ecological information, such as a life form and successional stage of plants, and trophic guild of bats. The data are organized and standardized at different levels of ecological complexity and temporal and geographic scales, which allows using them in a variety of studies with different scopes.
+
+```{r Figure 1, echo=FALSE, out.width="90%", fig.align ="center", fig.cap="Distribution of sampling sites covered in NeoBat Interactions. Purple dots show the location of original studies reporting bat-plant interactions. White lines show country borders. We included only studies with records of bat-plant interactions that were confirmed either by indirect or direct observation."}
+
+knitr::include_graphics("Figures/Figure_1.png")
+
+```
+
+&nbsp;
+
+## METADATA
+&nbsp;
+
+### CLASS I. DATA SET DESCRIPTORS
+&nbsp;
+
+#### A. Data set identity
+
+>**Title:** NeoBat Interactions: a data set of bat-plant interactions in the Neotropics
+&nbsp;
+
+#### B. Data set identification code
+
+>**Suggested data set identity codes:**
+>
+>NeoBat_Interactions_References.csv
+>
+>NeoBat_Interactions_Sites.csv
+>
+>NeoBat_Interactions_Records.csv
+
+&nbsp;
+
+#### C. Data set description
+
+
+>**Principal Investigator(s):**
+>
+>1. Guillermo L. Florez-Montero.
+>Universidade Federal do ABC. Centro de Ciências Humanas e Naturais. 09210-580 Santo André, SP, Brazil.
+>
+>2. Marco A. R. Mello.
+>Universidade de São Paulo, Instituto de Biociências, Departamento de Ecologia Geral. 05508-090 São Paulo, SP, Brazil.
+
+
+```{r data-abstract, message=FALSE, warning=FALSE, include=FALSE}
+library(tidyverse)
+
+records <- read.csv("./Data/NeoBat_Interactions_Records.csv")
+references <- read.csv("./Data/NeoBat_Interactions_References.csv")
+sites <- read.csv("./Data/NeoBat_Interactions_Sites.csv")
+
+# number of bats species
+n_bats <- records %>%
+  dplyr::slice(-grep(" sp.", CurrentBatSpecies)) %>%
+  dplyr::summarise(bats = unique(CurrentBatSpecies)) %>%
+  nrow()
+
+# bat records (%)
+batrecords <- records %>% 
+      dplyr::group_by(BatGenus) %>%
+      dplyr::summarise(Frequency = n()) %>%
+      dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),1)) %>%
+      dplyr::arrange(desc(Frequency))
+
+# number of species interacting with bat species
+batdegree <- records %>% 
+      dplyr::filter(!PlantGenus == "Unidentified") %>%
+      dplyr::group_by(CurrentBatSpecies, CurrentPlantSpecies) %>%
+      dplyr::summarise(Frequency = n()) %>%                  
+      dplyr::group_by(CurrentBatSpecies) %>%
+      dplyr::summarise(Degree = n()) %>%                     
+      dplyr::arrange(desc(Degree)) 
+
+# number of plant species
+n_plants <- records %>%
+  dplyr::filter(!PlantGenus == "Unidentified") %>%
+  dplyr::slice(-grep(" sp.", CurrentPlantSpecies)) %>%
+  dplyr::summarise(plants = unique(CurrentPlantSpecies)) %>%
+  nrow()
+
+# number of plant families
+n_plantfam <-  records %>%
+  dplyr::filter(!PlantGenus == "Unidentified") %>%
+  dplyr::summarise(plants = unique(PlantFamily)) %>%
+  nrow()
+
+# plant records (%)
+plantrecords <- records %>% 
+      dplyr::group_by(PlantFamily) %>%
+      dplyr::summarise(Frequency = n()) %>%
+      dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),1)) %>%
+      dplyr::arrange(desc(Frequency))
+
+# number of species interacting with plant genera
+plantdegree <-records %>% 
+      dplyr::filter(!PlantGenus == "Unidentified") %>%
+      dplyr::group_by(CurrentBatSpecies, PlantGenus) %>%
+      dplyr::summarise(Frequency = n()) %>%                 
+      dplyr::group_by(PlantGenus) %>%
+      dplyr::summarise(Degree = n()) %>%                     
+      dplyr::arrange(desc(Degree))
+
+# type of interactions
+interaction_type <- records %>% 
+      dplyr::group_by(Interaction) %>%
+      dplyr::summarise(Frequency = n()) %>%
+      dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),1)) %>%
+      dplyr::arrange(desc(Frequency))
+
+# Countries
+countries <- sites %>% 
+      dplyr::group_by(Country) %>%
+      dplyr::summarise(Frequency = n()) %>%
+      dplyr::mutate(Frequency = 100*(Frequency/sum(Frequency))) %>%
+      dplyr::arrange(desc(Frequency))
+
+```
+
+&nbsp;
+
+>**Abstract:**
+>
+>Data papers and open databases revolutionized contemporary science, as they provide the long-needed incentive to collaborate in large international teams and make naturalistic information widely available. Nevertheless, most of them focus on occurrence or abundance, while species interactions received less attention. To help fill this gap, we compiled a georeferenced data set of interactions between `r n_bats` bat species of the family Phyllostomidae (Chiroptera) and `r n_plants` plant species of  `r n_plantfam` families. Data were obtained from `r nrow(references)` studies published from `r min(references$Year)` to `r max(references$Year)` in the entire Neotropical Region, with most records coming from `r countries[1,1]` (`r countries[1,2]`% of all study sites), `r countries[2,1]` (`r countries[2,2]`%), and `r countries[3,1]` (`r countries[3,2]`%). Our data set includes `r nrow(records)` records of frugivory (`r interaction_type[1,2]`% of all records) and nectarivory (`r interaction_type[2,2]`%). The best represented bat genera are _`r batrecords[1,1]`_ (`r batrecords[1,2]`% of all records), _`r batrecords[2,1]`_  (`r batrecords[2,2]`%), _`r batrecords[3,1]`_  (`r batrecords[3,2]`%), and _`r batrecords[4,1]`_  (`r batrecords[4,2]`%). _`r batdegree[1,1]`_ (`r batdegree[1,2]`),  _`r batdegree[2,1]`_ (`r batdegree[2,2]`), _`r batdegree[3,1]`_ (`r batdegree[3,2]`), _`r batdegree[4,1]`_ (`r batdegree[4,2]`), and _`r batdegree[5,1]`_ (`r batdegree[5,2]`) are the bat species with the broadest diets recorded in number of plant species. Among plants, the best represented families are `r plantrecords[1,1]` (`r plantrecords[1,2]`%), `r plantrecords[2,1]` (`r plantrecords[2,2]`%), `r plantrecords[3,1]` (`r plantrecords[3,2]`%), and `r plantrecords[4,1]` (`r plantrecords[4,2]`%). Plants of the genera _`r plantdegree[1,1]`_ (`r plantdegree[1,2]`), _`r plantdegree[2,1]`_ (`r plantdegree[2,2]`), _`r plantdegree[3,1]`_ (`r plantdegree[3,2]`), _`r plantdegree[4,1]`_ (`r plantdegree[4,2]`), and _`r plantdegree[5,1]`_ (`r plantdegree[5,2]`) hold the largest number of interactions. These data are stored as arrays (records, sites, and studies) organized by logical keys and rich metadata, which helps compile the information at different ecological and geographic scales, as required by different studies. Our data set on bat-plant interactions is so far the most extensive both in geographic and taxonomic terms, and also includes some ecological information of plants and bats. It has already helped us develop several studies and we hope it will stimulate novel analyses and syntheses, in addition to pointing out to important gaps in knowledge for future research.
+&nbsp;
+
+#### D. Key words  
+&nbsp;
+
+Species interactions, mutualism, nectarivory, frugivory, pollination, seed dispersal, databases, networks.
+&nbsp;
+
+#### E. Description  
+&nbsp;
+
+This data base, includes information from `r nrow(countries)` countries of the Neotropics, sice 
+
+&nbsp;
+
