@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.4)  5 NOV 2020 19:00
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.4)  6 NOV 2020 06:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1206,7 +1206,13 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 ]
 File: Figures/Figure_1.png Graphic file (type bmp)
 <Figures/Figure_1.png>
-[2] [3] [4] [5] (./NeoBat_Interactions_metadata.aux)
+[2] [3]
+File: Figures/Figure_2.png Graphic file (type bmp)
+<Figures/Figure_2.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[4] [5] [6] (./NeoBat_Interactions_metadata.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1220,12 +1226,12 @@ Package logreq Info: Writing requests to 'NeoBat_Interactions_metadata.run.xml'
 
  ) 
 Here is how much of TeX's memory you used:
- 25610 strings out of 479393
- 474659 string characters out of 5877970
- 1611888 words of memory out of 5000000
- 44694 multiletter control sequences out of 15000+600000
+ 25622 strings out of 479393
+ 474891 string characters out of 5877970
+ 1601922 words of memory out of 5000000
+ 44705 multiletter control sequences out of 15000+600000
  541515 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,10n,118p,761b,5244s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on NeoBat_Interactions_metadata.pdf (5 pages).
+Output written on NeoBat_Interactions_metadata.pdf (6 pages).
