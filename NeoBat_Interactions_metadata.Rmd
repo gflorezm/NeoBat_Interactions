@@ -20,11 +20,6 @@ bibliography: bibliography.bib
 biblio-style: apa
 ---
 
-```{r graph float, message=FALSE, warning=FALSE, include=FALSE}
-
-knitr::opts_chunk$set(fig.pos = "!t", out.extra = "")
-```
-
 
 >> _1 Universidade Federal do ABC (UFABC). Centro de Ciências Humanas e Naturais. 09210-580 Santo André, SP, Brazil._
 >>
@@ -73,7 +68,7 @@ Mutualistic interactions between animals and plants are a cornerstone of terrest
 
 In the present data paper,we compiled a georeferenced database of 2,574 interaction records of frugivory and nectarivory between 95 bat species and 526 plant species. The data came from 168 studies covering 200 locations in 16 countries all over the Neotropical region. (Fig. 1). The database compiled by (@geiselman2002) was used as a starting point and was filtered and updated. NeoBat Interactions is so far the most extensive bat-plant interaction database both in geographic and taxonomic terms. Most sampling sites are georeferenced with high coordinate accuracy. All records came from primary sources and were taxonomically verified and updated. Additionally, our database includes ecological information, such as a life form and successional stage of plants, and trophic guild of bats. The data are organized and standardized at different levels of ecological complexity and temporal and geographic scales, which allows using them in a variety of studies with different scopes.
 
-```{r Figure 1, echo=FALSE, out.width="90%", fig.align ="center", fig.cap="Distribution of sampling sites covered in NeoBat Interactions. Purple dots show the location of original studies reporting bat-plant interactions. White lines show country borders. We included only studies with records of bat-plant interactions that were confirmed either by indirect or direct observation."}
+```{r Figure 1, echo=FALSE, out.width="90%", fig.align ="center", fig.pos = "!t", fig.cap="Distribution of sampling sites covered in NeoBat Interactions. Purple dots show the location of original studies reporting bat-plant interactions. White lines show country borders. We included only studies with records of bat-plant interactions that were confirmed either by indirect or direct observation."}
 
 knitr::include_graphics("Figures/Figure_1.png")
 
@@ -211,7 +206,7 @@ carried out over `r max(references$Year) - min(references$Year)` years, in `r nr
 
 &nbsp;
 
-```{r Figure 2, echo=FALSE, fig.align ="center", out.width="100%", fig.pos= "!h", fig.cap="Distribution of the number of studies on frugivory and nectarivory by bats, published by country (**A**) and throughout the recorded period (**B**)"}
+```{r Figure 2, echo=FALSE, fig.align ="center", out.width="100%", fig.pos= "t", fig.cap="Distribution of the number of studies on frugivory and nectarivory by bats, published by country (**A**) and throughout the recorded period (**B**)"}
 
 knitr::include_graphics("Figures/Figure_2.png")
 
