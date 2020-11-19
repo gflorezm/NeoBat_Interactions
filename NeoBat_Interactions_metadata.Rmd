@@ -15,6 +15,7 @@ output:
     latex_engine: xelatex  
     extra_dependencies: float
 indent: true
+linestretch: 1.25
 bibliography: bibliography.bib
 ---
 
@@ -46,7 +47,6 @@ bibliography: bibliography.bib
 ```{r processing data, code=readLines("./Code/chunk_1.R"), message=FALSE, warning=FALSE, include=FALSE}
 ```
 
-
 # INTRODUCTION
 
 &nbsp;
@@ -68,7 +68,7 @@ Mutualistic interactions between animals and plants are a cornerstone of terrest
 
 &nbsp;
 
-In the present data paper,we compiled a georeferenced database of `r nrow(records)` interaction records of frugivory and nectarivory between `r n_bats` bat species and `r n_plants` plant species. The data came from `r nrow(references)` studies covering `r nrow(sites)` locations in `r nrow(countries)` countries all over the Neotropical region. (Figure 1). The database compiled by @geiselman2002 was used as a starting point and was filtered and updated. NeoBat Interactions is so far the most extensive bat-plant interaction database both in geographic and taxonomic terms. Most sampling sites are georeferenced with high coordinate accuracy. All records came from primary sources and were taxonomically verified and updated. Additionally, our database includes ecological information, such as a life form and successional stage of plants, and trophic guild of bats. The data are organized and standardized at different levels of ecological complexity and temporal and geographic scales, which allows using them in a variety of studies with different scopes.
+In the present data paper,we compiled a georeferenced database of `r nrow(records)` interaction records of frugivory and nectarivory between `r n_bats` bat species and `r n_plants` plant species. The data came from `r nrow(references)` studies covering `r nrow(sites)` locations in `r nrow(countries)` countries all over the Neotropical region. (Figure 1). The database compiled by @geiselman2002 was used as a starting point and was filtered and updated. NeoBat Interactions is so far the most extensive bat-plant interaction database both in geographic and taxonomic terms. Most sampling sites are georeferenced with high coordinate accuracy. All records came from primary sources and were taxonomically verified and updated. Additionally, our database includes some geographic and abiotic information of study sites such as vegetation type, rainfall and precipitation,  and ecological information of species, such as a life form and successional stage of plants, and trophic guild of bats. The data are organized and standardized at different levels of ecological complexity and temporal and geographic scales, which allows using them in a variety of studies with different scopes.
 
 ```{r Figure 1, echo=FALSE, out.width="90%", fig.align ="center", fig.pos = "!t", fig.cap="Distribution of sampling sites covered in NeoBat Interactions. Purple dots show the location of original studies reporting bat-plant interactions. White lines show country borders. We included only studies with records of bat-plant interactions that were confirmed either by indirect or direct observation."}
 
@@ -76,7 +76,8 @@ knitr::include_graphics("Figures/Figure_1.png")
 
 ```
 
-&nbsp;
+
+\clearpage
 
 # METADATA
 &nbsp;
@@ -98,11 +99,9 @@ knitr::include_graphics("Figures/Figure_1.png")
 >NeoBat_Interactions_Sites.csv
 >
 >NeoBat_Interactions_Records.csv
-
 &nbsp;
 
 ### C. Data set description
-
 
 >**Principal Investigator(s):**
 >
@@ -112,55 +111,61 @@ knitr::include_graphics("Figures/Figure_1.png")
 >
 >2. Marco A. R. Mello.
 >Universidade de São Paulo, Instituto de Biociências, Departamento de Ecologia Geral. 05508-090 São Paulo, SP, Brazil.
-
-
-
 &nbsp;
 
 >**Abstract:**
 >
->Data papers and open databases revolutionized contemporary science, as they provide the long-needed incentive to collaborate in large international teams and make naturalistic information widely available. Nevertheless, most of them focus on occurrence or abundance, while species interactions received less attention. To help fill this gap, we compiled a georeferenced data set of interactions between `r n_bats` bat species of the family Phyllostomidae (Chiroptera) and `r n_plants` plant species of  `r n_plantfam` families. Data were obtained from `r nrow(references)` studies published from `r min(references$Year)` to `r max(references$Year)` in the entire Neotropical Region, with most records coming from `r countries[1,1]` (`r countries[1,3]`% of all study sites), `r countries[2,1]` (`r countries[2,3]`%), and `r countries[3,1]` (`r countries[3,3]`%). Our data set includes `r nrow(records)` records of frugivory (`r interaction_type[1,2]`% of all records) and nectarivory (`r interaction_type[2,2]`%). The best represented bat genera are _`r batrecords[1,1]`_ (`r batrecords[1,2]`% of all records), _`r batrecords[2,1]`_  (`r batrecords[2,2]`%), _`r batrecords[3,1]`_  (`r batrecords[3,2]`%), and _`r batrecords[4,1]`_  (`r batrecords[4,2]`%). _`r batdegree[1,1]`_ (`r batdegree[1,2]`),  _`r batdegree[2,1]`_ (`r batdegree[2,2]`), _`r batdegree[3,1]`_ (`r batdegree[3,2]`), _`r batdegree[4,1]`_ (`r batdegree[4,2]`), and _`r batdegree[5,1]`_ (`r batdegree[5,2]`) are the bat species with the broadest diets recorded in number of plant species. Among plants, the best represented families are `r plantrecords[1,1]` (`r plantrecords[1,2]`%), `r plantrecords[2,1]` (`r plantrecords[2,2]`%), `r plantrecords[3,1]` (`r plantrecords[3,2]`%), and `r plantrecords[4,1]` (`r plantrecords[4,2]`%). Plants of the genera _`r plantdegree[1,1]`_ (`r plantdegree[1,2]`), _`r plantdegree[2,1]`_ (`r plantdegree[2,2]`), _`r plantdegree[3,1]`_ (`r plantdegree[3,2]`), _`r plantdegree[4,1]`_ (`r plantdegree[4,2]`), and _`r plantdegree[5,1]`_ (`r plantdegree[5,2]`) hold the largest number of interactions. These data are stored as arrays (records, sites, and studies) organized by logical keys and rich metadata, which helps compile the information at different ecological and geographic scales, as required by different studies. Our data set on bat-plant interactions is so far the most extensive both in geographic and taxonomic terms, and also includes some ecological information of plants and bats. It has already helped us develop several studies and we hope it will stimulate novel analyses and syntheses, in addition to pointing out to important gaps in knowledge for future research.
+>Data papers and open databases revolutionized contemporary science, as they provide the long-needed incentive to collaborate in large international teams and make naturalistic information widely available. Nevertheless, most of them focus on occurrence or abundance, while species interactions received less attention. To help fill this gap, we compiled a georeferenced data set of interactions between `r n_bats` bat species of the family Phyllostomidae (Chiroptera) and `r n_plants` plant species of  `r n_plantfam` families. Data came from `r nrow(references)` studies published from `r min(references$Year)` to `r max(references$Year)` in the entire Neotropical Region, with most records from `r countries[1,1]` (`r countries[1,3]`% of all study sites), `r countries[2,1]` (`r countries[2,3]`%), and `r countries[3,1]` (`r countries[3,3]`%). Our data set includes `r nrow(records)` records of frugivory (`r interaction_type[1,2]`% of all records) and nectarivory (`r interaction_type[2,2]`%). The best represented bat genera are _`r batrecords[1,1]`_ (`r batrecords[1,2]`% of all records), _`r batrecords[2,1]`_  (`r batrecords[2,2]`%), _`r batrecords[3,1]`_  (`r batrecords[3,2]`%), and _`r batrecords[4,1]`_  (`r batrecords[4,2]`%). _`r batdegree[1,1]`_ (`r batdegree[1,2]`),  _`r batdegree[2,1]`_ (`r batdegree[2,2]`), _`r batdegree[3,1]`_ (`r batdegree[3,2]`), _`r batdegree[4,1]`_ (`r batdegree[4,2]`), and _`r batdegree[5,1]`_ (`r batdegree[5,2]`) are the bat species with the broadest diets recorded in number of plant species. Among plants, the best represented families are `r plantrecords[1,1]` (`r plantrecords[1,2]`%), `r plantrecords[2,1]` (`r plantrecords[2,2]`%), `r plantrecords[3,1]` (`r plantrecords[3,2]`%), and `r plantrecords[4,1]` (`r plantrecords[4,2]`%). Plants of the genera _`r plantdegree[1,1]`_ (`r plantdegree[1,2]`), _`r plantdegree[2,1]`_ (`r plantdegree[2,2]`), _`r plantdegree[3,1]`_ (`r plantdegree[3,2]`), _`r plantdegree[4,1]`_ (`r plantdegree[4,2]`), and _`r plantdegree[5,1]`_ (`r plantdegree[5,2]`) hold the largest number of interactions. These data are stored as arrays (records, sites, and studies) organized by logical keys and rich metadata, which helps compile the information at different ecological and geographic scales, as required by different studies. Our data set on bat-plant interactions is so far the most extensive both in geographic and taxonomic terms, and also includes some abiotic information of study sites and ecological information of plants and bats. It has already helped us develop several studies and we hope it will stimulate novel analyses and syntheses, in addition to pointing out to important gaps in knowledge for future research.
 &nbsp;
 
 ### D. Key words  
 &nbsp;
-
 Species interactions, mutualism, nectarivory, frugivory, pollination, seed dispersal, databases, networks.
+
 &nbsp;
 
 ### E. Description  
 &nbsp;
-
 This data base includes `r nrow(records)` records of interactions involving the consumption of nectar and fruit by bats, taken from studies carried out from the approach of the diet of bats and plant visitation across the Neotropics (Figure 1). The information came from `r nrow(countries)` countries, from the southwestern United States to northwestern Argentina. We have collected `r nrow(references)` scientific papers carried out over `r max(references$Year) - min(references$Year)` years, in `r nrow(sites)` study locations. The spatial and temporal distribution of the studies is not at all homogeneous.`r countries[1,1]` (`r countries[1,2]`), `r countries[2,1]` (`r countries[2,2]`), `r countries[3,1]` (`r countries[3,2]`) and `r countries[4,1]` (`r countries[4,2]`) are the countries with the most studies during that period (Figure 2A). Likewise, the number of published studies on frugivory and nectarivory were very scarce from the 1950s to the 1970s, having a peak of scientific production from the 1980s to the 2000s (Figure 2B).
 
 &nbsp;
 
-We have recorded `r nrow(records)` interaction events of frugivory (`r interaction_type[1,2]`% of all records) and nectarivory (`r interaction_type[2,2]`%) between `r n_bats` bat species and `r n_plants` plant species. Although most of the information comes from fruit- and nectar-feeding bats, we have also collected data of species with other trophic guilds that occasionally eat fruit or nectar. Likewise, this database includes information mainly on trees and shrubs, although it also contains other forms of life such as vines, herbs, and others. Many of species have no information on successional stage but many of the data cames from Early Successional species (Table 1). We have included information about the interaction strength, nevertheless `r n_weight`% of the reccords have no data, mainly because it was not reported in the paper.
+The most represented interaction events was frugivory (`r interaction_type[1,2]`% of all records) while nectarivory represents (`r interaction_type[2,2]`%). Although most of the information comes from fruit- and nectar-feeding bats, we have also collected data of species with other trophic guilds that occasionally eat fruit or nectar. Likewise, this database includes information mainly on trees and shrubs, although it also contains other forms of life such as vines, herbs, and others. Many of species have no information on successional stage but many of the data came from Early Successional species (Table 1). We have included information about the interaction strength, nevertheless `r n_weight`% of the records have no data, mainly because it was not reported in the paper. Respecting to the Conservation Status, `r sum(batsiucn$Frequency_R[1:3])`% of bat species and `r sum(plantsiucn$Frequency_R[1:4])`% are listed in some category of threat according to the IUCN (Table 2). However, most of plant species (`r plantsiucn$Frequency_R[plantsiucn$Category == "Not Evaluated (NE)"]`%) and some bat species (`r batsiucn$Frequency_R[batsiucn$Category == "Not Evaluated (NE)"]`%) have not been listed in any category. 
 
 &nbsp;
 
-```{r Figure 2, echo=FALSE, fig.align ="center", out.width="100%", fig.pos= "!h", fig.cap="Distribution of the number of studies on frugivory and nectarivory by bats, published by country (A) and throughout the recorded period (B)."}
+The taxonomic scope of this data base encompasses `r n_bats` species and `r n_batg` genera of bats of the family Phyllostomidae, and `r n_plants` species, `r n_plantg` genera and `r n_plantfam` families of plants. The most frequent bat recorded was *`r batrecordsSP[1,1]`*, followed by *`r batrecordsSP[2,1]`* 
+which have also been reported as hyper-dominant species in other community-focused databases [@muylaert2017] as they are cosmopolitan species, widely distributed across the neotropical region [@gardner2008]. Only seven species are responsible for almost `r round(sum(batrecordsSP[1:7,2]))`% of records: *`r batrecordsSP[1,1]`* (`r batrecordsSP[1,2]`%), *`r batrecordsSP[2,1]`* (`r batrecordsSP[2,2]`%), *`r batrecordsSP[3,1]`* (`r batrecordsSP[3,2]`%), *`r batrecordsSP[4,1]`* (`r batrecordsSP[4,2]`%), *`r batrecordsSP[5,1]`* (`r batrecordsSP[5,2]`%), *`r batrecordsSP[6,1]`* (`r batrecordsSP[6,2]`%) and *`r batrecordsSP[6,1]`* (`r batrecordsSP[6,2]`%). In contrast, most of bats species are infrequent, `r sum(batrecordsSP[,2]<=1)` species have a relative frequency $\leq 1$% (Figure 3A). *`r batrecordsSP[78,1]`*, *`r batrecordsSP[79,1]`*,   *`r batrecordsSP[80,1]`*,  *`r batrecordsSP[81,1]`*,  *`r batrecordsSP[82,1]`*,  *`r batrecordsSP[83,1]`*,  *`r batrecordsSP[84,1]`*,  *`r batrecordsSP[85,1]`*,  *`r batrecordsSP[86,1]`*,  *`r batrecordsSP[87,1]`*,  *`r batrecordsSP[88,1]`*,  *`r batrecordsSP[89,1]`*,  *`r batrecordsSP[90,1]`*,  *`r batrecordsSP[91,1]`*,  *`r batrecordsSP[92,1]`* and  *`r batrecordsSP[93,1]`* were the rarest species, representing `r round(sum(batrecordsSP[78:93,2]),2)`% of all records.
+
+&nbsp;
+
+```{r Figure 2, echo=FALSE, fig.align ="center", out.width="100%", fig.pos= "!ht", fig.cap="Distribution of the number of studies on frugivory and nectarivory by bats, published by country (A) and throughout the recorded period (B)."}
 
 knitr::include_graphics("Figures/Figure_2.png")
 
 ```
-&nbsp;
 
 &nbsp;
 
-```{r table 1, echo=FALSE,  message=FALSE, warning=FALSE}
-# add the table
+Plants of the genera *`r plantrecordsGN[1,1]`* (`r plantrecordsGN[1,2]`% of the records), *`r plantrecordsGN[2,1]`* (`r plantrecordsGN[2,2]`%), *`r plantrecordsGN[3,1]`* (`r plantrecordsGN[3,2]`%) and *`r plantrecordsGN[4,1]`* (`r plantrecordsGN[4,2]`%) were the most abundant in this data base, as they represent the main feeding resource of bats of the genera *Carollia*, *Artibeus* and *Sturnira*, which also were relatively abundant groups recorded [@fleming1982foraging]. An important quantity of species were Unidentified (`r plantrecordsGN$Frequency[plantrecordsGN$PlantGenus == "Unidentified"]`%) which reflects the hardness of identifying plants from seed samples, which was the principal sampling method used in the studies (Figure 3C). Plants of the genera *`r df <- as.data.frame(plantrecordsGN); paste(df$PlantGenus[135:189], sep = ", ")`* and *`r df$PlantGenus[190]`* were the less represented in this data base, accumulating the `r sum(df$Frequency[135:190])`% of all records. 
+
+&nbsp;
+
+*`r batdegree[1,1]`* (`r batdegree[1,2]` species of plants), *`r batdegree[2,1]`* (`r batdegree[2,2]`), *`r batdegree[3,1]`* (`r batdegree[3,2]`) and *`r batdegree[4,1]`* (`r batdegree[4,2]`) were the species with highest number of interactions as they also were very abundant species (Figure 3B). Most of species of bats `r sum(batdegree$Degree >=5)` interact with at least five species of plants. The species with only one interaction recorded in this database were: *`r df2 <- as.data.frame(batdegree); paste(df2$CurrentBatSpecies[c(73,75:91)], sep = ", ")`* and *`r df2$CurrentBatSpecies[92]`*. 
+
+&nbsp;
+
+On the contrary, most of plants recorded (`r sum(plantdegreeSP$Degree <=5)` species) interact with less than five bat species. *`r plantdegreeSP[1,1]`* (`r plantdegreeSP[1,2]` species), *`r plantdegreeSP[2,1]`* (`r plantdegreeSP[2,2]`) and *`r plantdegreeSP[3,1]`* (`r plantdegreeSP[3,2]`) hold the highest number of interactions. The rest of plant species (`r sum(between(plantdegreeSP$Degree, 6, 16))`) interacts with between 6 and 16 bat species (Figure 3D).
+
+```{r table 1 and 2, echo=FALSE,  message=FALSE, warning=FALSE}
+# add the table 1
 all %>% 
   kableExtra::kbl(booktabs = T, align = "l", caption = "Ecological information of bat and plant species recorded in the NeoBat Interactions database") %>%
   kableExtra::kable_styling(full_width = F, latex_options = "hold_position") %>%
   kableExtra::row_spec(0, bold=T) %>%
   kableExtra::collapse_rows(columns = 1, latex_hline = "major", valign = "middle")
-```
 
-&nbsp;
-
-```{r table 2, echo=FALSE,  message=FALSE, warning=FALSE}
-# add the table
+# add the table 2
 alliucn %>% 
   kableExtra::kbl(booktabs = T, align = "l", caption = "IUCN conservation status of animals and plants species reported in the NeoBat Interactions database") %>%
   kableExtra::kable_styling(full_width = F, latex_options = "hold_position") %>%
@@ -168,22 +173,27 @@ alliucn %>%
   kableExtra::collapse_rows(columns = 1, latex_hline = "major", valign = "middle")
 ```
 
-
-
-```{r fig 3, echo=FALSE, fig.align ="center", out.width="100%", fig.pos= "!t", fig.cap="Ranking of frequency of the 15 most abbundant bat species (A) and plant genera (C). Internal plots represent the number of interaction of the 15 most abbundant species of bats (B) and plants (D)."}
+```{r fig 3, echo=FALSE, fig.align ="center", out.width="100%", fig.pos= "!ht", fig.cap="Ranking of frequency of the 15 most abundant bat species (A) and plant genera (C). Internal plots represent the number  of each one of the 15 species of bats (B) and plants (D) with most interactions recorded in the NeoBat Interaction database"}
 
 knitr::include_graphics("Figures/Figure_3.png")
 ```
 
+&nbsp;
+
+```{r fig 4, echo=FALSE, fig.align ="center", out.width="80%", fig.pos= "!h", fig.cap="Number of interactions holds by plant and bat species according to their ecological traits: Life form of plants (A), Successional stage of plants (B) and Trophic guild of bats (C)"}
+
+knitr::include_graphics("Figures/Figure_4.png")
+```
 
 
-```{r metadata tables, code=readLines("./Code/chunk_2_tables.R"), message=FALSE, warning=FALSE, include=FALSE}
+```{r chunk tables, code=readLines("./Code/chunk_2_tables.R"), message=FALSE, warning=FALSE, include=FALSE}
 ```
 
 
 \clearpage
 \renewcommand{\arraystretch}{1.8}
 ```{r table 3-5, echo=FALSE,  message=FALSE, warning=FALSE}
+
 
 table_3 %>%
   kableExtra::kbl(align = "l", booktabs = F, format = "latex",
@@ -220,9 +230,6 @@ table_5 %>%
   kableExtra::column_spec(4, width = "3.4cm") %>%
   kableExtra::row_spec(0, bold = T)
 ```
-
-&nbsp;
-
 \clearpage
 
 

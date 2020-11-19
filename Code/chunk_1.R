@@ -16,12 +16,25 @@ n_bats <- records %>%
       dplyr::summarise(bats = unique(CurrentBatSpecies)) %>%
       nrow()
 
-# bat records (%)
+# bat records (genera) (%)
 batrecords <- records %>% 
       dplyr::group_by(BatGenus) %>%
       dplyr::summarise(Frequency = n()) %>%
       dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),1)) %>%
       dplyr::arrange(desc(Frequency))
+
+#number of bats genera
+n_batg <- batrecords %>%
+   nrow()
+
+# bat records (species) %
+batrecordsSP <- records %>% 
+   dplyr::group_by(CurrentBatSpecies) %>%
+   dplyr::summarise(Frequency = n()) %>%
+   dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),2)) %>%
+   dplyr::arrange(desc(Frequency))
+
+
 
 # number of species interacting with bat species
 batdegree <- records %>% 
@@ -31,6 +44,7 @@ batdegree <- records %>%
       dplyr::group_by(CurrentBatSpecies) %>%
       dplyr::summarise(Degree = n()) %>%                     
       dplyr::arrange(desc(Degree)) 
+
 
 # number of plant species
 n_plants <- records %>%
@@ -51,6 +65,18 @@ plantrecords <- records %>%
       dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),1)) %>%
       dplyr::arrange(desc(Frequency))
 
+# plant genera records (%)
+plantrecordsGN <- records %>% 
+   dplyr::group_by(PlantGenus) %>%
+   dplyr::summarise(Frequency = n()) %>%
+   dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),2)) %>%
+   dplyr::arrange(desc(Frequency))
+
+# Number of plants genera
+n_plantg <- plantrecordsGN %>%
+   dplyr::filter(!PlantGenus == "Unidentified") %>%
+   nrow()
+
 # number of species interacting with plant genera
 plantdegree <-records %>% 
       dplyr::filter(!PlantGenus == "Unidentified") %>%
@@ -59,6 +85,17 @@ plantdegree <-records %>%
       dplyr::group_by(PlantGenus) %>%
       dplyr::summarise(Degree = n()) %>%                     
       dplyr::arrange(desc(Degree))
+
+# number of species interacting with plant species
+plantdegreeSP <-records %>% 
+   dplyr::filter(!PlantGenus == "Unidentified") %>%
+   dplyr::group_by(CurrentBatSpecies, CurrentPlantSpecies) %>%
+   dplyr::summarise(Frequency = n()) %>%                 
+   dplyr::group_by(CurrentPlantSpecies) %>%
+   dplyr::summarise(Degree = n()) %>%                     
+   dplyr::arrange(desc(Degree))
+
+
 
 # type of interactions
 interaction_type <- records %>% 

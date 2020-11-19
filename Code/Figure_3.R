@@ -49,6 +49,7 @@ head(records)
 batrecords <- records %>% 
       dplyr::group_by(CurrentBatSpecies) %>%
       dplyr::summarise(Frequency = n()) %>%
+      dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),1)) %>%
       dplyr::arrange(desc(Frequency))
 
 # Check the data
@@ -101,6 +102,7 @@ batdegree15$Bat
 plantrecords <- records %>% 
       dplyr::group_by(PlantGenus) %>%
       dplyr::summarise(Frequency = n()) %>%
+      dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),1)) %>%
       dplyr::arrange(desc(Frequency))
 
 # Check the data
@@ -150,8 +152,8 @@ plantdegree15$Plant
 g1 <- ggplot(batrecords15, aes(x = reorder(names, -Frequency), y = Frequency)) +
       geom_bar(stat = "identity", color = "Black", fill = "#C59F00") +
       theme_bw() + 
-      ylim(c(0,450)) +
-      labs(x = " ", y = "Absolute frequency") +
+      ylim(c(0,20)) +
+      labs(x = " ", y = "Relative frequency (%)") +
       theme(panel.grid = element_blank(),
             axis.text.x = element_text(size = 9, colour = "black",
                                        face = "italic", angle = 80,
@@ -187,8 +189,8 @@ g2 <- ggplot(plantrecords15, aes(x = reorder(PlantGenus, -Frequency),
                                  y = Frequency)) +
       geom_bar(stat = "identity", color = "Black", fill = "#980063") +
       theme_bw() + 
-      ylim(c(0,450)) +
-      labs(x = " ", y = "Absolute frequency") + 
+      ylim(c(0,20)) +
+      labs(x = " ", y = "Relative frequency (%)") + 
       theme(panel.grid = element_blank(),
             axis.text.x = element_text(size = 9, colour = "black",
                                        face = "italic", angle = 80,
