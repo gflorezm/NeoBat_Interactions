@@ -8,6 +8,7 @@ library(tidyverse)
 library(kableExtra)
 library(tinytex)
 library(magrittr)
+library(knitr)
 
 records <- read.csv("./Data/NeoBat_Interactions_Records.csv")
 references <- read.csv("./Data/NeoBat_Interactions_References.csv")

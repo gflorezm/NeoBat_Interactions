@@ -77,7 +77,7 @@ In the present data paper, we compiled a georeferenced database of `r nrow(recor
 <!-- Guillermo, será que você errou de figura aqui? O mapa contém pontos amarelos e roxos, e não apenas roxos como diz a legenda. -->
 
 
-```{r Figure 1, echo=FALSE, out.width="90%", fig.align ="center", fig.pos = "!t", fig.cap="Distribution of sampling sites included in NeoBat Interactions. Purple dots show the location of original studies reporting bat-plant interactions. White lines show country borders. We included only studies with records of bat-plant interactions that were confirmed either by indirect or direct observation."}
+```{r Figure 1, echo=FALSE, out.width="90%", fig.align ="center", fig.pos = "!t", fig.cap="Distribution of sampling sites included in NeoBat Interactions. Dots show the location of original studies focused on plant visitation (purple) and bat diet (yellow). White lines show country borders. We included only studies with records of bat-plant interactions that were confirmed either by indirect or direct observation."}
 
 knitr::include_graphics("Figures/Figure_1.png")
 

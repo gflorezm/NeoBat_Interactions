@@ -68,7 +68,7 @@ table_4 <- data.frame(
             
             "Meters above sea level reported in the reference paper.",
             
-            "Meters above sea level, from the Hydro-1K dataset (United States Geological Survey – USGS, 2001. Global 30 arc-seconds Elevation (GTOPO30).",
+            "Meters above sea level, from the Hydro-1K dataset (United States Geological Survey-USGS, 2001. Global 30 arc-seconds Elevation (GTOPO30).",
             
             "Annual Rainfall in mm from WorldClim 2.0 with 30 arc seconds resolution.",
             

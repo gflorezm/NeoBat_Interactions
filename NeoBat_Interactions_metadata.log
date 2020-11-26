@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.4)  19 NOV 2020 17:09
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.4)  20 NOV 2020 15:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1078,49 +1078,49 @@ File: Figures/Figure_4.png Graphic file (type bmp)
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [7] [8] [9]
-Overfull \hbox (6.23627pt too wide) in paragraph at lines 542--555
+Overfull \hbox (6.23627pt too wide) in paragraph at lines 546--559
  [][] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 557--562
+Overfull \hbox (6.23627pt too wide) in alignment at lines 561--566
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 562--567
+Overfull \hbox (6.23627pt too wide) in alignment at lines 566--571
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 567--607
+Overfull \hbox (6.23627pt too wide) in alignment at lines 571--611
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 607--620
+Overfull \hbox (6.23627pt too wide) in alignment at lines 611--624
  [] [] [] [] 
  []
 
 [10
 
 ] [11] [12] [13] [14]
-Overfull \hbox (6.23627pt too wide) in alignment at lines 622--627
+Overfull \hbox (6.23627pt too wide) in alignment at lines 626--631
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 627--632
+Overfull \hbox (6.23627pt too wide) in alignment at lines 631--636
  [] [] [] [] 
  []
 
 
-Overfull \hbox (4.07175pt too wide) in paragraph at lines 653--653
+Overfull \hbox (4.07175pt too wide) in paragraph at lines 657--657
 []|\TU/lmr/m/n/10 CurrentPlantSpecies|  
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 632--663
+Overfull \hbox (6.23627pt too wide) in alignment at lines 636--667
  [] [] [] [] 
  []
 
@@ -1138,7 +1138,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  19237 strings out of 479393
  339925 string characters out of 5877970
- 847491 words of memory out of 5000000
+ 847511 words of memory out of 5000000
  38323 multiletter control sequences out of 15000+600000
  541621 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
