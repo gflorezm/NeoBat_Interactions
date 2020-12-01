@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.4)  20 NOV 2020 15:14
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.4)  1 DEC 2020 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1072,55 +1072,56 @@ File: Figures/Figure_2.png Graphic file (type bmp)
 [6]
 File: Figures/Figure_3.png Graphic file (type bmp)
 <Figures/Figure_3.png>
+[7]
 File: Figures/Figure_4.png Graphic file (type bmp)
 <Figures/Figure_4.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] [8] [9]
-Overfull \hbox (6.23627pt too wide) in paragraph at lines 546--559
+[8] [9]
+Overfull \hbox (6.23627pt too wide) in paragraph at lines 565--578
  [][] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 561--566
+Overfull \hbox (6.23627pt too wide) in alignment at lines 580--585
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 566--571
+Overfull \hbox (6.23627pt too wide) in alignment at lines 585--590
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 571--611
+Overfull \hbox (6.23627pt too wide) in alignment at lines 590--630
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 611--624
+Overfull \hbox (6.23627pt too wide) in alignment at lines 630--643
  [] [] [] [] 
  []
 
 [10
 
 ] [11] [12] [13] [14]
-Overfull \hbox (6.23627pt too wide) in alignment at lines 626--631
+Overfull \hbox (6.23627pt too wide) in alignment at lines 645--650
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 631--636
+Overfull \hbox (6.23627pt too wide) in alignment at lines 650--655
  [] [] [] [] 
  []
 
 
-Overfull \hbox (4.07175pt too wide) in paragraph at lines 657--657
+Overfull \hbox (4.07175pt too wide) in paragraph at lines 676--676
 []|\TU/lmr/m/n/10 CurrentPlantSpecies|  
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 636--667
+Overfull \hbox (6.23627pt too wide) in alignment at lines 655--686
  [] [] [] [] 
  []
 

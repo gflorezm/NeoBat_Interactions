@@ -206,3 +206,52 @@ batsiucn <- bats_iucn %>%
 alliucn <- rbind(plantsiucn, batsiucn)
 names(alliucn) <- c("Group", "IUCN Status", "Number of species", "%")
 
+
+# Mean and range of the number of interactions by life form 
+
+intlifeform <- records %>%
+   dplyr::filter(!is.na(LifeForm)) %>%
+   dplyr::group_by(CurrentPlantSpecies,CurrentBatSpecies, 
+                   LifeForm, Interaction) %>%
+   dplyr::summarise() %>%
+   dplyr::group_by(CurrentPlantSpecies, LifeForm, Interaction) %>%
+   dplyr::summarise(N_interactions = n()) %>%
+   dplyr::group_by(LifeForm, Interaction) %>%
+   dplyr::summarise(N = n(),
+                    Mean = round(mean(N_interactions)),
+                    Min = round(min(N_interactions)),
+                    Max = round(max(N_interactions))) %>%
+   dplyr::arrange(LifeForm, Interaction)
+
+# Mean and range of the number of interactions by successional stage
+
+intsstage <- records %>%
+   dplyr::filter(!is.na(SuccessionalStage)) %>%
+   dplyr::group_by(CurrentPlantSpecies,CurrentBatSpecies, 
+                   SuccessionalStage, Interaction) %>%
+   dplyr::summarise() %>%
+   dplyr::group_by(CurrentPlantSpecies, SuccessionalStage, Interaction) %>%
+   dplyr::summarise(N_interactions = n()) %>%
+   dplyr::group_by(SuccessionalStage, Interaction) %>%
+   dplyr::summarise(N = n(),
+                    Mean = round(mean(N_interactions)),
+                    Min = round(min(N_interactions)),
+                    Max = round(max(N_interactions))) %>%
+   dplyr::arrange(SuccessionalStage, Interaction)
+
+#and range of the number of interactions by bat guild
+
+intbatguild <- records %>%
+   dplyr::filter(!is.na(TrophicGuild)) %>%
+   dplyr::group_by(CurrentPlantSpecies,CurrentBatSpecies, 
+                   TrophicGuild, Interaction) %>%
+   dplyr::summarise() %>%
+   dplyr::group_by(CurrentBatSpecies, TrophicGuild, Interaction) %>%
+   dplyr::summarise(N_interactions = n()) %>%
+   dplyr::group_by(TrophicGuild, Interaction) %>%
+   dplyr::summarise(N = n(),
+                    Mean = round(mean(N_interactions)),
+                    Min = round(min(N_interactions)),
+                    Max = round(max(N_interactions))) %>%
+   dplyr::arrange(TrophicGuild, Interaction)
+   

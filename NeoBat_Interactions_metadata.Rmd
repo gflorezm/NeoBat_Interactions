@@ -189,6 +189,16 @@ knitr::include_graphics("Figures/Figure_3.png")
 
 &nbsp;
 
+&nbsp;
+
+&nbsp;
+
+&nbsp;
+
+Each species of plant interact with a relatively low number of bat species ($\bar{x} = `r round(mean(intlifeform$Mean))`$). Nevertheless, most of species of trees hold the a large number of interactions of frugivory and the largest number of nectarivory. Shrubs are the second life form holding the largest number of interacting species, mainly of frugivory and in very few number of nectarivory. Despite trees and shrubs are the life form of plants with most number of records, this data set also includes information of nectarivory and frugivory of vines, succulents (Cactaceae) and palm-trees (Figure 4A). On the other side, early successional plants hold most of frugivory interactions, interacting 
+
+&nbsp;
+
 ```{r fig 4, echo=FALSE, fig.align ="center", out.width="80%", fig.pos= "!h", fig.cap="Number of interactions holds by plant and bat species according to their ecological traits: Life form of plants (A), Successional stage of plants (B) and Trophic guild of bats (C)"}
 
 knitr::include_graphics("Figures/Figure_4.png")
