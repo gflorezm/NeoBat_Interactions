@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.4)  1 DEC 2020 13:13
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.11.4)  8 JAN 2021 17:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1078,71 +1078,73 @@ File: Figures/Figure_4.png Graphic file (type bmp)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8] [9]
-Overfull \hbox (6.23627pt too wide) in paragraph at lines 565--578
+[8] [9] [10
+
+]
+Overfull \hbox (6.23627pt too wide) in paragraph at lines 582--595
  [][] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 580--585
+Overfull \hbox (6.23627pt too wide) in alignment at lines 597--602
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 585--590
+Overfull \hbox (6.23627pt too wide) in alignment at lines 602--607
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 590--630
+Overfull \hbox (6.23627pt too wide) in alignment at lines 607--647
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 630--643
+Overfull \hbox (6.23627pt too wide) in alignment at lines 647--660
  [] [] [] [] 
  []
 
-[10
+[11
 
-] [11] [12] [13] [14]
-Overfull \hbox (6.23627pt too wide) in alignment at lines 645--650
- [] [] [] [] 
- []
-
-
-Overfull \hbox (6.23627pt too wide) in alignment at lines 650--655
+] [12] [13] [14] [15]
+Overfull \hbox (6.23627pt too wide) in alignment at lines 662--667
  [] [] [] [] 
  []
 
 
-Overfull \hbox (4.07175pt too wide) in paragraph at lines 676--676
+Overfull \hbox (6.23627pt too wide) in alignment at lines 667--672
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (4.07175pt too wide) in paragraph at lines 693--693
 []|\TU/lmr/m/n/10 CurrentPlantSpecies|  
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 655--686
+Overfull \hbox (6.23627pt too wide) in alignment at lines 672--703
  [] [] [] [] 
  []
 
-[15] [16] [17]
+[16] [17] [18]
 No file NeoBat_Interactions_metadata.bbl.
-[18
+[19
 
 
 
-] [19] (./NeoBat_Interactions_metadata.aux)
+] [20] (./NeoBat_Interactions_metadata.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19237 strings out of 479393
- 339925 string characters out of 5877970
- 847511 words of memory out of 5000000
- 38323 multiletter control sequences out of 15000+600000
+ 19239 strings out of 479393
+ 339970 string characters out of 5877970
+ 847703 words of memory out of 5000000
+ 38325 multiletter control sequences out of 15000+600000
  541621 words of font info for 80 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,11n,118p,524b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on NeoBat_Interactions_metadata.pdf (19 pages).
+Output written on NeoBat_Interactions_metadata.pdf (20 pages).

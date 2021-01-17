@@ -195,15 +195,23 @@ knitr::include_graphics("Figures/Figure_3.png")
 
 &nbsp;
 
-Each species of plant interact with a relatively low number of bat species ($\bar{x} = `r round(mean(intlifeform$Mean))`$). Nevertheless, most of species of trees hold the a large number of interactions of frugivory and the largest number of nectarivory. Shrubs are the second life form holding the largest number of interacting species, mainly of frugivory and in very few number of nectarivory. Despite trees and shrubs are the life form of plants with most number of records, this data set also includes information of nectarivory and frugivory of vines, succulents (Cactaceae) and palm-trees (Figure 4A). On the other side, early successional plants hold most of frugivory interactions, interacting 
+Each species of plant interact with a relatively low number of bat species and the range of the number of interactions varies considerably ($\bar{x} = `r round(mean(intlifeform$Mean))`$, range = 1 - `r max(intlifeform$Max)`). Most of species of trees hold the a large number of interactions of frugivory (`r intlifeform[9,3]` species, range = `r intlifeform[9,5]` - `r intlifeform[9,6]` interactions) and the largest number of nectarivory (`r intlifeform[10,3]` species, range = `r intlifeform[10,5]` - `r intlifeform[10,6]` interactions). A large number of shrubs (`r intlifeform[5,3]` species) holds interactions of frugivory (range = `r intlifeform[5,5]` - `r intlifeform[5,6]` interactions), and a very small number of species (`r intlifeform[6,3]`) of nectarivory (range = `r intlifeform[6,5]` - `r intlifeform[6,6]` interactions). Despite trees and shrubs are the life form of plants with most number of records, this data set also includes information of nectarivory and frugivory of vines, succulents (Cactaceae) and palm-trees (Figure 4A).
 
 &nbsp;
 
-```{r fig 4, echo=FALSE, fig.align ="center", out.width="80%", fig.pos= "!h", fig.cap="Number of interactions holds by plant and bat species according to their ecological traits: Life form of plants (A), Successional stage of plants (B) and Trophic guild of bats (C)"}
+Most of frugivory interactions come from Early Succesional plants (`r intsstage[1,3]` species), holding interactions with between `r intsstage[1,5]` and `r intsstage[1,6]` bat species while Late Successional plants (`r intsstage[3,3]` species) interact with between `r intsstage[3,5]` and `r intsstage[3,6]` bat species. 
+
+&nbsp;
+
+```{r fig 4, echo=FALSE, fig.align ="center", out.width="80%", fig.pos= "!h", fig.cap = "Number of interactions holds by plant and bat species according to their ecological traits: A) Life form of plants, B) Successional stage of plants and C) Trophic guild of bats. Each violet point on A and B represents one plant species, each yellow point on C represents one bat species."}
 
 knitr::include_graphics("Figures/Figure_4.png")
 ```
 
+\clearpage
+
+## CLASS II. RESEARCH ORIGIN DESCRIPTORS
+&nbsp;
 
 ```{r chunk tables, code=readLines("./Code/chunk_2_tables.R"), message=FALSE, warning=FALSE, include=FALSE}
 ```

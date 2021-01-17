@@ -4,6 +4,7 @@
 #####
 ################################################################################
 
+## load the packages ####
 library(tidyverse)
 library(kableExtra)
 library(tinytex)
@@ -14,23 +15,23 @@ records <- read.csv("./Data/NeoBat_Interactions_Records.csv")
 references <- read.csv("./Data/NeoBat_Interactions_References.csv")
 sites <- read.csv("./Data/NeoBat_Interactions_Sites.csv")
 
-# number of bats species
+## number of bats species ####
 n_bats <- records %>%
       dplyr::summarise(bats = unique(CurrentBatSpecies)) %>%
       nrow()
 
-# bat records (genera) (%)
+## bat records (genera) (%) ####
 batrecords <- records %>% 
       dplyr::group_by(BatGenus) %>%
       dplyr::summarise(Frequency = n()) %>%
       dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),1)) %>%
       dplyr::arrange(desc(Frequency))
 
-#number of bats genera
+## number of bats genera ####
 n_batg <- batrecords %>%
    nrow()
 
-# bat records (species) %
+## bat records (species) % ####
 batrecordsSP <- records %>% 
    dplyr::group_by(CurrentBatSpecies) %>%
    dplyr::summarise(Frequency = n()) %>%
@@ -39,7 +40,7 @@ batrecordsSP <- records %>%
 
 
 
-# number of species interacting with bat species
+## number of species interacting with bat species ####
 batdegree <- records %>% 
       dplyr::filter(!PlantGenus == "Unidentified") %>%
       dplyr::group_by(CurrentBatSpecies, CurrentPlantSpecies) %>%
@@ -49,38 +50,38 @@ batdegree <- records %>%
       dplyr::arrange(desc(Degree)) 
 
 
-# number of plant species
+## number of plant species ####
 n_plants <- records %>%
       dplyr::filter(!PlantGenus == "Unidentified") %>%
       dplyr::summarise(plants = unique(CurrentPlantSpecies)) %>%
       nrow()
 
-# number of plant families
+## number of plant families ####
 n_plantfam <-  records %>%
       dplyr::filter(!PlantGenus == "Unidentified") %>%
       dplyr::summarise(plants = unique(PlantFamily)) %>%
       nrow()
 
-# plant family records (%)
+## plant family records (%) ####
 plantrecords <- records %>% 
       dplyr::group_by(PlantFamily) %>%
       dplyr::summarise(Frequency = n()) %>%
       dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),1)) %>%
       dplyr::arrange(desc(Frequency))
 
-# plant genera records (%)
+## plant genera records (%) #####
 plantrecordsGN <- records %>% 
    dplyr::group_by(PlantGenus) %>%
    dplyr::summarise(Frequency = n()) %>%
    dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),2)) %>%
    dplyr::arrange(desc(Frequency))
 
-# Number of plants genera
+## Number of plants genera ####
 n_plantg <- plantrecordsGN %>%
    dplyr::filter(!PlantGenus == "Unidentified") %>%
    nrow()
 
-# number of species interacting with plant genera
+## number of species interacting with plant genera ####
 plantdegree <-records %>% 
       dplyr::filter(!PlantGenus == "Unidentified") %>%
       dplyr::group_by(CurrentBatSpecies, PlantGenus) %>%
@@ -89,7 +90,7 @@ plantdegree <-records %>%
       dplyr::summarise(Degree = n()) %>%                     
       dplyr::arrange(desc(Degree))
 
-# number of species interacting with plant species
+## number of species interacting with plant species ####
 plantdegreeSP <-records %>% 
    dplyr::filter(!PlantGenus == "Unidentified") %>%
    dplyr::group_by(CurrentBatSpecies, CurrentPlantSpecies) %>%
@@ -100,28 +101,28 @@ plantdegreeSP <-records %>%
 
 
 
-# type of interactions
+## type of interactions ####
 interaction_type <- records %>% 
       dplyr::group_by(Interaction) %>%
       dplyr::summarise(Frequency = n()) %>%
       dplyr::mutate(Frequency = round(100*(Frequency/sum(Frequency)),1)) %>%
       dplyr::arrange(desc(Frequency))
 
-# Countries
+## Countries ####
 countries <- sites %>% 
       dplyr::group_by(Country) %>%
       dplyr::summarise(Frequency = n()) %>%
       dplyr::mutate(Frequency_R = 100*(Frequency/sum(Frequency))) %>%
       dplyr::arrange(desc(Frequency))
 
-# % of the number of records with information of the strength of the interaction
+## % of the number of records with information of the strength of the interaction ####
 n_weight <- round(100*(sum(!is.na(records$Weight))/nrow(records)),1)
 
 
 
 ################################################################################
 #####
-##### TABLE 1
+##### TABLE 1 ####
 #####
 ################################################################################
 
@@ -172,7 +173,7 @@ all <- rbind(batguilds, sstage, lifeform)
 
 ################################################################################
 #####
-##### TABLE 2
+##### TABLE 2 ####
 #####
 ################################################################################
 
@@ -207,7 +208,7 @@ alliucn <- rbind(plantsiucn, batsiucn)
 names(alliucn) <- c("Group", "IUCN Status", "Number of species", "%")
 
 
-# Mean and range of the number of interactions by life form 
+## Mean and range of the number of interactions by life form  ####
 
 intlifeform <- records %>%
    dplyr::filter(!is.na(LifeForm)) %>%
@@ -223,7 +224,7 @@ intlifeform <- records %>%
                     Max = round(max(N_interactions))) %>%
    dplyr::arrange(LifeForm, Interaction)
 
-# Mean and range of the number of interactions by successional stage
+## Mean and range of the number of interactions by successional stage ####
 
 intsstage <- records %>%
    dplyr::filter(!is.na(SuccessionalStage)) %>%
@@ -239,7 +240,7 @@ intsstage <- records %>%
                     Max = round(max(N_interactions))) %>%
    dplyr::arrange(SuccessionalStage, Interaction)
 
-#and range of the number of interactions by bat guild
+## Mean and range of the number of interactions by bat guild ####
 
 intbatguild <- records %>%
    dplyr::filter(!is.na(TrophicGuild)) %>%
