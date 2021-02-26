@@ -64,15 +64,15 @@ table_4 <- data.frame(
             
             "Ecological region according to Olson et al. (2001).",
             
-            "Phytogeographic domain according to NatureServe (2013) and Oliveira-Filho (2017).",
+            "Phytogeographic domain according to Oliveira-Filho (2017).",
             
             "Meters above sea level reported in the reference paper.",
             
             "Meters above sea level, from the Hydro-1K dataset (United States Geological Survey-USGS, 2001. Global 30 arc-seconds Elevation (GTOPO30).",
             
-            "Annual Rainfall in mm from WorldClim 2.0 with 30 arc seconds resolution.",
+            "Annual Rainfall in mm from WorldClim 2.0 with 30 arc seconds resolution (Fick and Hijmans 2017).",
             
-            "Mean annual temperature in Celsius degrees from WorldClim 2.0 with 30 arc seconds resolution.",
+            "Mean annual temperature in Celsius degrees from WorldClim 2.0 with 30 arc seconds resolution (Fick and Hijmans 2017).",
             
             "Global Potential Evapo-Transpiration (annual average in mm) from CGIAR-CSI (Trabucco and Zomer 2009), with resolution of 30 arc seconds.",
             

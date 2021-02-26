@@ -255,4 +255,16 @@ intbatguild <- records %>%
                     Min = round(min(N_interactions)),
                     Max = round(max(N_interactions))) %>%
    dplyr::arrange(TrophicGuild, Interaction)
-   
+
+
+## Number of unidentified plant families, genera and species ####
+
+unidfam <- records %>% 
+   dplyr::filter(PlantFamily == "Unidentified") %>%
+   nrow()
+
+unidgen <- records %>% 
+   dplyr::filter(PlantGenus == "Unidentified") %>%
+   nrow()
+
+unidsp <- sum(grepl("sp.", records$CurrentPlantSpecies))
