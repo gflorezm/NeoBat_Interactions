@@ -273,24 +273,143 @@ We also have identified some of the shortfalls in large-scale knowledge about ba
 
 &nbsp;
 
-**Wallacean Shortfall:** The lack of information about geographic distribution of species is a worldwide issue [@lomolino2004]. Despite the increasing effort to sample animals and plants separately, it is not adequate to fill out this shortfall when referred to ecological interactions. Infer ecological interactions only by co-occurrence data is not correct since that interactions can be conditioned by another kind of biotic and abiotic processes, more than the simple presence of the two species at a local scale [@Blanchet2020co]. In this database we have only compiled verified interactions however it is clear the existence of a large gap in sampling and publishing information on bat-plant interactions in the region (Figure 2A), which makes it even harder to understand the geographic distribution of such interactions.
+**Wallacean Shortfall:** The lack of information about geographic distribution of species is a worldwide issue [@lomolino2004]. Despite the increasing effort to sample animals and plants separately, it is not adequate to fill out this shortfall when referred to ecological interactions. Infer ecological interactions only by co-occurrence data is not correct since that interactions can be conditioned by another kind of biotic and abiotic processes, more than the simple presence of the two species at a local scale [@Blanchet2020co]. In this database we have only compiled verified interactions however it is clear the existence of a large gap in sampling and publishing information on bat-plant interactions in the region (Figure 1). There is likely a large amount of gray literature on bat-plant interactions in different universities and research centers in the region. However, this information is not digitally available or has usage restrictions, which makes it even harder to fill the gaps and understand the geographic distribution of such interactions.
 
 &nbsp;
 
-**Prestonian Shortfall:** This shortfall concerns to the gap in knowledge about the abundance of species [@cardoso2011seven]. 
+**Prestonian Shortfall:** This shortfall concerns to the gap in knowledge about the abundance of species [@cardoso2011seven]. Most of papers compiled in this database (`r 100-n_weight`% of records) provide information on the presence of each interaction but no abundance data. Quantifying the strength of ecological interactions allows to acquire insights on the complex structure of mutualistic networks that could not be obtained from binary data of presence and absence [@bascompte2007plant]. Due to the variety of sampling methods used, quantifying the abundance of bat-plant interactions in a comparable way can be a difficult task. Studies on bat diet where samples of pollen or feces are taken directly from the animal body generally report the strength of the interaction as the number of samples in which pollen or seeds of each plant species were present. However, in many cases, the authors do not report the number of fecal samples collected by species, and others only report the number of seeds obtained in the total samples of each species of bat. Studies on plant visitation usually report the number of visits of each species of bats to each plant, and in some cases, they only report the duration of flower visits or even the number of flowers visited. Despite being useful for analyzing aspects of the autecology of species, much of these data are not useful for quantifying the strength of ecological interactions. Then, collecting and reporting data to calculate the frequency of interactions between pairs of species as a proxy for the strength of the interaction could be an option to overcome this shortfall [@vasquez2005frequency].
+
+&nbsp;
+
+**Eltonian Shortfall:** It refers to the lack of information about interactions among species [@hortal2015seven]. We have extended the definition of this shortfall as the lack of verification about the type of interaction that takes place between a pair of species. Roughly we tend to assume that frugivory necessarily implies seed dispersal, and nectarivory involves pollination. We even tend to define both as mutualistic interactions, but both assumptions are imprecise and unclear without an appropriate endorsement. Ecological interactions are not static in time and space. The effect of one species on the population dynamics of another can be modulated by internal factors such as population densities, and external factors such as environmental conditions [@hernandez1998dynamics]. This conditional effect enables a context-dependent transition from mutualisms to antagonisms under variable environments. Overcoming this shortfall for bat-plant interactions requires considerable effort. Frugivory only can be assumed as a mutualism if the balance between seed destruction and germination rate after passing through the animal's gut results in a demographic gain for the plant [@Genrich2017duality]. In the same way, it is necessary to quantify the benefit in terms of fruit production, the genetic variability of the propagules, or the dispersal distance of pollen to establish that the nectarivory represents a mutualistic interaction [@Flemingetal2009evolution].
+
+&nbsp;
+
+This database has allowed us to identify the need to increase the effort in systematic, long-term studies on bat-plant interactions. As well as the incomporation of quantitative information about the frequency of the interactions, and new techniques that improve the taxonomic precision in the identification of the species. We suggest using this database with caution in defining such interactions as mutualists and assuming the possible biases arising from the shortfalls mentioned above.
 
 &nbsp;
 
 ## CLASS III. DATA SET STATUS AND ACCESSIBILITY
-
 &nbsp;
 
 ### A. Status
+
+>**Latest update:** October 2020.
+&nbsp;
+
+>**Latest archive date:** October 2020.
+&nbsp;
+
+>**Metadata status:** Last updated January 2021, version submitted.
+&nbsp;
+
+>**Data verification:** Datawas compiled as is in the pubished sources. We corrected transcription errors, checked the geographic coordinates of records, and homogenized the taxonomic information.
+&nbsp;
+
+### B. Accessibility
+
+>**Contact person:** Guillermo Florez-Montero (gflorezmontero@gmail.com) or Marco Mello (marmello@usp.br).
+
+>**Download link:** https://github.com/gflorezm/NeoBat_Interactions
+&nbsp;
+
+>**Copyright restrictions:** None.
+&nbsp;
+
+>**Proprietary restrictions:** Please cite this *Ecology* data paper when the data are used in publications or teaching events.
+&nbsp;
+
+>**Costs:** None.
+
+&nbsp;
+
+## CLASS IV. DATA STRUCTURAL DESCRIPTORS
+&nbsp;
+
+### A. Data set file
+
+>**Identity:**
+>
+>(1) NeoBat_Interactions_References.csv
+>
+>(2) NeoBat_Interactions_Sites.csv
+>
+>(3) NeoBat_Interactions_Records.csv
+&nbsp;
+
+>**Size:**
+>
+>(1) NeoBat_Interactions_References.csv, 168 references, 34.9 KB
+>
+>(2) NeoBat_Interactions_Sites.csv, 200 study sites, 49.4 KB
+>
+>(3) NeoBat_Interactions_Records.csv, 2571 records, 402.3 KB
+&nbsp;
+
+>**Format and storage mode:** Data frames as comma-separated values (.csv)
+&nbsp;
+
+>**Alphanumeric attributes:** Mixed
+&nbsp;
+
+>**Data anomalies:** If no information is available for any cell, this is indicated as 'NA'.
+&nbsp;
+
+### B. Variable information
+
+>Table 3. References informatio
+>
+>Table 4. Study sites information
+>
+>Table 5. Interaction records information
+
+
+\clearpage
+
+## CLASS V. SUPPLEMENTAL DESCRIPTORS
+&nbsp;
+
+### A. Data acquisition
+
+>**1. Data request history:** None
+>
+>**2. Data set updates history:** None
+>
+>**3. Data entry/verification procedures**
+&nbsp;
+
+### G. History of data set usage
+
+> The data were used in the following studies, in chronological order:
+&nbsp;
+
+>1.	Mello, M. A. R., F. M. D. Marquitti, P. R. Guimarães Jr., E. K. V. Kalko, P. Jordano, M. A. M. de Aguiar, and P. R. Guimaraes. 2011. The missing part of seed dispersal networks: structure and robustness of bat-fruit interactions. PLoS One 6: e17395.
+>
+>2.	Mello, M. A. R., F. M. D. Marquitti, P. R. Guimarães, E. K. V. Kalko, P. Jordano, and M. A. M. de Aguiar. 2011. The modularity of seed dispersal: differences in structure and robustness between bat– and bird–fruit networks. Oecologia 167: 131–140.
+>
+3.	Sarmento, R., C. P. Alves-Costa, A. Ayub, and M. A. R. Mello. 2014. Partitioning of seed dispersal services between birds and bats in a fragment of the Brazilian Atlantic Forest. Zoologia 31: 245–255.
+>
+4.	Mello, M. A. R., F. A. Rodrigues, L. da F. Costa, W. D. Kissling, Ç. H. Şekercioğlu, F. M. D. Marquitti, and E. K. V. Kalko. 2015. Keystone species in seed dispersal networks are mainly determined by dietary specialization. Oikos 124: 1031–1039.
+>
+5.	Mello, M. A. R., G. M. Felix, R. B. P. Pinheiro, R. L. Muylaert, C. Geiselman, S. E. Santana, M. Tschapka, N. Lotfi, F. A. Rodrigues, and R. D. Stevens. 2019. Insights into the assembly rules of a continent-wide multilayer network. Nat. Ecol. Evol. 3: 1525–1532.
+
+&nbsp;
+
+## ACKNOWLEDGMENTS
+
+&nbsp;
+
+Firstly, we thank Prof. Mauro Galetti and Prof. Milton Ribeiro, from the State University of São Paulo, Brazil, who started the Atlantic Series of data papers and inspired our entire community to take their data out of their drawers. Our labmates and colleagues helped us at different stages of this project. Our sponsors, especially the Alexander von Humboldt-Stiftung, CNPq, CAPES, and FAPESP, gave us grants, fellowships, and scholarships. Last, but not least, we thank the Stack Overflow Community, where we solve most of our coding dilemmas.
+
+&nbsp;
 
 ```{r chunk tables, code=readLines("./Code/chunk_2_tables.R"), message=FALSE, warning=FALSE, include=FALSE}
 ```
 
 \clearpage
+
+## TABLES
+
 \renewcommand{\arraystretch}{1.8}
 ```{r table 3-5, echo=FALSE,  message=FALSE, warning=FALSE}
 

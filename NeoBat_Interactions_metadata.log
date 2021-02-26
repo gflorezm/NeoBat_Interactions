@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.1.17)  25 FEB 2021 12:04
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.1.17)  26 FEB 2021 10:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1088,73 +1088,75 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 ] [11] [12]
 File: Figures/Figure_5.png Graphic file (type bmp)
 <Figures/Figure_5.png>
-[13] [14]
-Overfull \hbox (6.23627pt too wide) in paragraph at lines 903--916
+[13] [14] [15] [16] [17
+
+]
+Overfull \hbox (6.23627pt too wide) in paragraph at lines 1160--1173
  [][] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 918--923
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1175--1180
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 923--928
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1180--1185
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 928--968
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1185--1225
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 968--981
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1225--1238
  [] [] [] [] 
  []
 
-[15
+[18
 
-] [16] [17] [18] [19]
-Overfull \hbox (6.23627pt too wide) in alignment at lines 983--988
- [] [] [] [] 
- []
-
-
-Overfull \hbox (6.23627pt too wide) in alignment at lines 988--993
+] [19] [20] [21] [22]
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1240--1245
  [] [] [] [] 
  []
 
 
-Overfull \hbox (4.07175pt too wide) in paragraph at lines 1014--1014
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1245--1250
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (4.07175pt too wide) in paragraph at lines 1271--1271
 []|\TU/lmr/m/n/10 CurrentPlantSpecies|  
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 993--1024
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1250--1281
  [] [] [] [] 
  []
 
-[20] [21] [22]
+[23] [24] [25]
 No file NeoBat_Interactions_metadata.bbl.
-[23
+[26
 
 
 
-] [24] [25] [26] [27] [28] [29] [30] [31] [32]
+] [27] [28] [29] [30] [31] [32] [33] [34] [35] [36]
 Missing character: There is no К in font [lmroman10-regular]:mapping=tex-text;!
-[33] [34] [35] (./NeoBat_Interactions_metadata.aux)
+[37] [38] (./NeoBat_Interactions_metadata.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19358 strings out of 479212
- 341970 string characters out of 5873273
- 855191 words of memory out of 5000000
- 38621 multiletter control sequences out of 15000+600000
+ 19376 strings out of 479212
+ 342235 string characters out of 5873273
+ 855606 words of memory out of 5000000
+ 38639 multiletter control sequences out of 15000+600000
  409963 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  98i,11n,122p,524b,541s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on NeoBat_Interactions_metadata.pdf (35 pages).
+Output written on NeoBat_Interactions_metadata.pdf (38 pages).
