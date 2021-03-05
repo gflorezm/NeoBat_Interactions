@@ -4,7 +4,7 @@ Supplement to the data paper Florez-Montero *et al*. (2020, sub.).
 
 [Ecological Synthesis Lab](https://marcomellolab.wordpress.com) (SintECO).
 
-Authors: Guillermo L. Florez-Montero, Cullen Geiselman, Marcelo R. Nogueira, Renata de Lara Muylaert, Sharlene E. Santana, Richard D. Stevens, Marco Tschapka, Francisco A. Rodrigues, Marco A. R. Mello.
+Authors: Guillermo L. Florez-Montero, Cullen Geiselman, Marcelo R. Nogueira, Renata L. Muylaert, Sharlene E. Santana, Richard D. Stevens, Marco Tschapka, Francisco A. Rodrigues, Marco A. R. Mello.
 
 E-mail: gflorezmontero@gmail.com. 
 
