@@ -1,6 +1,6 @@
 # NeoBat_Interactions - Supplement
 
-Supplement to the data paper Florez-Montero *et al*. (2020, sub.).
+Supplements to the data paper Florez-Montero *et al*. (2020, sub.).
 
 [Ecological Synthesis Lab](https://marcomellolab.wordpress.com) (SintECO).
 
@@ -28,7 +28,7 @@ The data, scripts, and functions provided here aim at making or data paper fully
     
     b. NeoBat_Interactions_Records.csv -> data set with interaction records.
 
-    c. NeoBat_Interactions_References.csv - > data set with full references of the source studies.
+    c. NeoBat_Interactions_References.csv -> data set with full references of the source studies.
     
 
 2. Figures (folder)
@@ -74,10 +74,10 @@ If you have any questions, corrections, or suggestions, please feel free to open
 
 ## Acknowledgments
 
-Firstly, we thank Prof. Mauro Galetti and Prof. Milton Ribeiro, from the State University of São Paulo, Brazil, who started the [Atlantic Series of data papers](https://esajournals.onlinelibrary.wiley.com/doi/toc/10.1002/(ISSN)1939-9170.AtlanticPapers) and inspired our entire community to take their data out of their drawers. Our labmates and colleagues helped us at different stages of this project. Our sponsors, especially the Alexander von Humboldt-Stiftung, CNPq, CAPES, and FAPESP, gave us grants, fellowships, and scholarships. Last, but not least, we thank the [Stack Overflow Community](https://stackoverflow.com), where we solve most of our coding dilemmas.
+Firstly, we thank Prof. Mauro Galetti and Prof. Milton Ribeiro, from the Sao Paulo State University (UNESP), Brazil, who led the [Atlantic Series of data papers](https://esajournals.onlinelibrary.wiley.com/doi/toc/10.1002/(ISSN)1939-9170.AtlanticPapers) and inspired our entire community to take their data out of their drawers. Our labmates and colleagues helped us at different stages of this project. Our sponsors, especially the Alexander von Humboldt-Stiftung, CNPq, CAPES, and FAPESP, gave us grants, fellowships, and scholarships. Last, but not least, we thank the [Stack Overflow Community](https://stackoverflow.com), where we solve most of our coding dilemmas.
 
 
 ## Reference
 
-Guillermo L. Florez-Montero, Cullen Geiselman, Marcelo R. Nogueira, Renata de Lara Muylaert, Sharlene E. Santana, Richard D. Stevens, Marco Tschapka, Francisco A. Rodrigues, Marco A. R. Mello. 2020. NeoBat Interactions: a data set of bat-plant interactions in the Neotropics. *Submitted*.
+Guillermo L. Florez-Montero, Cullen Geiselman, Marcelo R. Nogueira, Renata L. Muylaert, Sharlene E. Santana, Richard D. Stevens, Marco Tschapka, Francisco A. Rodrigues, Marco A. R. Mello. 2020. NeoBat Interactions: a data set of bat-plant interactions in the Neotropics. *Submitted*.
 
