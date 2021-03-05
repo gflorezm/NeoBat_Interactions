@@ -1,10 +1,10 @@
 ################################################################################
 #
 # FIGURE 3 
-# 3.A Abundance of the 15 most abundant bats species
-# 3.B Number of interactions of the 15 most abundant bats species
+# 3.A Abundance of the 15 most abundant bat species
+# 3.B Number of interactions of the 15 most abundant bat species
 # 3.C Abundance of the 15 most abundant plants genus
-# 3.D Number of interactions of the 15 most abundant plants species
+# 3.D Number of interactions of the 15 most abundant plant species
 #
 ################################################################################
 
@@ -25,11 +25,10 @@ rm(list= ls())
 ##### LOAD THE PACKAGES
 ################################################################################
 
-
-library(dplyr)
-library(ggplot2)
-library(tidyr)
-library(cowplot)
+if (!require(dplyr)) install.packages('dplyr')
+if (!require(ggplot2)) install.packages('ggplot2')
+if (!require(tidyr)) install.packages('tidyr')
+if (!require(cowplot)) install.packages('cowplot')
 
 
 ################################################################################
@@ -38,7 +37,7 @@ library(cowplot)
 
 
 # Import the data set with the interaction records
-records <- read.csv("./Data/NeoBat_Interactions_records.csv")
+records <- read.csv("../Data/NeoBat_Interactions_records.csv")
 
 # Check the data
 class(records)
@@ -64,7 +63,7 @@ batrecords15 <- batrecords[1:15,]
 batrecords15
 
 # Load a custom-made function to abbreviate the scientific names
-source("abbr_name.R")
+source("../abbr_name.R")
 
 #Abbreviate the scientific names of bats
 batrecords15$names <- abbr_name(batrecords15$CurrentBatSpecies)
@@ -150,7 +149,7 @@ plantdegree15$Plant
 
 # Plot the bat species abundance
 g1 <- ggplot(batrecords15, aes(x = reorder(names, -Frequency), y = Frequency)) +
-      geom_bar(stat = "identity", color = "Black", fill = "#C59F00") +
+      geom_bar(stat = "identity", color = "Black", fill = "#C59F00", alpha=0.8) +
       theme_bw() + 
       ylim(c(0,20)) +
       labs(x = " ", y = "Relative frequency (%)") +
@@ -168,7 +167,7 @@ g1
 
 # Plot the bat species degree (number of interactions)
 batdp <- ggplot(batdegree15, aes(x = reorder(Bat, Degree), y = Degree)) + 
-      geom_bar(stat = "identity", color = "Black", fill = "#C59F00") +
+      geom_bar(stat = "identity", color = "Black", fill = "#C59F00", alpha=0.8) +
       theme_bw() +
       coord_flip() +
       labs(x = " ", y = "Number of interactions (plant species)") +
@@ -187,7 +186,7 @@ batdp
 # Plot the plant genera abundance
 g2 <- ggplot(plantrecords15, aes(x = reorder(PlantGenus, -Frequency), 
                                  y = Frequency)) +
-      geom_bar(stat = "identity", color = "Black", fill = "#980063") +
+      geom_bar(stat = "identity", color = "Black", fill = "#980063", alpha=0.8) +
       theme_bw() + 
       ylim(c(0,20)) +
       labs(x = " ", y = "Relative frequency (%)") + 
@@ -206,7 +205,7 @@ g2
 
 # Plot the plant species degree (number of interactions)
 plantdp <- ggplot(plantdegree15, aes(x = reorder(Plant, Degree), y = Degree)) +
-      geom_bar(stat = "identity", color = "Black", fill = "#980063") +
+      geom_bar(stat = "identity", color = "Black", fill = "#980063", alpha=0.8) +
       theme_bw() +
       coord_flip() +
       labs(x = " ", y = "Number of interactions (bat species)") +
@@ -224,7 +223,7 @@ plantdp
 
 
 # Export both plots together as a PNG image
-png("./Figures/Figure_3.png", res = 200,
+png("../Figures/Figure_3.png", res = 200,
     width = 2000, height = 1400, unit = "px")
 
 # Draw all the plots together:

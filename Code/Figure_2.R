@@ -23,13 +23,11 @@ rm(list= ls())
 ##### LOAD THE PACKAGES
 ################################################################################
 
-
-library(dplyr)
-library(ggplot2)
-library(maps)
-library(mapdata)
-library(cowplot)
-
+if (!require(dplyr)) install.packages('dplyr')
+if (!require(ggplot2)) install.packages('ggplot2')
+if (!require(maps)) install.packages('maps')
+if (!require(mapdata)) install.packages('mapdata')
+if (!require(cowplot)) install.packages('cowplot')
 
 ################################################################################
 ##### IMPORT THE DATA
@@ -37,8 +35,8 @@ library(cowplot)
 
 
 # Import the data sets with sites and references
-sites <- read.csv("./Data/NeoBat_Interactions_Sites.csv")
-refs <- read.csv("./Data/NeoBat_Interactions_References.csv")
+sites <- read.csv("../Data/NeoBat_Interactions_Sites.csv")
+refs <- read.csv("../Data/NeoBat_Interactions_References.csv")
 
 # Check the data
 class(sites)
@@ -113,7 +111,7 @@ g2 <- ggplot(r_years, aes(x = year)) +
       geom_histogram(binwidth = 4, fill = "#006154", 
                      color = "black", alpha = 0.9) +
       theme_bw() +
-      labs(x = "Year of publication", y = "Number of Studies") +
+      labs(x = "Year of publication", y = "Number of studies") +
       theme(panel.grid = element_blank(),
             axis.text = element_text(size = 11, colour = "black"),
             axis.title.x = element_text(size = 12, colour = "black", vjust = -3,
@@ -126,7 +124,7 @@ g2 <- ggplot(r_years, aes(x = year)) +
 g2
 
 # Export both plots together as PNG image
-png("./Figures/Figure_2.png", res = 300,
+png("../Figures/Figure_2.png", res = 300,
     width = 3000, height = 1700, unit = "px")
 
 cowplot::plot_grid(g1, g2, labels = c("A", "B"))

@@ -4,16 +4,23 @@
 #####
 ################################################################################
 
-## load the packages ####
-library(tidyverse)
-library(kableExtra)
-library(tinytex)
-library(magrittr)
-library(knitr)
 
-records <- read.csv("./Data/NeoBat_Interactions_Records.csv")
-references <- read.csv("./Data/NeoBat_Interactions_References.csv")
-sites <- read.csv("./Data/NeoBat_Interactions_Sites.csv")
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) # Recomendo abrir um R project para não se preocupar com paths!
+
+
+## load the packages ####
+
+if (!require(tidyverse)) install.packages('tidyverse')
+if (!require(kableExtra)) install.packages('kableExtra')
+if (!require(tinytex)) install.packages('tinytex')
+if (!require(magrittr)) install.packages('magrittr')
+if (!require(knitr)) install.packages('knitr')
+
+## open data
+
+records <- read.csv("..//Data//NeoBat_Interactions_Records.csv")
+references <- read.csv("../Data/NeoBat_Interactions_References.csv")
+sites <- read.csv("../Data/NeoBat_Interactions_Sites.csv")
 
 ## number of bats species ####
 n_bats <- records %>%
@@ -99,8 +106,6 @@ plantdegreeSP <-records %>%
    dplyr::summarise(Degree = n()) %>%                     
    dplyr::arrange(desc(Degree))
 
-
-
 ## type of interactions ####
 interaction_type <- records %>% 
       dplyr::group_by(Interaction) %>%
@@ -177,8 +182,8 @@ all <- rbind(batguilds, sstage, lifeform)
 #####
 ################################################################################
 
-plants_iucn <- read.csv("other/Plants_IUCN.csv")
-bats_iucn <- read.csv("other/Bats_IUCN.csv")
+plants_iucn <- read.csv("../other/Plants_IUCN.csv")
+bats_iucn <- read.csv("../other/Bats_IUCN.csv")
 iucnlevels <- c("Extinct", "Extinct in the Wild","Critically Endangered", 
                 "Endangered", "Vulnerable", "Near Threatened", "Least Concern", 
                 "Conservation Dependent", "Data Deficient", "Not Evaluated")
@@ -209,7 +214,6 @@ names(alliucn) <- c("Group", "IUCN Status", "Number of species", "%")
 
 
 ## Mean and range of the number of interactions by life form  ####
-
 intlifeform <- records %>%
    dplyr::filter(!is.na(LifeForm)) %>%
    dplyr::group_by(CurrentPlantSpecies,CurrentBatSpecies, 
@@ -225,7 +229,6 @@ intlifeform <- records %>%
    dplyr::arrange(LifeForm, Interaction)
 
 ## Mean and range of the number of interactions by successional stage ####
-
 intsstage <- records %>%
    dplyr::filter(!is.na(SuccessionalStage)) %>%
    dplyr::group_by(CurrentPlantSpecies,CurrentBatSpecies, 
@@ -241,7 +244,6 @@ intsstage <- records %>%
    dplyr::arrange(SuccessionalStage, Interaction)
 
 ## Mean and range of the number of interactions by bat guild ####
-
 intbatguild <- records %>%
    dplyr::filter(!is.na(TrophicGuild)) %>%
    dplyr::group_by(CurrentPlantSpecies,CurrentBatSpecies, 
@@ -256,9 +258,7 @@ intbatguild <- records %>%
                     Max = round(max(N_interactions))) %>%
    dplyr::arrange(TrophicGuild, Interaction)
 
-
 ## Number of unidentified plant families, genera and species ####
-
 unidfam <- records %>% 
    dplyr::filter(PlantFamily == "Unidentified") %>%
    nrow()

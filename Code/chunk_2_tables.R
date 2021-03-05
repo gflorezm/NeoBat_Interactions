@@ -5,7 +5,7 @@
 ################################################################################
 
 
-##### TABLE 3. References matriz
+##### TABLE 3. References matrix
 
 table_3 <- data.frame(
       Variable = names(references),

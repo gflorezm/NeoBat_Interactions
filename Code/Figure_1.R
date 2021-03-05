@@ -12,7 +12,7 @@
 
 
 #Set the working directory
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) # o path automatico aqui é a pasta Code, então por isso recomendo criar um R project
 
 #Delete all previous objects
 rm(list= ls())
@@ -22,15 +22,14 @@ rm(list= ls())
 ##### LOAD THE PACKAGES
 ################################################################################
 
-
-library(dplyr)
-library(ggplot2)
-library(grDevices)
-library(sf)
-library(rnaturalearth)
-library(rnaturalearthdata)
-library(ggspatial)
-library(rgeos)
+if (!require(dplyr)) install.packages('dplyr')
+if (!require(ggplot2)) install.packages('ggplot2')
+if (!require(grDevices)) install.packages('grDevices')
+if (!require(sf)) install.packages('sf')
+if (!require(rnaturalearth)) install.packages('rnaturalearth')
+if (!require(rnaturalearthdata)) install.packages('rnaturalearthdata')
+if (!require(ggspatial)) install.packages('ggspatial')
+if (!require(rgeos)) install.packages('rgeos')
 
 
 ################################################################################
@@ -39,7 +38,7 @@ library(rgeos)
 
 
 # Import the data set with site coordinates
-sites <- read.csv("./Data/NeoBat_Interactions_Sites.csv")
+sites <- read.csv("../Data/NeoBat_Interactions_Sites.csv")
 
 # Check the data
 class(sites)
@@ -93,15 +92,14 @@ g1 <- ggplot(data = world) +
       ggspatial::annotation_north_arrow(location = "tr", which_north = "true",
                                         height = unit(1.5, "cm"), 
                                         width = unit(1.5, "cm"),
-                                        style = north_arrow_fancy_orienteering
-                                        (
+                                        style = ggspatial::north_arrow_fancy_orienteering(
                                               fill = c("white","grey30")))
 
 # See the map
 g1
 
 # Export the map as a PNG image
-png("./Figures/Figure_1.png", res = 300,
+png("../Figures/Figure_1.png", res = 300,
     width = 2000, height = 2200, unit = "px")
 g1
 
