@@ -1,6 +1,6 @@
 # NeoBat_Interactions - Supplement
 
-Supplements to the data paper Florez-Montero *et al*. (2020, sub.).
+Supplements to the data paper Florez-Montero *et al*. (2021, sub.).
 
 [Ecological Synthesis Lab](https://marcomellolab.wordpress.com) (SintECO).
 
@@ -39,23 +39,40 @@ The data, scripts, and functions provided here aim at making or data paper fully
     
     c. Figure_3.png
 
-    c. Figure_4.png
+    d. Figure_4.png
+    
+    e. Figure_5.png
 
 
-3. Results (folder)
+3. Code (folder)
 
-    a. 
+    a. Figure_1.R -> script for reproducing Figure 1.
+    
+    b. Figure_2.R -> script for reproducing Figure 2.
+    
+    c. Figure_3.R -> script for reproducing Figure 3.
+    
+    d. Figure_4.R -> script for reproducing Figure 4.
+    
+    e. Figure_5.R -> script for reproducing Figure 5.
+    
+    f. chunk_1.R -> script for basic quantitative analysis reported in the metadata.
+    
+    g. chunk_2.R -> script for construct the metadata tables.
+    
+    h. abbr_name.R -> custom-made function to abbreviate scientific names.
 
 
-4. abbr_name.R -> custom-made function to abbreviate scientific names.
+4. other (Folder)
 
-5. Figure_1.R -> script for reproducing Figure 1.
+    a. Bats_IUCN.csv -> data set with the IUCN category of bats.
+    
+    b. Plants_IUCN.csv -> data set with the IUCN category of plants.
 
-6. Figure_2.R -> script for reproducing Figure 2.
 
-7. Figure_3.R -> script for reproducing Figure 3.
+5. 
 
-8. Figure_4.R -> script for reproducing Figure 4.
+
 
 
 ## Instructions
@@ -64,7 +81,7 @@ The data, scripts, and functions provided here aim at making or data paper fully
 
 2. Follow the instructions provided in the script;
 
-3. Check the figure in the Figures folder and the statistics in the Results folder.
+3. Check the figure in the Figures folder or the pdf document after knit the NeoBat_Interactions_metadata.Rmd file.
 
 
 ## Feedback
@@ -79,5 +96,5 @@ Firstly, we thank Prof. Mauro Galetti and Prof. Milton Ribeiro, from the Sao Pau
 
 ## Reference
 
-Guillermo L. Florez-Montero, Cullen Geiselman, Marcelo R. Nogueira, Renata L. Muylaert, Sharlene E. Santana, Richard D. Stevens, Marco Tschapka, Francisco A. Rodrigues, Marco A. R. Mello. 2020. NeoBat Interactions: a data set of bat-plant interactions in the Neotropics. *Submitted*.
+Guillermo L. Florez-Montero, Cullen Geiselman, Marcelo R. Nogueira, Renata L. Muylaert, Sharlene E. Santana, Richard D. Stevens, Marco Tschapka, Francisco A. Rodrigues, Marco A. R. Mello. 2021. NeoBat Interactions: a data set of bat-plant interactions in the Neotropics. *Submitted*.
 

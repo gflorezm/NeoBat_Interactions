@@ -55,7 +55,7 @@ batrecords15 <- batrecords[1:15,]
 batrecords15
 
 # Load a custom-made function to abbreviate the scientific names
-source("./abbr_name.R")
+source("code/abbr_name.R")
 
 #Abbreviate the scientific names of bats
 batrecords15$names <- abbr_name(batrecords15$CurrentBatSpecies)
