@@ -5,15 +5,6 @@
 #
 ################################################################################
 
-
-################################################################################
-##### SET THE STAGE
-################################################################################
-
-
-#Set the working directory
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path)) # o path automatico aqui é a pasta Code, então por isso recomendo criar um R project
-
 #Delete all previous objects
 rm(list= ls())
 
@@ -38,7 +29,7 @@ if (!require(rgeos)) install.packages('rgeos')
 
 
 # Import the data set with site coordinates
-sites <- read.csv("../Data/NeoBat_Interactions_Sites.csv")
+sites <- read.csv("./Data/NeoBat_Interactions_Sites.csv")
 
 # Check the data
 class(sites)
@@ -99,7 +90,7 @@ g1 <- ggplot(data = world) +
 g1
 
 # Export the map as a PNG image
-png("../Figures/Figure_1.png", res = 300,
+png("./Figures/Figure_1.png", res = 300,
     width = 2000, height = 2200, unit = "px")
 g1
 

@@ -6,15 +6,6 @@
 #
 ################################################################################
 
-
-################################################################################
-##### SET THE STAGE
-################################################################################
-
-
-#Set the working directory
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 #Delete all previous objects
 rm(list= ls())
 
@@ -35,8 +26,8 @@ if (!require(cowplot)) install.packages('cowplot')
 
 
 # Import the data sets with sites and references
-sites <- read.csv("../Data/NeoBat_Interactions_Sites.csv")
-refs <- read.csv("../Data/NeoBat_Interactions_References.csv")
+sites <- read.csv("./Data/NeoBat_Interactions_Sites.csv")
+refs <- read.csv("./Data/NeoBat_Interactions_References.csv")
 
 # Check the data
 class(sites)
@@ -124,7 +115,7 @@ g2 <- ggplot(r_years, aes(x = year)) +
 g2
 
 # Export both plots together as PNG image
-png("../Figures/Figure_2.png", res = 300,
+png("./Figures/Figure_2.png", res = 300,
     width = 3000, height = 1700, unit = "px")
 
 cowplot::plot_grid(g1, g2, labels = c("A", "B"))

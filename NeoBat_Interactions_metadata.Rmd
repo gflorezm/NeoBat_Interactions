@@ -45,7 +45,7 @@ csl: frontiersec.csl
 &nbsp;
 
 
-```{r processing data, code=readLines("./Code/chunk_1.R"), message=FALSE, warning=FALSE, include=FALSE}
+```{r processing data, code=readLines("Code/chunk_1.R"), message=FALSE, warning=FALSE, include=FALSE}
 ```
 
 # INTRODUCTION
@@ -403,7 +403,7 @@ Firstly, we thank Prof. Mauro Galetti and Prof. Milton Ribeiro, from the State U
 
 &nbsp;
 
-```{r chunk tables, code=readLines("./Code/chunk_2_tables.R"), message=FALSE, warning=FALSE, include=FALSE}
+```{r chunk tables, code=readLines("Code/chunk_2_tables.R"), message=FALSE, warning=FALSE, include=FALSE}
 ```
 
 \clearpage

@@ -8,17 +8,8 @@
 ################################################################################
 
 
-################################################################################
-##### SET THE STAGE
-################################################################################
-
-
-#Set the working directory
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 #Delete all previous objects
 rm(list= ls())
-
 
 ################################################################################
 ##### LOAD THE PACKAGES
@@ -36,7 +27,7 @@ if (!require(cowplot)) install.packages('cowplot')
 
 # Import the data set with the interaction records and filter out "unidentified"
 # plant genera
-records <- read.csv("../data/NeoBat_Interactions_records.csv")
+records <- read.csv("./data/NeoBat_Interactions_records.csv")
 
 # Check the data
 class(records)
@@ -173,7 +164,7 @@ p3
 
 
 # Export all three plots as a PNG image
-png("../Figures/Figure_4.png", res = 300,
+png("./Figures/Figure_4.png", res = 300,
     width = 2000, height = 3200, unit = "px")
 
 cowplot::plot_grid(p1, p2, p3, nrow = 3, 

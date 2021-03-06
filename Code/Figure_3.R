@@ -9,14 +9,6 @@
 ################################################################################
 
 
-################################################################################
-##### SET THE STAGE
-################################################################################
-
-
-#Set the working directory
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 #Delete all previous objects
 rm(list= ls())
 
@@ -37,7 +29,7 @@ if (!require(cowplot)) install.packages('cowplot')
 
 
 # Import the data set with the interaction records
-records <- read.csv("../Data/NeoBat_Interactions_records.csv")
+records <- read.csv("./Data/NeoBat_Interactions_records.csv")
 
 # Check the data
 class(records)
@@ -63,7 +55,7 @@ batrecords15 <- batrecords[1:15,]
 batrecords15
 
 # Load a custom-made function to abbreviate the scientific names
-source("../abbr_name.R")
+source("./abbr_name.R")
 
 #Abbreviate the scientific names of bats
 batrecords15$names <- abbr_name(batrecords15$CurrentBatSpecies)
@@ -223,7 +215,7 @@ plantdp
 
 
 # Export both plots together as a PNG image
-png("../Figures/Figure_3.png", res = 200,
+png("./Figures/Figure_3.png", res = 200,
     width = 2000, height = 1400, unit = "px")
 
 # Draw all the plots together:
