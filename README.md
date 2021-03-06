@@ -29,6 +29,7 @@ The data, scripts, and functions provided here aim at making or data paper fully
     b. NeoBat_Interactions_Records.csv -> data set with interaction records.
 
     c. NeoBat_Interactions_References.csv -> data set with full references of the source studies.
+
     
 
 2. Figures (folder)
@@ -44,6 +45,7 @@ The data, scripts, and functions provided here aim at making or data paper fully
     e. Figure_5.png
 
 
+
 3. Code (folder)
 
     a. Figure_1.R -> script for reproducing Figure 1.
@@ -56,32 +58,54 @@ The data, scripts, and functions provided here aim at making or data paper fully
     
     e. Figure_5.R -> script for reproducing Figure 5.
     
-    f. chunk_1.R -> script for basic quantitative analysis reported in the metadata.
-    
-    g. chunk_2.R -> script for construct the metadata tables.
-    
-    h. abbr_name.R -> custom-made function to abbreviate scientific names.
+    f. abbr_name.R -> custom-made function to abbreviate scientific names.
 
 
-4. other (Folder)
+
+4. Metadata (Folder)
+
+    a. NeoBat_Interactions_metadata.Rmd -> script for reproducing the metadata document in pdf format.
+    
+    b. NeoBat_Interactions_metadata.aux -> intermediate file between Rmd and latex.
+    
+    c. NeoBat_Interactions_metadata.log -> intermediate file between Rmd and latex.
+    
+    d. NeoBat_Interactions_metadata.pdf -> metadata in pdf format.
+    
+    e. bibliography.bib -> references in bibTex format.
+    
+    f. chunk_1.R -> script for basic quantitative analysis reported in the metadata. A child code of the .Rmd script.
+
+    g. chunk_2.R -> script for construct the metadata tables. A child code of the .Rmd script.
+    
+    h. frontiersec.csl -> bibliography format.
+
+
+
+5. other (Folder)
 
     a. Bats_IUCN.csv -> data set with the IUCN category of bats.
     
     b. Plants_IUCN.csv -> data set with the IUCN category of plants.
 
 
-5. 
-
-
-
 
 ## Instructions
+
+### For reproducing figures
 
 1. Run the respective script to reproduce the chosen figure;
 
 2. Follow the instructions provided in the script;
 
-3. Check the figure in the Figures folder or the pdf document after knit the NeoBat_Interactions_metadata.Rmd file.
+3. Check the figure in the Figures folder.
+
+
+### For reproducing metadata
+
+1. Knit de script .Rmd of from the Metadata folder;
+
+2. Check the pdf document at the same folder.
 
 
 ## Feedback
