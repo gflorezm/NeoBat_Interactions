@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.3.6)  6 MAR 2021 16:48
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2021.3.6)  8 MAR 2021 17:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1042,17 +1042,6 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 fg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-Overfull \hbox (32.07698pt too wide) in paragraph at lines 96--97
-[]\TU/lmr/m/it/10 2 Institution. Departament. Postal Code. City, Country XXXXXX
-XXXXXXXXXXXXXXXX
- []
-
-
-Overfull \hbox (31.84698pt too wide) in paragraph at lines 110--111
-[]\TU/lmr/m/it/10 6 Institution. Departament. Postal Code. City, Country XXXXXX
-XXXXXXXXXXXXXXXX
- []
-
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 126.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
@@ -1079,70 +1068,73 @@ File: ../Figures/Figure_1.png Graphic file (type bmp)
 ]
 File: ../Figures/Figure_2.png Graphic file (type bmp)
 <../Figures/Figure_2.png>
-[5] [6]
+[5]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[6]
 File: ../Figures/Figure_3.png Graphic file (type bmp)
 <../Figures/Figure_3.png>
 [7]
 File: ../Figures/Figure_4.png Graphic file (type bmp)
 <../Figures/Figure_4.png>
-[8]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9] [10] [11
+[8] [9] [10
 
-] [12] [13]
+] [11] [12]
 File: ../Figures/Figure_5.png Graphic file (type bmp)
 <../Figures/Figure_5.png>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[14] [15] [16] [17] [18
+[13] [14] [15] [16] [17
 
-]
-Overfull \hbox (6.23627pt too wide) in paragraph at lines 1171--1184
+] [18]
+Overfull \hbox (6.23627pt too wide) in paragraph at lines 1221--1234
  [][] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 1186--1191
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1236--1241
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 1191--1196
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1241--1246
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 1196--1236
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1246--1286
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 1236--1249
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1286--1299
  [] [] [] [] 
  []
 
 [19
 
 ] [20] [21] [22] [23]
-Overfull \hbox (6.23627pt too wide) in alignment at lines 1251--1256
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1301--1306
  [] [] [] [] 
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 1256--1261
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1306--1311
  [] [] [] [] 
  []
 
 
-Overfull \hbox (4.07175pt too wide) in paragraph at lines 1282--1282
+Overfull \hbox (4.07175pt too wide) in paragraph at lines 1332--1332
 []|\TU/lmr/m/n/10 CurrentPlantSpecies|  
  []
 
 
-Overfull \hbox (6.23627pt too wide) in alignment at lines 1261--1292
+Overfull \hbox (6.23627pt too wide) in alignment at lines 1311--1342
  [] [] [] [] 
  []
 
@@ -1161,8 +1153,8 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  18866 strings out of 478931
- 337040 string characters out of 5865405
- 862948 words of memory out of 5000000
+ 337035 string characters out of 5865405
+ 862942 words of memory out of 5000000
  38404 multiletter control sequences out of 15000+600000
  409963 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
