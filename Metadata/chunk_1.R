@@ -12,11 +12,29 @@ if (!require(tinytex)) install.packages('tinytex')
 if (!require(magrittr)) install.packages('magrittr')
 if (!require(knitr)) install.packages('knitr')
 
-## open data
+## open data ####
 
 records <- read.csv("../Data/NeoBat_Interactions_Records.csv")
 references <- read.csv("../Data/NeoBat_Interactions_References.csv")
 sites <- read.csv("../Data/NeoBat_Interactions_Sites.csv")
+
+plants_iucn <- read.csv("../other/Plants_IUCN.csv")
+bats_iucn <- read.csv("../other/Bats_IUCN.csv")
+
+################################################################################
+#
+# If you want to run this script separately of the parent code (RMD file)
+# you have to change the data file paths as follow
+#
+#records <- read.csv("./Data/NeoBat_Interactions_Records.csv")
+#references <- read.csv("./Data/NeoBat_Interactions_References.csv")
+#sites <- read.csv("./Data/NeoBat_Interactions_Sites.csv")
+#
+#plants_iucn <- read.csv("../other/Plants_IUCN.csv")
+#bats_iucn <- read.csv("../other/Bats_IUCN.csv")
+#
+################################################################################
+
 
 ## number of bats species ####
 n_bats <- records %>%
@@ -178,8 +196,7 @@ all <- rbind(batguilds, sstage, lifeform)
 #####
 ################################################################################
 
-plants_iucn <- read.csv("../other/Plants_IUCN.csv")
-bats_iucn <- read.csv("../other/Bats_IUCN.csv")
+
 iucnlevels <- c("Extinct", "Extinct in the Wild","Critically Endangered", 
                 "Endangered", "Vulnerable", "Near Threatened", "Least Concern", 
                 "Conservation Dependent", "Data Deficient", "Not Evaluated")
@@ -264,3 +281,4 @@ unidgen <- records %>%
    nrow()
 
 unidsp <- sum(grepl("sp.", records$CurrentPlantSpecies))
+
