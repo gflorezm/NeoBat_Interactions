@@ -52,30 +52,41 @@ editor_options:
 
  
 
-Open access to primary scientific data is fundamental to assure the social contract that governs scientific publishing [@vision2010]. This contract relies on the transparency, reproducibility, and progress of science by allowing independent verification and reuse of published data [@costello2009]. Data access has been facilitated in the information age through important frameworks for the production, storage, curation, and sharing of data. These frameworks aim to preserve data in the long term, even beyond the life of their initial compilers and curators [@chavan2009].
+Open access to primary scientific data is fundamental to assure the social contract that governs scientific publishing [@vision2010].
+This contract relies on the transparency, reproducibility, and progress of science by allowing independent verification and reuse of published data [@costello2009].
+Data access has been facilitated in the information age through important frameworks for the production, storage, curation, and sharing of data.
+These frameworks aim to preserve data in the long term, even beyond the life of their initial compilers and curators [@chavan2009].
 
  
 
-One major framework for making data available are data papers, which optimize efforts in the discovery, organization, and availability of information [@chavan2011]. They have the potential to offer highly reliable data sources, as they have been subjected to quality control protocols, such as peer review and editorial inspection of data and metadata [@costello2013].
+One major framework for making data available are data papers, which optimize efforts in the discovery, organization, and availability of information [@chavan2011].
+They have the potential to offer highly reliable data sources, as they have been subjected to quality control protocols, such as peer review and editorial inspection of data and metadata [@costello2013].
 This new kind of publication has revolutionized contemporary biology by making decades of naturalistic information widely available in highly accessible and comprehensive formats.
 
  
 
 Recently, the revolution has also reached mammalogy.
 Data papers on mammal communities are growing in number.
-There are, for instance, data papers on non-volant mammals on a global scale [@thibault2011]. Another important source is the BioTIME database of biodiversity time series for the Anthropocene [@dornelas2018]. Others have larger scope, such as the global database for metacommunity ecology, integrating species, traits, environments, and space [@jeliazkov2020].
+There are, for instance, data papers on non-volant mammals on a global scale [@thibault2011].
+Another important source is the BioTIME database of biodiversity time series for the Anthropocene [@dornelas2018].
+Others have larger scope, such as the global database for metacommunity ecology, integrating species, traits, environments, and space [@jeliazkov2020].
 Others attempt to harmonize and curate all main data sets for mammal traits, phyllogeny, and viral sharing (<https://github.com/viralemergence/clover>).
 
  
 
 In Brazil, the most famous mammalogical data papers were produced by the ATLANTIC Series and NEOTROPICAL Series, which contain information about the biodiversity of the Atlantic Forest of South America and the Neotropics, respectively.
-This series includes data papers on plant-frugivore interactions [@bello2017], rodents and marsupials: [@bovendorp2017], bats [@muylaert2017], primates [@culot2019], and medium- and large-sized mammals [@souza2019]. Many other data papers were produced by other research groups outside the ATLANTIC Series, focusing on groups such as small mammals [@figueredo2017]. Nevertheless, only a few of them covered larger spatial scales, such as Neotropical xenarthrans [@santos2019] and Neotropical Carnivores [@Nagy-Reis2020].
+This series includes data papers on plant-frugivore interactions [@bello2017], rodents and marsupials: [@bovendorp2017], bats [@muylaert2017], primates [@culot2019], and medium- and large-sized mammals [@souza2019].
+Many other data papers were produced by other research groups outside the ATLANTIC Series, focusing on groups such as small mammals [@figueredo2017].
+Nevertheless, only a few of them covered larger spatial scales, such as Neotropical xenarthrans [@santos2019] and Neotropical Carnivores [@Nagy-Reis2020].
 In addition, most of them, particularly in the Atlantic Forest and Cerrado, are based on abundance-incidence data whereas species interactions received much less attention.
 
  
 
 Mutualistic interactions between animals and plants are a cornerstone of terrestrial ecosystems.
-Almost 94% of plants in neotropical communities are pollinated by animals [@ollerton2011], while 70--94% have their seeds dispersed by vertebrates [@jordano2013]. Bats are especially important in this context, as they represent the second largest group of seed dispersers in the Neotropics, after birds [@bello2017]. On the other hand, even though insects pollinate most flowering plants, bats are also the second group of pollinating vertebrates since they pollinate about 2% of the extant plant genera [@skercioglu2006]. Bat-plant interactions also generate ecosystem services, such as the pollination of economically important plants and the dispersal of seeds from pioneer plants that are key to habitat regeneration [@kunz2011].
+Almost 94% of plants in neotropical communities are pollinated by animals [@ollerton2011], while 70--94% have their seeds dispersed by vertebrates [@jordano2013].
+Bats are especially important in this context, as they represent the second largest group of seed dispersers in the Neotropics, after birds [@bello2017].
+On the other hand, even though insects pollinate most flowering plants, bats are also the second group of pollinating vertebrates since they pollinate about 2% of the extant plant genera [@skercioglu2006].
+Bat-plant interactions also generate ecosystem services, such as the pollination of economically important plants and the dispersal of seeds from pioneer plants that are key to habitat regeneration [@kunz2011].
 
  
 
@@ -282,10 +293,12 @@ knitr::include_graphics("../Figures/Figure_4.png")
 
 ### B. Specific subproject description
 
-> **Site description:** The neotropical region is one of the eight biogeographic realms of the world and extends from southeastern United States to Patagonia, including the Caribbean and some pacific islands [@olson2001]. The region is comprised by 17 Phytogeographic Domains divided in 96 eco-regions including the Nearctic Mexico Domain [@oliveirafilho2017].
+> **Site description:** The neotropical region is one of the eight biogeographic realms of the world and extends from southeastern United States to Patagonia, including the Caribbean and some pacific islands [@olson2001].
+> The region is comprised by 17 Phytogeographic Domains divided in 96 eco-regions including the Nearctic Mexico Domain [@oliveirafilho2017].
 > The vegetation of the region is very diverse, including xeric and thorny shrubs, open fields, sandy and rocky vegetation, woodlands, savannas, deciduous and semideciduous forest, rainforest, cloud forest, dwarf forest, and floodplains.
 
-> The Neotropics is the most species-rich realm in the world and has high levels of endemism [@ulloa2017]. Due to this high level of endemism and the number of threats in some areas, seven of the 25 hotspots of biodiversity are in the neotropical region: Mesoamerica, Caribean Islands, Tumbes-Choco-Magdalena, Tropical Andes, Cerrado, Atlantic Forest, and Chilean Winter Rainfall and Valdivian Forests [@Mittermeier2011], beside the Amazon Forest, the most biodiverse ecoregion in the world [@hoorn2010amazonia].
+> The Neotropics is the most species-rich realm in the world and has high levels of endemism [@ulloa2017].
+> Due to this high level of endemism and the number of threats in some areas, seven of the 25 hotspots of biodiversity are in the neotropical region: Mesoamerica, Caribean Islands, Tumbes-Choco-Magdalena, Tropical Andes, Cerrado, Atlantic Forest, and Chilean Winter Rainfall and Valdivian Forests [@Mittermeier2011], beside the Amazon Forest, the most biodiverse ecoregion in the world [@hoorn2010amazonia].
 >  
 
 > **Data compilation:** The present database was originally compiled from the Bat-Plant Interaction Database, currently known as Bat Eco Interactions [@geiselman2002].
@@ -339,7 +352,8 @@ The lack of standardization in the frugivory and nectarivory sampling methods ma
 Sampling methods vary significantly between studies focused on plants or bats.
 Studies focused on plants are sampled primarily through the observation of a single species and its floral visitors or fruit removers.
 On the other hand, studies focused on bats are made mainly by the analysis of fecal samples from one species or the entire assemblage.
-In these studies, capture is carried out mainly with mist nets, which adds a bias towards animals that fly in the understory and usually do not detect the nets [@tschapka1998compact]. Some studies used seed traps to collect the seeds rain under the canopy [@medellin1999seed; @arteaga2006seed].
+In these studies, capture is carried out mainly with mist nets, which adds a bias towards animals that fly in the understory and usually do not detect the nets [@tschapka1998compact].
+Some studies used seed traps to collect the seeds rain under the canopy [@medellin1999seed; @arteaga2006seed].
 However, these methods do not allow to identify which bat species each fecal sample belongs to, and therefore are not useful for recording pairwise interactions.
 
 ```{r Fig 5, echo=FALSE, out.width="90%", fig.align="center", fig.pos="!h", fig.cap="Interactions accumulation curve by sampling site. Black dots represent the empirical accumulation data, green line represents the rarefaction curve based on Chao2 non-parametric estimator and green polygon is the 95\\% confidence interval of the rarefaction curve."}
@@ -369,7 +383,9 @@ In this sense, combining photographic records with mist-netting can help researc
 
  
 
-**Wallacean Shortfall:** The lack of information about geographic distribution of species is a worldwide issue [@lomolino2004]. Despite the increasing effort to sample animals and plants separately, this effort is not enough to reduce this shortfall in the case of ecological interactions. Inferring ecological interactions only from co-occurrence data is not correct since interactions can be conditioned by another kind of biotic and abiotic processes, more than the simple presence of the two species in the same place at the same time [@Blanchet2020co].
+**Wallacean Shortfall:** The lack of information about geographic distribution of species is a worldwide issue [@lomolino2004].
+Despite the increasing effort to sample animals and plants separately, this effort is not enough to reduce this shortfall in the case of ecological interactions.
+Inferring ecological interactions only from co-occurrence data is not correct since interactions can be conditioned by another kind of biotic and abiotic processes, more than the simple presence of the two species in the same place at the same time [@Blanchet2020co].
 In this database we have only compiled verified interactions, but there is clearly a large gap in sampling and publishing about bat-plant interactions in the region (Figure 1).
 There is likely a large amount of gray literature on bat-plant interactions in different neotropical universities and research centers.
 However, this information is not digitally available or has usage restrictions, which makes it even harder to fill the gaps and understand the geographic distribution of such interactions.
@@ -388,7 +404,16 @@ Then, collecting and reporting data to calculate the frequency of interactions b
 
  
 
-**Eltonian Shortfall:** It refers to the lack of information about interactions among species [@hortal2015seven]. We have extended the definition of this shortfall as the lack of verification about the type of interaction that takes place between a pair of species. Roughly, we tend to assume that frugivory necessarily implies seed dispersal, and nectarivory necessarily implies pollination. We even tend to define both as mutualistic interactions, but these assumptions are imprecise and unclear without additional information. This issue gets even more complicated, when we consider that ecological interactions are not fixed in time and space. The effect of one species on the population dynamics of another can be modulated by internal factors such as population densities, and external factors such as environmental conditions [@hernandez1998dynamics]. This conditioning enables a context-dependent transition from mutualisms to antagonisms under variable environments. Overcoming this shortfall for bat-plant interactions requires considerable effort. Frugivory can only be assumed as mutualistic, if the balance between seed destruction and safe gut passage results in a fitness gain for the plant [@Genrich2017duality]. The benefit can be measured in terms of fruit production, the genetic variability of the propagules, or the dispersal distance of pollen to establish that the nectarivory represents a mutualistic interaction [@Flemingetal2009evolution].
+**Eltonian Shortfall:** It refers to the lack of information about interactions among species [@hortal2015seven].
+We have extended the definition of this shortfall as the lack of verification about the type of interaction that takes place between a pair of species.
+Roughly, we tend to assume that frugivory necessarily implies seed dispersal, and nectarivory necessarily implies pollination.
+We even tend to define both as mutualistic interactions, but these assumptions are imprecise and unclear without additional information.
+This issue gets even more complicated, when we consider that ecological interactions are not fixed in time and space.
+The effect of one species on the population dynamics of another can be modulated by internal factors such as population densities, and external factors such as environmental conditions [@hernandez1998dynamics].
+This conditioning enables a context-dependent transition from mutualisms to antagonisms under variable environments.
+Overcoming this shortfall for bat-plant interactions requires considerable effort.
+Frugivory can only be assumed as mutualistic, if the balance between seed destruction and safe gut passage results in a fitness gain for the plant [@Genrich2017duality].
+The benefit can be measured in terms of fruit production, the genetic variability of the propagules, or the dispersal distance of pollen to establish that the nectarivory represents a mutualistic interaction [@Flemingetal2009evolution].
 
  
 
@@ -492,28 +517,35 @@ Potential biases derived from the shortfalls mentioned above should be taken ser
 
 > The data were used in the following studies, in chronological order:  
 
-> 1.  Mello, M. A. R., F. M. D. Marquitti, P. R. Guimarães Jr., E. K. V. Kalko, P. Jordano, M. A. M. de Aguiar, and P. R. Guimaraes.
+> 1.  Mello, M. A. R., F. M. D. Marquitti, P. R. Guimarães Jr., E. K. V. Kalko, P. Jordano, M. A. M.
+>     de Aguiar, and P.
+>     R. Guimaraes.
 >
 >     2011. The missing part of seed dispersal networks: structure and robustness of bat-fruit interactions. PLoS One 6: e17395.
 >
-> 2.  Mello, M. A. R., F. M. D. Marquitti, P. R. Guimarães, E. K. V. Kalko, P. Jordano, and M. A. M. de Aguiar.
+> 2.  Mello, M. A. R., F. M. D. Marquitti, P. R. Guimarães, E. K. V. Kalko, P. Jordano, and M.
+>     A. M.
+>     de Aguiar.
 >
 >     2011. The modularity of seed dispersal: differences in structure and robustness between bat-- and bird--fruit networks. Oecologia 167: 131--140.
 >
-> 3.  Sarmento, R., C. P. Alves-Costa, A. Ayub, and M. A. R. Mello.
+> 3.  Sarmento, R., C. P. Alves-Costa, A. Ayub, and M.
+>     A. R. Mello.
 >
 >     2014. Partitioning of seed dispersal services between birds and bats in a fragment of the Brazilian Atlantic Forest. Zoologia 31: 245--255.
 >
-> 4.  Mello, M. A. R., F. A. Rodrigues, L. da F. Costa, W. D. Kissling, Ç.
+> 4.  Mello, M. A. R., F. A. Rodrigues, L.
+>     da F.
+>     Costa, W. D. Kissling, Ç.
 >
 >     H.  Şekercioğlu, F. M. D. Marquitti, and E. K. V. Kalko.
 >
->     ```{=html}
 >     <!-- -->
->     ```
+>
 >     2015. Keystone species in seed dispersal networks are mainly determined by dietary specialization. Oikos 124: 1031--1039.
 >
-> 5.  Mello, M. A. R., G. M. Felix, R. B. P. Pinheiro, R. L. Muylaert, C. Geiselman, S. E. Santana, M. Tschapka, N. Lotfi, F. A. Rodrigues, and R. D. Stevens.
+> 5.  Mello, M. A. R., G. M. Felix, R. B. P. Pinheiro, R. L. Muylaert, C. Geiselman, S. E. Santana, M. Tschapka, N. Lotfi, F. A. Rodrigues, and R.
+>     D. Stevens.
 >
 >     2019. Insights into the assembly rules of a continent-wide multilayer network. Nat. Ecol. Evol. 3: 1525--1532.
 
