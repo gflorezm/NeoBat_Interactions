@@ -599,5 +599,3 @@ table_5 %>%
 nocite: | 
  @trabucco2009global, @fick2017worldclim, @plantlist2013
 ---
-
-options(encoding="native")
