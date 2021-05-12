@@ -103,6 +103,8 @@ g2 <- ggplot(r_years, aes(x = year)) +
                      color = "black", alpha = 0.9) +
       theme_bw() +
       labs(x = "Year of publication", y = "Number of studies") +
+      scale_x_continuous(breaks = c(1957, 1967, 1977, 1987, 1997, 2007),
+            limits = c(1955, 2010)) +
       theme(panel.grid = element_blank(),
             axis.text = element_text(size = 11, colour = "black"),
             axis.title.x = element_text(size = 12, colour = "black", vjust = -3,
