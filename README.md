@@ -16,7 +16,7 @@ Disclaimer: You may freely use the software and data provided here for any purpo
 
 ## Functionality and origin
 
-The data, scripts, and functions provided here aim at making or data paper 100% reproducible. You will find code to reproduce both the analysis and figures, as well as the main supplementary material.
+The data and code provided here aim at making the graphical and numerical analyses presented in our data paper reproducible.
 
 ## List of folders and files
 
