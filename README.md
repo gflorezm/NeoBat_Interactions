@@ -6,7 +6,7 @@ Supplements to the data paper Florez-Montero *et al*. (2021, *in prep*.).
 
 Authors: Guillermo L. Florez-Montero, Renata L. Muylaert, Marcelo R. Nogueira, Cullen Geiselman, Sharlene E. Santana, Richard D. Stevens, Marco Tschapka, Francisco A. Rodrigues, Marco A. R. Mello.
 
-E-mail: [gflorezmontero\@gmail.com](mailto:gflorezmontero@gmail.com){.email}.
+E-mail: [gflorezmontero\@gmail.com](mailto:gflorezmontero@gmail.com).
 
 First published on October 14th, 2020 (English version).
 
@@ -51,28 +51,12 @@ The data and code provided here aim at making the graphical and numerical analys
     d.  Figure_4.R -\> script for reproducing Figure 4.
 
     e.  Figure_5.R -\> script for reproducing Figure 5.
+    
+    f.  Tables.R -\> script for reproducing tables 1 and 2.
 
     f.  abbr_name.R -\> custom-made function to abbreviate scientific names.
 
-4.  Metadata (Folder)
-
-    a.  NeoBat_Interactions_metadata.Rmd -\> script for reproducing the metadata document in PDF format.
-
-    b.  NeoBat_Interactions_metadata.aux -\> intermediate file between RMD and LaTeX.
-
-    c.  NeoBat_Interactions_metadata.log -\> intermediate file between RMD and LaTeX.
-
-    d.  NeoBat_Interactions_metadata.pdf -\> metadata in PDF format.
-
-    e.  bibliography.bib -\> references in BibTeX format.
-
-    f.  chunk_1.R -\> script for the basic quantitative analysis reported in the metadata. A child code of the Rmd script.
-
-    g.  chunk_2.R -\> script for building the metadata tables. A child code of the RMD script.
-
-    h.  frontiersec.csl -\> bibliography format.
-
-5.  other (Folder)
+4.  Other (Folder)
 
     a.  Bats_IUCN.csv -\> data set with the IUCN categories of bats.
 
@@ -80,19 +64,15 @@ The data and code provided here aim at making the graphical and numerical analys
 
 ## Instructions
 
-### For reproducing the figures
+### For reproducing the figures and tables
 
-1.  Run the respective script to reproduce the chosen figure;
+1.  Run the respective script to reproduce the chosen figure or table;
 
 2.  Follow the instructions provided in the script;
 
 3.  Check the figure in the Figures folder.
 
-### For reproducing the metadata
 
-1.  Knit the RMD script from the Metadata folder;
-
-2.  Check the PDF document in the same folder.
 
 ## Feedback
 
