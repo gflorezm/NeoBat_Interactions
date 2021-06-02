@@ -1,6 +1,6 @@
 # NeoBat_Interactions - Supplement
 
-Supplements to the data paper Florez-Montero *et al*. (2021, *in prep*.).
+Supplement to the data paper Florez-Montero *et al*. (2021, *sub*.).
 
 [Ecological Synthesis Lab](https://marcomellolab.wordpress.com) (SintECO), University of São Paulo.
 
@@ -16,7 +16,7 @@ Disclaimer: You may freely use the software and data provided here for any purpo
 
 ## Functionality and origin
 
-The data and code provided here aim at making the graphical and numerical analyses presented in our data paper reproducible.
+The data and code provided here aim at making reproducible the graphical and numerical analyses presented in our data paper.
 
 ## List of folders and files
 
@@ -51,10 +51,10 @@ The data and code provided here aim at making the graphical and numerical analys
     d.  Figure_4.R -\> script for reproducing Figure 4.
 
     e.  Figure_5.R -\> script for reproducing Figure 5.
-    
+
     f.  Tables.R -\> script for reproducing tables 1 and 2.
 
-    f.  abbr_name.R -\> custom-made function to abbreviate scientific names.
+    g.  abbr_name.R -\> custom-made function to abbreviate scientific names.
 
 4.  Other (Folder)
 
@@ -70,9 +70,7 @@ The data and code provided here aim at making the graphical and numerical analys
 
 2.  Follow the instructions provided in the script;
 
-3.  Check the figure in the Figures folder.
-
-
+3.  Check the file in the Figures folder.
 
 ## Feedback
 
@@ -80,8 +78,8 @@ If you have any questions, corrections, or suggestions, please feel free to open
 
 ## Acknowledgments
 
-Firstly, we thank Prof. Mauro Galetti and Prof. Milton Ribeiro, from the Sao Paulo State University (UNESP), Brazil, who led the [Atlantic Series of data papers](https://esajournals.onlinelibrary.wiley.com/doi/toc/10.1002/(ISSN)1939-9170.AtlanticPapers) and inspired our entire community to take their data out of their drawers. Our labmates and colleagues helped us at different stages of this project. Our sponsors, especially the Alexander von Humboldt-Stiftung (AvH), Brazilian Council of Scientific and Technological Development (CNPq), Brazilian Coordination for the Improvement of Higher Education Personnel (CAPES), and São Paulo Research Foundation (FAPESP), gave us grants, fellowships, and scholarships. Last, but not least, we thank the [Stack Overflow Community](https://stackoverflow.com), where we solve most of our coding dilemmas.
+Firstly, we thank Mauro Galetti and Milton Ribeiro, from the Sao Paulo State University (UNESP), Brazil, who led the [Atlantic Series of data papers](https://esajournals.onlinelibrary.wiley.com/doi/toc/10.1002/(ISSN)1939-9170.AtlanticPapers) and inspired our entire community to share data collected over decades. Our labmates and colleagues helped us at different stages of this project. Our sponsors, especially the Alexander von Humboldt-Stiftung (AvH), Brazilian Council of Scientific and Technological Development (CNPq), Brazilian Coordination for the Improvement of Higher Education Personnel (CAPES), São Paulo Research Foundation (FAPESP), and Research Dean of the University of São Paulo (PRP-USP), gave us grants, fellowships, and scholarships. Last, but not least, we thank the [Stack Overflow Community](https://stackoverflow.com), where we solve most of our coding dilemmas.
 
 ## Reference
 
-Florez-Montero GL, Muylaert RL, Geiselman C, Nogueira MR, Santana SE, Stevens RD, Tschapka M, Rodrigues FA, Mello MAR. 2021. NeoBat Interactions: a data set of bat-plant interactions in the Neotropics. *In preparation*.
+Florez-Montero GL, Muylaert RL, Geiselman C, Nogueira MR, Santana SE, Stevens RD, Tschapka M, Rodrigues FA, Mello MAR. 2021. NeoBat Interactions: a data set of bat-plant interactions in the Neotropics. *Submitted*.
