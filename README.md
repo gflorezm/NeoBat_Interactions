@@ -1,4 +1,4 @@
-# NeoBat_Interactions - Supplement
+# NeoBat Interactions: a data set of bat-plant interactions in the Neotropics - Supplement
 
 Supplement to the data paper Florez-Montero *et al*. (2021, *sub*.).
 
