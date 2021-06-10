@@ -83,3 +83,9 @@ Firstly, we thank Mauro Galetti and Milton Ribeiro, from the Sao Paulo State Uni
 ## Reference
 
 Florez-Montero GL, Muylaert RL, Geiselman C, Nogueira MR, Santana SE, Stevens RD, Tschapka M, Rodrigues FA, Mello MAR. 2021. NeoBat Interactions: a data set of bat-plant interactions in the Neotropics. *Submitted*.
+
+## Indexing
+
+[![Review](https://github.com/gflorezm/NeoBat_Interactions/actions/workflows/review.yml/badge.svg)](https://github.com/gflorezm/NeoBat_Interactions/actions) [![Build Status](https://travis-ci.com/gflorezm/NeoBat_Interactions.svg)](https://travis-ci.com/gflorezm/NeoBat_Interactions) [![GloBI](https://api.globalbioticinteractions.org/interaction.svg?accordingTo=globi:gflorezm/NeoBat_Interactions)](https://globalbioticinteractions.org/?accordingTo=globi:gflorezm/NeoBat_Interactions)
+
+This repository is configured to be indexed by Global Biotic Interactions (GloBI, https://globalbioticinteractions.org). 

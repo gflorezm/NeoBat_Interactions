@@ -1,6 +1,3 @@
-.git
-.Rhistory
-.DS_Store
-IUCN_tables.R
-.Rproj.user
-Texto
+.elton/
+add_travis_artifact_upload_keys.sh
+datasets/
