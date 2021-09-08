@@ -1,6 +1,6 @@
 # NeoBat Interactions: a data set of bat-plant interactions in the Neotropics - Supplement
 
-Supplement to the data paper Florez-Montero *et al*. (2021, *accepted*.).
+Supplement to the data paper Florez-Montero *et al*. (2021, *accepted*).
 
 [Ecological Synthesis Lab](https://marcomellolab.wordpress.com) (SintECO), University of São Paulo.
 
