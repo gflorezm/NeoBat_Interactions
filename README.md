@@ -10,6 +10,8 @@ E-mail: [gflorezmontero\@gmail.com](mailto:gflorezmontero@gmail.com).
 
 First published on October 14th, 2020 (English version).
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.4894176.svg)](https://doi.org/10.5281/zenodo.4894176)
+
 Run in R version 4.0.3 (2020-10-10) -- "Bunny-Wunnies Freak Out".
 
 Disclaimer: You may freely use the software and data provided here for any purposes at your own risk. We assume no responsibility or liability for the use of this material, convey no license or title under any patent, copyright, or mask work right to the product. We reserve the right to make changes in the material without notification. We also make no representation or warranty that such application will be suitable for the specified use without further testing or modification. If this material helps you produce any academic work (paper, book, chapter, monograph, dissertation, report, talk, lecture or similar), please acknowledge the authors and cite the original data paper and this repository.
