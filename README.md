@@ -84,4 +84,4 @@ Firstly, we thank Mauro Galetti and Milton Ribeiro, from the Sao Paulo State Uni
 
 ## Reference
 
-Florez-Montero GL, Muylaert RL, Geiselman C, Nogueira MR, Santana SE, Stevens RD, Tschapka M, Rodrigues FA, Mello MAR. 2021. NeoBat Interactions: a data set of bat-plant interactions in the Neotropics. Ecology, accepted.
+Florez-Montero, G.L., Muylaert, R.L., Nogueira, M.R., Geiselman, C., Santana, S.E., Stevens, R.D., Tschapka, M., Rodrigues, F.A. and Mello, M.A.R. (2022), NeoBat Interactions: A data set of bat–plant interactions in the Neotropics. Ecology. Accepted Author Manuscript e3640. https://doi.org/10.1002/ecy.3640
